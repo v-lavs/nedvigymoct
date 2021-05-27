@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  transition: .35s;
+  border: 2px solid;
+  &_gold {
+    background-color: $gold;
+    border-color: $gold;
+  }
+
+  &_glass-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #FFFFFF;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}
+

@@ -1,0 +1,31 @@
+.wrapper{
+  width: 100%;
+  overflow: hidden;
+  }
+
+.container{
+  width: 100%;
+  max-width: 1690px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @include respond-to($xxl){
+    max-width: 1400px;
+  }
+  @include respond-to($xl){
+    max-width: 1180px;
+  }
+  @include respond-to($lg){
+    max-width: 800px;
+  }
+  @include respond-to($md){
+
+    max-width: 670px;
+  }
+  @include respond-to($sm){
+    max-width: 420px;
+  }
+  @include respond-to($xs){
+    max-width: 300px;
+  }
+}

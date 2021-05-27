@@ -1,0 +1,78 @@
+.section-intro {
+  padding: 60px 0 130px;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    display: flex;
+    min-height: 690px;
+    padding: 90px 7.5% 80px;
+    color: #fff;
+    z-index: 2;
+  }
+
+  &__part {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: Raleway, sans-serif;
+    padding: 50px 30px 40px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    mix-blend-mode: multiply;
+    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      background-color: #FCC214;
+      mix-blend-mode: multiply;
+      z-index: 0;
+    }
+
+    span {
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .swiper-slide {
+    padding: 0 8%;
+    height: 100%;
+  }
+
+  .banner__inner {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+
