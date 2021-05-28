@@ -42,7 +42,7 @@ body {
   padding-top: 135px;
 }
 
-.section__title{
+.section__title {
   font-weight: 500;
   font-size: 55px;
   color: $dark-100;
@@ -50,7 +50,8 @@ body {
 
 .dynamic-content {
   p {
-
+    font-size: 17px;
+    margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 0;
@@ -71,6 +72,7 @@ body {
 }
 
 .heading_anim {
+
   font-weight: 600;
   font-size: 140px;
   line-height: .5;

@@ -1,0 +1,155 @@
+.public-location {
+  padding-bottom: 164px;
+  .part_left {
+    position: relative;
+    width: 60%;
+  }
+
+  .part_right {
+    width: 40%;
+  }
+
+  .wrap-map {
+    position: absolute;
+    right: -15%;
+    top: 0;
+    bottom: 0;
+    max-width: 1440px;
+    width: 85vw;
+    z-index: -1;
+  }
+  .field-markers{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .img-marker{
+    width: auto;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    &:nth-child(1){
+      bottom: 30%;
+      left: 39%;
+    }
+    &:nth-child(2){
+      bottom: 11%;
+      left: 40%;
+    }
+    &:nth-child(3){
+      top: 25%;
+      right: 30%;
+    }
+  }
+
+}
+
+.public-spaces__list {
+  background-color: $gold;
+  padding: 56px 47px 47px;
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 596px;
+  min-height: 647px;
+  .preview {
+    font-size: 17px;
+    padding-bottom: 50px;
+
+
+    .title {
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 1;
+      color: #ffffff;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      margin-bottom: 40px;
+    }
+  }
+
+  .wrap-img {
+    width: 50%;
+    position: relative;
+    padding-top: 56.75%;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-bottom: 28px;
+    max-width: 186px;
+    float: left;
+  }
+
+  .img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.list-places {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 50%;
+    padding: 5px 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+      .icon:before {
+        background-image: url(../assets/img/svg/shopping.svg);
+      }
+    }
+
+    &:nth-child(2) {
+      .icon:before {
+        background-image: url(../assets/img/svg/school.svg);
+      }
+    }
+
+    &:nth-child(3) {
+      .icon:before {
+        background-image: url(../assets/img/svg/park.svg);
+      }
+    }
+
+    &:nth-child(4) {
+      .icon:before {
+        background-image: url(../assets/img/svg/station.svg);
+      }
+    }
+  }
+
+  .icon {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 18px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 45px;
+      height: 45px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
