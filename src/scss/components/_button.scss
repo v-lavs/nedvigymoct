@@ -32,5 +32,8 @@
     padding: 12px;
   }
 
+  &:disabled{
+    opacity: .3;
+  }
 }
 

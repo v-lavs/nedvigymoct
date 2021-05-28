@@ -251,6 +251,10 @@ body {
   padding: 12px;
 }
 
+.btn:disabled {
+  opacity: .3;
+}
+
 .menu {
   color: #403e3d;
   font-size: 15px;
@@ -376,11 +380,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .filter .btn {
   min-width: 184px;
-  border-width: 1px;
+  border-width: .5px;
   margin-right: 93px;
   font-size: 17px;
   padding: 7px 10px;
@@ -388,6 +394,46 @@ body {
 
 .filter .btn:last-child {
   margin-right: 0;
+}
+
+.filter__top-bar {
+  margin-bottom: 17px;
+}
+
+.filter__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.filter__item {
+  position: relative;
+}
+
+.filter__item:before {
+  position: absolute;
+  content: '';
+  width: .5px;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background-color: #ffffff;
+}
+
+.filter__item:first-child:before {
+  display: none;
+}
+
+.filter__link {
+  padding: 7px 27px;
+}
+
+.filter__link.active {
+  color: #fcc214;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .section-intro {
