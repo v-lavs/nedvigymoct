@@ -1,0 +1,16 @@
+.filter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .btn{
+    min-width: 184px;
+    border-width: 1px;
+    margin-right: 93px;
+    font-size: 17px;
+    padding: 7px 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+}

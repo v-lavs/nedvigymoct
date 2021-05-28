@@ -1,5 +1,6 @@
 .section-about {
   position: relative;
+  padding-top: 195px;
   padding-bottom: 320px;
 
   .section__title {
@@ -10,6 +11,7 @@
     width: 50%;
 
     &_left {
+      padding-top: 50px;
       padding-left: 118px;
     }
     &_right {
@@ -46,6 +48,10 @@
     }
   }
   .heading_anim{
+    font-size: 150px;
+    top: 240px;
+    letter-spacing: 3rem;
     left: 60px;
+    position: absolute;
   }
 }

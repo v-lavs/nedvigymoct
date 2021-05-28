@@ -32,6 +32,7 @@ body {
   background-repeat: repeat;
   background-size: contain;
   background-position: center 0;
+
 }
 
 .d-flex {
@@ -78,14 +79,17 @@ body {
   line-height: .5;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, .03);
-  -webkit-text-stroke: 2px rgba(0, 0, 0, .03);
 
   span {
     display: inline-block;
   }
 
-  .white {
+  &_dark{
+    color: rgba(0, 0, 0, .03);
+    -webkit-text-stroke: 2px rgba(0, 0, 0, .03);
+  }
+  .white,
+  &_white{
     -webkit-text-stroke: 2px rgba(255, 255, 255, .03);
     color: rgba(255, 255, 255, .03);
   }

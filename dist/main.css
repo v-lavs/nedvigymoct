@@ -174,15 +174,19 @@ body {
   line-height: .5;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.03);
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.03);
 }
 
 .heading_anim span {
   display: inline-block;
 }
 
-.heading_anim .white {
+.heading_anim_dark {
+  color: rgba(0, 0, 0, 0.03);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.03);
+}
+
+.heading_anim .white,
+.heading_anim_white {
   -webkit-text-stroke: 2px rgba(255, 255, 255, 0.03);
   color: rgba(255, 255, 255, 0.03);
 }
@@ -366,6 +370,24 @@ body {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fcc214;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filter .btn {
+  min-width: 184px;
+  border-width: 1px;
+  margin-right: 93px;
+  font-size: 17px;
+  padding: 7px 10px;
+}
+
+.filter .btn:last-child {
+  margin-right: 0;
 }
 
 .section-intro {
@@ -704,14 +726,29 @@ body {
 }
 
 .section-projects {
+  position: relative;
+  padding-top: 85px;
   background-color: #403E3D;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.07) 51.12%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.01);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  font-family: inherit;
+.section-projects .heading_anim {
+  top: -30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 100px;
+  font-size: 170px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-projects .section__header {
+  margin-bottom: 65px;
+}
+
+.section-projects .section__title {
+  color: #ffffff;
+  text-align: center;
 }
 
 .card-list {
@@ -860,6 +897,7 @@ a {
 
 .section-about {
   position: relative;
+  padding-top: 195px;
   padding-bottom: 320px;
 }
 
@@ -872,6 +910,7 @@ a {
 }
 
 .section-about .part_left {
+  padding-top: 50px;
   padding-left: 118px;
 }
 
@@ -914,10 +953,16 @@ a {
 }
 
 .section-about .heading_anim {
+  font-size: 150px;
+  top: 240px;
+  letter-spacing: 3rem;
   left: 60px;
+  position: absolute;
 }
 
 .section-advantages {
+  background-color: #403E3D;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.07) 51.12%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.01);
   border-bottom: 0.5px solid #FCC21D;
   color: #ffffff;
 }
