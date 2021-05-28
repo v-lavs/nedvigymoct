@@ -2,4 +2,16 @@
   color: $dark-100;
   font-size: 15px;
   line-height: 1;
+  &__item{
+    transition: .35s;
+    &:hover,
+    &:focus{
+      color: #FCC214;
+    }
+  }
+  &__link{
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
 }
