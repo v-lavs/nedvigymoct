@@ -131,6 +131,12 @@ body {
   border: 0;
 }
 
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .bg_dark {
   background-color: #3c3c3c;
   background-image: url(../assets/img/bg-dark.svg);
@@ -139,8 +145,18 @@ body {
   background-position: center 0;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .main {
   padding-top: 135px;
+}
+
+.section__title {
+  font-weight: 500;
+  font-size: 55px;
+  color: #403e3d;
 }
 
 .dynamic-content p:last-child {
@@ -201,8 +217,8 @@ body {
 }
 
 .btn_gold {
-  background-color: #FCC214;
-  border-color: #FCC214;
+  background-color: #fcc214;
+  border-color: #fcc214;
 }
 
 .btn_glass-dark {
@@ -220,9 +236,10 @@ body {
   font-size: 18px;
 }
 
-.btn_big_sm {
+.btn_sm {
   min-width: 180px;
   font-size: 15px;
+  padding: 12px;
 }
 
 .menu {
@@ -264,6 +281,7 @@ body {
   left: -7px;
   height: 0;
   opacity: 0;
+  transition: height .4s, opacity .35s;
 }
 
 .menu .sub-menu__item {
@@ -342,11 +360,11 @@ body {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #FCC214;
+  background-color: #fcc214;
 }
 
 .section-intro {
-  padding: 60px 0 130px;
+  padding: 60px 0 60px;
   overflow: hidden;
 }
 
@@ -482,6 +500,144 @@ body {
   z-index: 1;
 }
 
+.section-investments {
+  position: relative;
+}
+
+.section-investments .heading_anim {
+  position: absolute;
+  left: 0;
+  top: 110px;
+  z-index: 0;
+}
+
+.section-investments .part {
+  width: 50%;
+}
+
+.section-investments .part_left {
+  padding-top: 118px;
+  padding-left: 118px;
+  padding-right: 20px;
+}
+
+.section-investments .section__header {
+  margin-bottom: 125px;
+}
+
+.section-investments .profit {
+  display: flex;
+  align-items: center;
+  color: #fcc214;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1;
+  padding-bottom: 60px;
+}
+
+.section-investments .percent {
+  font-weight: 500;
+  font-size: 86px;
+  padding-right: 33px;
+}
+
+.section-investments .text {
+  max-width: 570px;
+  width: 100%;
+  margin-bottom: 96px;
+}
+
+.public-spaces__list {
+  background-color: #fcc214;
+  padding: 56px 47px 77px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.public-spaces__list .preview {
+  font-size: 17px;
+  padding-bottom: 50px;
+}
+
+.public-spaces__list .preview .title {
+  font-weight: 600;
+  font-size: 55px;
+  color: #ffffff;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 40px;
+}
+
+.public-spaces__list .wrap-img {
+  width: 25%;
+  position: relative;
+  padding-top: 35.5%;
+  overflow: hidden;
+  margin-right: 50px;
+  margin-bottom: 28px;
+  float: left;
+}
+
+.public-spaces__list .img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.list-places {
+  font-size: 20px;
+  max-width: 596px;
+}
+
+.list-places__item {
+  width: 50%;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.list-places__item:nth-child(1) .icon:before {
+  background-image: url(../assets/img/svg/shopping.svg);
+}
+
+.list-places__item:nth-child(2) .icon:before {
+  background-image: url(../assets/img/svg/school.svg);
+}
+
+.list-places__item:nth-child(3) .icon:before {
+  background-image: url(../assets/img/svg/park.svg);
+}
+
+.list-places__item:nth-child(4) .icon:before {
+  background-image: url(../assets/img/svg/station.svg);
+}
+
+.list-places .icon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 18px;
+}
+
+.list-places .icon:before {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .section-about {
   padding-bottom: 320px;
 }
@@ -588,7 +744,7 @@ body {
 }
 
 .header .container {
-  border-bottom: 1px solid #FCC214;
+  border-bottom: 1px solid #fcc214;
 }
 
 .header .header__logo {
@@ -673,7 +829,7 @@ body {
 .header .lang-switch__link.active {
   font-weight: 500;
   font-size: 20px;
-  color: #FCC214;
+  color: #fcc214;
 }
 
 .header .lang-switch_mob {
@@ -814,6 +970,10 @@ body {
 .footer__contacts-item .tel .text_md {
   font-weight: 500;
   line-height: 1.8;
+}
+
+.aside {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1680px) {

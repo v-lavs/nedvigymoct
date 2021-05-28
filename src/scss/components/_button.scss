@@ -25,11 +25,11 @@
     min-width: 290px;
     padding: 22px;
     font-size: 18px;
-
-    &_sm {
-      min-width: 180px;
-      font-size: 15px;
-    }
+  }
+  &_sm {
+    min-width: 180px;
+    font-size: 15px;
+    padding: 12px;
   }
 }
 
