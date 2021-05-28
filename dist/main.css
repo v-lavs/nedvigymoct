@@ -196,6 +196,8 @@ body {
   text-align: center;
   transition: .35s;
   border: 2px solid;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .btn_gold {
@@ -210,6 +212,17 @@ body {
 
 .btn_uppercase {
   text-transform: uppercase;
+}
+
+.btn_big {
+  min-width: 290px;
+  padding: 22px;
+  font-size: 18px;
+}
+
+.btn_big_sm {
+  min-width: 180px;
+  font-size: 15px;
 }
 
 .menu {
@@ -314,6 +327,24 @@ body {
   display: none;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 23px;
+  z-index: 10;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  margin: 0 7px;
+  opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FCC214;
+}
+
 .section-intro {
   padding: 60px 0 130px;
   overflow: hidden;
@@ -347,10 +378,11 @@ body {
   font-weight: 600;
   line-height: 1;
   font-family: Raleway, sans-serif;
-  padding: 50px 30px 40px;
+  padding: 50px 30px 40px 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   mix-blend-mode: multiply;
   margin-bottom: 40px;
+  max-width: 550px;
 }
 
 .section-intro__title:before {
@@ -391,6 +423,63 @@ body {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
+}
+
+.section-intro .logo-big {
+  max-width: 327px;
+  width: 50%;
+  margin-left: auto;
+}
+
+.section-intro .social-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-intro .social-bar .social__link {
+  display: block;
+  width: 22px;
+  margin-left: 45px;
+}
+
+.section-intro .social-bar .social__link:first-child {
+  margin-left: 0;
+}
+
+.section-intro .social-bar .icon-svg {
+  width: 100%;
+}
+
+.section-intro .social-bar .icon-svg path {
+  fill: #ffffff;
+}
+
+.section-intro .block-btn .btn {
+  display: block;
+}
+
+.section-intro .block-btn .btn_gold {
+  margin-bottom: 28px;
+}
+
+.section-intro .block-btn .btn_glass-dark {
+  padding-left: 76px;
+  position: relative;
+}
+
+.section-intro .block-btn .btn_glass-dark:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(../assets/img/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 30px;
+  left: 45px;
+  top: 17px;
+  z-index: 1;
 }
 
 .section-about {

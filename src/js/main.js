@@ -45,7 +45,8 @@ $(document).ready(function () {
         onHeaderScrol()
     });
 
-    var bannerSlider = new Swiper(".banner-slider", {
+    var bannerSlider = new Swiper(".banner", {
+        grabCursor: true,
         pagination: {
             el: ".swiper-pagination",
         },

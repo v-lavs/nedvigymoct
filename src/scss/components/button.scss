@@ -4,6 +4,9 @@
   text-align: center;
   transition: .35s;
   border: 2px solid;
+  color: #ffffff;
+  font-weight: 600;
+
   &_gold {
     background-color: $gold;
     border-color: $gold;
@@ -16,6 +19,17 @@
 
   &_uppercase {
     text-transform: uppercase;
+  }
+
+  &_big {
+    min-width: 290px;
+    padding: 22px;
+    font-size: 18px;
+
+    &_sm {
+      min-width: 180px;
+      font-size: 15px;
+    }
   }
 }
 
