@@ -25,6 +25,10 @@ $(document).ready(function () {
         jQuery('.backdrop').fadeOut();
     });
 
+    $('.sub-menu__toggle').click(function (e) {
+        $(this).toggleClass('sub-menu__toggle_active')
+    });
+
 
     //HEADER SCROLL
 
