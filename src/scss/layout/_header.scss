@@ -94,8 +94,9 @@
       padding: 20px 0;
       display: block;
       transition: .35s;
+
       &:hover,
-      &:focus{
+      &:focus {
         color: $gold;
       }
 
@@ -213,7 +214,13 @@
     .lang-switch {
       margin-top: 45px;
       justify-content: center;
+
+      &__list {
+        justify-content: center;
+      }
+
     }
+
     .btn-close,
     .btn-burger,
     .lang-switch_mob {
@@ -241,11 +248,19 @@
         display: none;
       }
     }
-  }
-  @include respond-to($sm) {
+
     .header__logo {
       width: 50px;
-      height: auto;
+      height: 55px;
+    }
+  }
+  @include respond-to($sm) {
+    .btn-burger {
+      width: 35px;
+      height: 21px;
+    }
+    .lang-switch__link.active {
+      font-size: 15px;
     }
   }
 }
