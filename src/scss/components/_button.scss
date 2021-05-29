@@ -17,6 +17,12 @@
     border-color: #FFFFFF;
   }
 
+  &_white {
+    background-color: #ffffff;
+    border-color: $gold;
+    color: $dark-100;
+  }
+
   &_uppercase {
     text-transform: uppercase;
   }
@@ -26,13 +32,14 @@
     padding: 22px;
     font-size: 18px;
   }
+
   &_sm {
     min-width: 180px;
     font-size: 15px;
     padding: 12px;
   }
 
-  &:disabled{
+  &:disabled {
     opacity: .3;
   }
 }

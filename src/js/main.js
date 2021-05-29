@@ -51,5 +51,19 @@ $(document).ready(function () {
             el: ".swiper-pagination",
         },
     });
+    var sliderGallery = new Swiper("#gallery", {
+        spaceBetween: 60,
+        loop:true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    var sliderBuilding = new Swiper("#building", {
+        spaceBetween: 60,
+        loop:true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
 
 });
