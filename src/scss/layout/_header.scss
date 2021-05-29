@@ -28,7 +28,6 @@
     }
   }
 
-
   &__inner {
     padding: 50px 0 30px;
     transition: .35s;
@@ -295,4 +294,18 @@
   background-color: #000;
   opacity: .5;
   z-index: 500;
+}
+
+@include respond-to($lg) {
+  .header {
+    &__inner {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+      max-width: none;
+    }
+  }
 }

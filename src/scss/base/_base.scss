@@ -42,6 +42,9 @@ body {
 
 .main {
   padding-top: 135px;
+  @include respond-to($lg) {
+    padding-top: 90px;
+  }
 }
 
 .section__title {
@@ -78,6 +81,7 @@ body {
   font-size: 140px;
   line-height: .5;
   letter-spacing: 0.2em;
+  white-space: nowrap;
   text-transform: uppercase;
 
   span {

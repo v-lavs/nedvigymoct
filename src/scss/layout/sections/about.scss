@@ -3,10 +3,6 @@
   padding-top: 195px;
   padding-bottom: 320px;
 
-  //.section__title {
-  //  margin-bottom: 80px;
-  //}
-
   .part {
     width: 50%;
 
@@ -54,5 +50,11 @@
   }
   .section__header{
     margin-bottom: 55px;
+  }
+
+  @include respond-to($lg) {
+    .part_left {
+      padding-left: 0;
+    }
   }
 }
