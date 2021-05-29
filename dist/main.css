@@ -852,6 +852,12 @@ body {
 .footer .social__link {
   width: 22px;
   height: 22px;
+  transition: .35s;
+}
+
+.footer .social__link:hover,
+.footer .social__link:focus {
+  transform: scale(1.2);
 }
 
 .footer__contacts {

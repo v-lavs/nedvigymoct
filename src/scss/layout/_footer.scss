@@ -5,6 +5,7 @@
   display: flex;
   padding-right: 7%;
   background-color: $dark;
+
   &__logo-wrap {
     max-width: 475px;
     flex-grow: 1;
@@ -28,6 +29,11 @@
   .social__link {
     width: 22px;
     height: 22px;
+    transition: .35s;
+    &:hover,
+    &:focus {
+    transform: scale(1.2);
+    }
   }
 
 
