@@ -881,6 +881,15 @@ body {
   border-bottom: 0.5px solid #FCC21D;
 }
 
+.footer__contacts-item a {
+  transition: .35s;
+}
+
+.footer__contacts-item a:hover,
+.footer__contacts-item a:focus {
+  color: #fcc214;
+}
+
 .footer__contacts-item:last-child {
   border-bottom: none;
 }
