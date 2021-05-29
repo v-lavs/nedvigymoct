@@ -46,7 +46,7 @@ $(document).ready(function () {
             if (!locationCards) {
                 locationCards = new Swiper('#locationCards', {
                     pagination: {
-                        el: '.banner-slider .swiper-pagination',
+                        el: '#locationCards .swiper-pagination',
                         clickable: true,
                     }
                 });
