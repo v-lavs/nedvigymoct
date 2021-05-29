@@ -12,6 +12,11 @@
 $(document).ready(function () {
     let locationCards;
 
+    lightbox.option({
+        disableScrolling: true,
+        positionFromTop: 0
+    });
+
     function slidersInit() {
         if ($(window).width() <= 760) {
             if (!locationCards) {
