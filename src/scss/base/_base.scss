@@ -5,8 +5,9 @@
 }
 
 body {
-  font: 400 17px $main-font;
+  font: 400 17px/1.25 $main-font;
   color: $dark;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .hide {
@@ -73,7 +74,6 @@ body {
 }
 
 .heading_anim {
-
   font-weight: 600;
   font-size: 140px;
   line-height: .5;

@@ -116,8 +116,9 @@ a:hover {
 }
 
 body {
-  font: 400 17px "Raleway", sans-serif;
+  font: 400 17px/1.25 "Raleway", sans-serif;
   color: #3c3c3c;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .hide {
@@ -198,8 +199,9 @@ body {
 }
 
 body {
-  font: 400 17px "Raleway", sans-serif;
+  font: 400 17px/1.25 "Raleway", sans-serif;
   color: #3c3c3c;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .hide {
@@ -337,6 +339,27 @@ body {
   min-width: 180px;
   font-size: 15px;
   padding: 12px;
+}
+
+.btn_white-icon {
+  padding-left: 76px;
+  position: relative;
+}
+
+.btn_white-icon:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(../assets/img/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 30px;
+  left: 45px;
+  top: 17px;
+  z-index: 1;
+  filter: invert(1);
 }
 
 .btn:disabled {
@@ -1666,31 +1689,6 @@ body {
   min-width: 200px;
 }
 
-.section-gallery {
-  padding-bottom: 108px;
-}
-
-.section-gallery__inner .btn_white {
-  padding-left: 76px;
-  position: relative;
-}
-
-.section-gallery__inner .btn_white:before {
-  position: absolute;
-  display: block;
-  content: '';
-  background-image: url(../assets/img/svg/phone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 28px;
-  height: 30px;
-  left: 45px;
-  top: 17px;
-  z-index: 1;
-  filter: invert(1);
-}
-
 .gallery {
   padding-bottom: 32px;
   position: relative;
@@ -1765,6 +1763,120 @@ body {
   border-color: #000000;
 }
 
+.section-banner {
+  padding-top: 70px;
+  margin-bottom: 75px;
+}
+
+.section-banner__sidebar {
+  width: 380px;
+}
+
+.section-banner__logo {
+  width: 252px;
+  display: block;
+  margin: 0 auto 70px;
+}
+
+.section-banner__wrap-img {
+  height: 100%;
+}
+
+.section-banner__banner {
+  position: relative;
+  margin-left: 6.4%;
+  flex-grow: 1;
+}
+
+.section-banner__banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-banner__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 8.75%;
+  padding-right: 8.75%;
+  padding-left: 8.75%;
+  text-align: right;
+  z-index: 1;
+}
+
+.section-banner__info {
+  display: inline-block;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+.section-banner__info .sub-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-banner__info .building-area {
+  line-height: .75;
+  font-size: 175px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.section-banner__info .name-object {
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.section-banner__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-banner .btn {
+  margin-left: 50px;
+}
+
+.section-banner__nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.section-banner__nav-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #403e3d;
+  border-bottom: 1px solid #fcc214;
+  padding: 22px 30px 22px 35px;
+}
+
+.section-banner__nav-link:last-child {
+  border-bottom: none;
+}
+
+.section-banner__nav-link:hover {
+  color: #fcc214;
+}
+
+.section-banner__nav-icon {
+  width: 41px;
+  height: 42px;
+  margin-right: 35px;
+}
+
+.section-gallery {
+  padding-bottom: 108px;
+}
+
 .section-building {
   padding-bottom: 87px;
 }
@@ -1779,7 +1891,7 @@ body {
 
 .section-map {
   padding-top: 135px;
-  padding-bottom: 126px;
+  padding-bottom: 110px;
 }
 
 .section-map .part_left {
