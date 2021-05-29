@@ -71,37 +71,99 @@
       border-bottom: none;
     }
 
-    .wrap-item {
-      max-width: 335px;
-      width: 30%;
-      padding-top: 35px;
-      padding-bottom: 35px;
-      padding-right: 20px;
-      flex-grow: 1;
-      border-right: 0.5px solid #FCC21D;
-
-      &:first-child {
-        max-width: 538px;
-        width: 40%;
-        padding-left: 15%;
-      }
-
-      &:last-child {
-        border-right: none;
-      }
-
-      &:nth-child(2) {
-        padding-left: 60px;
-      }
-
-      &:nth-child(3) {
-        padding-left: 74px;
-      }
-    }
 
     .tel .text_md {
       font-weight: 500;
       line-height: 1.8;
+    }
+  }
+
+  .wrap-item {
+    max-width: 335px;
+    width: 30%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    flex-grow: 1;
+    border-right: 0.5px solid #FCC21D;
+
+    &:first-child {
+      max-width: 538px;
+      width: 40%;
+      padding-left: 15%;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:nth-child(2) {
+      padding-left: 60px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 74px;
+    }
+
+  }
+
+  @include respond-to($xl) {
+    .wrap-item {
+      width: 33.33%;
+    }
+    .wrap-item:first-child {
+      padding-left: 9%;
+    }
+    .wrap-item:nth-child(2) {
+      padding-left: 40px;
+      flex-shrink: 0;
+    }
+
+    .wrap-item:nth-child(3) {
+      padding-left: 50px;
+
+    }
+  }
+  @include respond-to($lg) {
+    padding-right: 0;
+    .footer__contacts {
+      .wrap-item {
+        padding: 25px;
+        font-size: 12px;
+      }
+
+      .tel {
+        font-size: 14px;
+
+        .text_md {
+          font-size: 18px;
+        }
+      }
+    }
+    .social-bar {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  @include respond-to($md){
+    .wrap-item:nth-child(n) {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+    }
+
+    .wrap-item{
+      border-bottom: .5px solid $gold;
+    }
+    .footer__contacts{
+      display: flex;
+    }
+    .footer__contacts-item{
+      display: block;
+      width: 50%;
+      &:first-child{
+        border-right: .5px solid $gold;
+      }
     }
   }
 }

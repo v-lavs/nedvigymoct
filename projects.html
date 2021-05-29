@@ -10,34 +10,236 @@
     <meta name="robots" content="noindex">
     <meta name="yandex" content="none">
 
-    <title>Projects</title>
+    <title>sendReady projects</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
 </head>
-
 <body>
-
 <div class="wrapper">
-   <div class="projects-grid projects-grid_single">
-       <div class="projects-grid__item"></div>
-   </div>
 
-   <div class="projects-grid projects-grid_duo">
-       <div class="projects-grid__item"></div>
-       <div class="projects-grid__item"></div>
-   </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <button class="btn-close" aria-label="Закрити"></button>
 
-   <div class="projects-grid projects-grid_multiple">
-       <div class="projects-grid__item"></div>
-       <div class="projects-grid__item"></div>
-       <div class="projects-grid__item"></div>
-       <div class="projects-grid__item"></div>
-       <div class="projects-grid__item"></div>
-   </div>
+                    <ul class="menu menu_left">
+                        <li class="menu__item dropdown">
+                            <a href="projects.html" class="menu__link">Проекти</a>
+                            <button class="sub-menu__toggle"></button>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Житлові проекти</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Офісні проекти</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Паркінги</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Комерційні проекти</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про компанію</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Інвестиції</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu menu_right">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Партнери</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакти</a>
+                        </li>
+                        <li class="menu__item">
+                            <div class="lang-switch">
+                                <ul class="lang-switch__list">
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
+                                    </li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">en</a></li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">pl</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/svg/logo-site.svg" alt="Smart Estate" class="img">
+                </a>
+
+                <button type="button" class="btn-burger" aria-label="бургер-меню">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="lang-switch_mob">
+                    <a href="#" class="lang-switch__link active">ua</a>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </header>
+
+    <main class="main projects">
+        <section class="section-projects bg_dark">
+            <div class="container">
+                <div class="filter">
+                    <div class="filter__top-bar">
+                        <button type="button" class="btn btn_main btn_gold btn_uppercase">В ПРОЦЕСІ</button>
+                        <button type="button" class="btn btn_main btn_glass-dark btn_uppercase" disabled>РЕАЛІЗОВАНІ
+                        </button>
+                    </div>
+                    <ul class="filter__category">
+                        <li class="filter__item"><a href="#" class="filter__link active">Житлові проекти</a></li>
+                        <li class="filter__item"><a href="#" class="filter__link">Офісні проекти</a></li>
+                        <li class="filter__item"><a href="#" class="filter__link">Паркінги</a></li>
+                        <li class="filter__item"><a href="#" class="filter__link">Комерційні проекти</a></li>
+                    </ul>
+                </div>
+
+                <div class="card-list card-list_multiple">
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/offiсe2.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/preview.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+
+                                <footer class="card__footer">
+                                    Coming soon...
+                                </footer>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/preview.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+
+                                <footer class="card__footer">
+                                    Coming soon...
+                                </footer>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/preview.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+
+                                <footer class="card__footer">
+                                    Coming soon...
+                                </footer>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/preview.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+
+                                <footer class="card__footer">
+                                    Coming soon...
+                                </footer>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-wrap">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/svg/logo-site.svg" alt="" class="img">
+            </a>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title text_sm">Відділи продажу </h5>
+                    <span>м. Львів, вул. Стрийська 266 <br>
+                        м. Львів, вул. Наукова, 30</span>
+                </div>
+                <div class="wrap-item tel">
+                    <a href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
+                    <a href="tel: +38 (067) 3141 414" class="text_md"> +38 (067) 3141 414</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title text_sm">Графік роботи</h5>
+                    <span>Пн-Пт: 09:00-19:00<br>
+                            Сб: 10:00-15:00<br>
+                            Нд: Вихідний</span>
+                </div>
+            </div>
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title text_sm">Офіс</h5>
+                    <span>м. Львів, вул. Стрийська 66</span>
+
+                    <span class="text_sm">Відділ постачання</span>
+                    <span class="text_sm">Відкриті до пропозицій</span>
+                </div>
+                <div class="wrap-item tel">
+                    <a href="tel: +38 (067) 6381 115" class="text_md"> +38 (067) 6381 115</a>
+                    <a href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
+                    <a href="mailto: marketing@smartestate.eu">marketing@smartestate.eu</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title text_sm">Графік роботи</h5>
+                    <span>Пн-Пт: 09:00-19:00<br>
+                            Сб: 10:00-15:00<br>
+                            Нд: Вихідний</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer__item social-bar">
+            <a href="#" class="social__link"><span class="hide">Instagram</span>
+                <img class="icon" src="assets/img/svg/insta.svg" alt="">
+            </a>
+            <a href="#" class="social__link"><span class="hide">Youtube</span>
+                <img class="icon" src="assets/img/svg/youtybe.svg" alt="">
+            </a>
+            <a href="#" class="social__link"><span class="hide">Behance</span>
+                <img class="icon" src="assets/img/svg/twitter.svg" alt="">
+            </a>
+            <a href="#" class="social__link"><span class="hide">Facebook</span>
+                <img class="icon" src="assets/img/svg/fb.svg" alt="">
+            </a>
+        </div>
+    </footer>
 </div>
-
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="dist/main.js"></script>
 </body>

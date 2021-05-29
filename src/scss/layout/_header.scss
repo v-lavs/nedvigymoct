@@ -205,14 +205,14 @@
           }
 
           &__toggle {
-            display: block;
+            //display: block;                   раскоментить по надобности
           }
         }
       }
 
     }
     .lang-switch {
-      margin-top: 45px;
+      margin-top: 90px;
       justify-content: center;
 
       &__list {
@@ -238,6 +238,7 @@
     .sub-menu__toggle_active + .sub-menu {
       display: block !important;
       opacity: 1;
+      visibility: visible;
       height: auto;
     }
 
@@ -252,6 +253,11 @@
     .header__logo {
       width: 50px;
       height: 55px;
+    }
+    .menu_right{
+      .menu__item:last-child{
+        height: 100%;
+      }
     }
   }
   @include respond-to($sm) {
