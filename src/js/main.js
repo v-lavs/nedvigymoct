@@ -11,6 +11,7 @@
 
 $(document).ready(function () {
     let locationCards;
+    let sliderAdvantages;
 
     lightbox.option({
         disableScrolling: true,
@@ -18,6 +19,29 @@ $(document).ready(function () {
     });
 
     function slidersInit() {
+        if ($(window).width() <= 1180) {
+            if (!sliderAdvantages) {
+                sliderAdvantages = new Swiper('#sliderAdvantages', {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                    breakpoints: {
+                        760: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                    },
+                    pagination: {
+                        el: '#sliderAdvantages .swiper-pagination',
+                        clickable: true,
+                    }
+                });
+            }
+        } else {
+            if (sliderAdvantages) {
+                sliderAdvantages.destroy(true, true);
+                sliderAdvantages = null;
+            }
+        }
         if ($(window).width() <= 760) {
             if (!locationCards) {
                 locationCards = new Swiper('#locationCards', {
