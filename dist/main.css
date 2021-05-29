@@ -1405,16 +1405,12 @@ body {
   padding-bottom: 320px;
 }
 
-.section-about .section__title {
-  margin-bottom: 80px;
-}
-
 .section-about .part {
   width: 50%;
 }
 
 .section-about .part_left {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-left: 118px;
 }
 
@@ -1458,10 +1454,12 @@ body {
 
 .section-about .heading_anim {
   font-size: 150px;
-  top: 240px;
   letter-spacing: 3rem;
   left: 60px;
-  position: absolute;
+}
+
+.section-about .section__header {
+  margin-bottom: 55px;
 }
 
 .section-advantages {
