@@ -1598,6 +1598,8 @@ body {
   background-position: center;
   background-size: contain;
   z-index: 1;
+  transition: .35s;
+  opacity: 0;
 }
 
 .gallery .overlay {
@@ -1622,6 +1624,10 @@ body {
 }
 
 .gallery .swiper-slide-active {
+  opacity: 1;
+}
+
+.gallery .swiper-slide-active .gallery__link:before {
   opacity: 1;
 }
 

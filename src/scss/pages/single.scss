@@ -31,6 +31,8 @@
       background-position: center;
       background-size: contain;
       z-index: 1;
+      transition: .35s;
+      opacity: 0;
     }
   }
 
@@ -57,6 +59,10 @@
 
   .swiper-slide-active {
     opacity: 1;
+
+    .gallery__link:before {
+      opacity: 1;
+    }
 
     .overlay {
       opacity: 1;
@@ -154,11 +160,12 @@
     margin-left: 50px;
   }
 
-  &__nav{
+  &__nav {
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
   }
+
   &__nav-link {
     display: flex;
     align-items: center;
@@ -170,6 +177,7 @@
     &:last-child {
       border-bottom: none;
     }
+
     &:hover {
       color: $gold;
     }
