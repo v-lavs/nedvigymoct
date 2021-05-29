@@ -182,6 +182,10 @@
   }
 }
 
+@import '../layout/sections/single-article';
+@import '../layout/sections/location';
+@import '../layout/sections/documents';
+
 .section-gallery {
   padding-bottom: 108px;
 }

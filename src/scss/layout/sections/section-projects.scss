@@ -1,24 +1,13 @@
 
 .section-projects {
   position: relative;
-  padding-top: 85px;
-
-  background-color: #403E3D;
-
-  .heading_anim {
-    top: -30px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 100px;
-    font-size: 170px;
-    width: 100%;
-    text-align: center;
-
-  }
+  padding-top: 63px;
+  padding-bottom: 86px;
 
   .section__header {
-    margin-bottom: 65px;
+    justify-content: center;
+    margin-bottom: 43px;
+
   }
 
   .section__title {
@@ -26,6 +15,7 @@
     text-align: center;
 
   }
+
 }
 
 
@@ -35,7 +25,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 80px 0;
+  padding: 63px 0;
 
   &_single {
     // add this class if list contains only one card

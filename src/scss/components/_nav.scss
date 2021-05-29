@@ -9,9 +9,9 @@
 
   &__item {
     &:hover > .sub-menu {
-      height: auto;
       opacity: 1;
-
+      transform: scale(1);
+      transform-origin: 50%;
     }
   }
 
@@ -37,9 +37,12 @@
     font-size: 14px;
     color: #989898;
     left: -7px;
-    height: 0;
+    height: auto;
     opacity: 0;
     transition: height .4s, opacity .35s;
+
+    transform: scale(0);
+    transform-origin: 50%;
     &__item {
       margin-bottom: 18px;
 

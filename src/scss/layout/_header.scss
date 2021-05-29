@@ -213,7 +213,8 @@
     .btn-burger,
     .lang-switch_mob {
       display: block;
-      .lang-switch__link{
+
+      .lang-switch__link {
         padding: 14px 0;
       }
     }
@@ -236,8 +237,8 @@
       }
     }
   }
-  @include respond-to($sm){
-    .header__logo{
+  @include respond-to($sm) {
+    .header__logo {
       width: 50px;
       height: auto;
     }

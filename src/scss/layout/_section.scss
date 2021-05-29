@@ -1,9 +1,18 @@
 .section {
   position: relative;
+
   &__title-bg {
     position: absolute;
     left: 0;
+
   }
+
+  &__title-bg-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   &__header {
     min-height: 110px;
     display: flex;

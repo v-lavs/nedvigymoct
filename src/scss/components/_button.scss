@@ -6,6 +6,10 @@
   border: 2px solid;
   color: #ffffff;
   font-weight: 600;
+  &:hover,
+  &:focus{
+    filter: drop-shadow(0px 0px 17px #FCC21D);
+  }
 
   &_gold {
     background-color: $gold;
