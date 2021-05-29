@@ -80,7 +80,39 @@
     }
   }
 
-  @include respond-to($sm) {
+  @include respond-to($md) {
+    .section__inner {
+      flex-wrap: wrap;
+    }
 
+    .section__header {
+      margin-bottom: 20px;
+    }
+
+    .radio-list {
+      padding: 0;
+    }
+
+    .section__part_left,
+    .section__part_right {
+      width: 100%;
+      padding: 44px 0 60px;
+    }
+
+    .section__part_right:before {
+      left: -50vw;
+      right: -50vw;
+      width: auto;
+    }
+
+    .documents-list__item {
+      flex-direction: column;
+    }
+
+    .documents-list__desc,
+    .documents-list__btns {
+      width: 100%;
+      max-width: 480px;
+    }
   }
 }

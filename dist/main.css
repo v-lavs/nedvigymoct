@@ -2700,6 +2700,40 @@ body {
     padding: 30px 20px;
   }
 
+  .section-documents .section__inner {
+    flex-wrap: wrap;
+  }
+
+  .section-documents .section__header {
+    margin-bottom: 20px;
+  }
+
+  .section-documents .radio-list {
+    padding: 0;
+  }
+
+  .section-documents .section__part_left,
+  .section-documents .section__part_right {
+    width: 100%;
+    padding: 44px 0 60px;
+  }
+
+  .section-documents .section__part_right:before {
+    left: -50vw;
+    right: -50vw;
+    width: auto;
+  }
+
+  .section-documents .documents-list__item {
+    flex-direction: column;
+  }
+
+  .section-documents .documents-list__desc,
+  .section-documents .documents-list__btns {
+    width: 100%;
+    max-width: 480px;
+  }
+
   .section-map {
     padding-top: 100px;
   }
