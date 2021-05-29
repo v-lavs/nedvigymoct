@@ -8,6 +8,7 @@
     min-height: 690px;
     padding: 90px 7.5% 80px;
     color: #fff;
+    pointer-events: none;
     z-index: 2;
   }
 
@@ -88,6 +89,7 @@
     justify-content: flex-end;
 
     .social__link {
+      pointer-events: all;
       display: block;
       width: 22px;
       margin-left: 45px;
@@ -116,6 +118,7 @@
   }
 
   .block-btn {
+    pointer-events: all;
     .btn {
       display: block;
     }
@@ -143,6 +146,13 @@
         z-index: 1;
       }
     }
+  }
+
+  .swiper-pagination-bullets {
+    left: 0;
+    right: 0;
+    pointer-events: all;
+    bottom: 23px;
   }
 }
 
