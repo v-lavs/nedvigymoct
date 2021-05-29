@@ -79,4 +79,8 @@
       min-width: 200px;
     }
   }
+
+  @include respond-to($sm) {
+
+  }
 }
