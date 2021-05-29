@@ -758,6 +758,12 @@ body {
 .header .lang-switch__link {
   padding: 20px 0;
   display: block;
+  transition: .35s;
+}
+
+.header .lang-switch__link:hover,
+.header .lang-switch__link:focus {
+  color: #fcc214;
 }
 
 .header .lang-switch__link.active {

@@ -93,6 +93,11 @@
     &__link {
       padding: 20px 0;
       display: block;
+      transition: .35s;
+      &:hover,
+      &:focus{
+        color: $gold;
+      }
 
       &.active {
         font-weight: 500;
