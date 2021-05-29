@@ -43,21 +43,6 @@
     position: relative;
     display: block;
     padding-top: 40%;
-
-
-  }
-
-  .overlay {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    padding: 30px 54px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    opacity: 0;
     &:before {
       position: absolute;
       content: '';
@@ -73,6 +58,19 @@
       background-size: contain;
       z-index: 1;
     }
+  }
+
+  .overlay {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 30px 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+    z-index: 2;
   }
 
   &__slide {

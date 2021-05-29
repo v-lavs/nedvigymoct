@@ -11,7 +11,7 @@
     <meta name="yandex" content="none">
 
     <title>sendReady Single</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
@@ -82,8 +82,14 @@
     </header>
 
     <main class="main page-single">
-
         <section class="section-gallery">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">Gallery</span>
+                    <h2 class="section__title">Галерея</h2>
+                </header>
+            </div>
+
             <div class="swiper-container gallery" id="gallery">
                 <div class="swiper-wrapper">
 
@@ -117,11 +123,241 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+        </section>
 
+        <section class="section-location">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">Location</span>
+                    <h2 class="section__title">Розташування</h2>
+                </header>
 
+                <div class="swiper-container" id="locationCards">
+                    <div class="swiper-wrapper location-list">
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/smart-house.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Розумний дім</h3>
+                                <div class="location-list__text">
+                                    <p>Кожна квартира оснащена технологією ”Розумний будинок”.
+                                        Розумне паркомісце, що здається в оренду.
+                                        Навіть діджтилізація ОСББ - Управлінська Компанія переходить
+                                        у додаток в смартфон. У комунікаціях: Smart Estate - розумне місто.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/park-area.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Парк поруч з домівкою</h3>
+                                <div class="location-list__text">
+                                    <p>Місце для відпочинку: прогулянки з сім’єю, ранкові та вечірні пробіжки,
+                                        активності та заходи для дорослих і малих, чисте повітря та локації
+                                        для фотосесій. Парк, який надихає творити. Парк, де кожен може
+                                        відпочити в будь-яку годину дня.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/european-approach.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Європейський підхід</h3>
+                                <div class="location-list__text">
+                                    <p>Планування за типом європейського менталітету,
+                                        сучасні громадські простори для відпочинку, забезпеченість
+                                        паркомісцями, smart система управління будинком,
+                                        відкриті і доступні інструменти фінансування.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/rest-location.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Локація відпочинку</h3>
+                                <div class="location-list__text">
+                                    <p>«Бути завжди в епіцентрі подій, але за бажанням - передихнути в парку»
+                                        Комплекс розташований по вул. Стрийська 266, поруч з парком,
+                                        школою, торговим центром, та АС. Це місце, де легко перемкнутися
+                                        з робочого режиму надомашній затишок.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/underground-parking.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Підземний паркінг</h3>
+                                <div class="location-list__text">
+                                    <p>Майбутнє настало вчора. Мешканці можуть
+                                        піднятися до себе на поверх прямо з паркінгу.
+                                        Це ще один елемент системи безпеки та комфорту
+                                        у будинку де все продумано наперед.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide location-list__item">
+                            <div class="location-list__icon">
+                                <img src="assets/img/svg/location-section/sport-area.svg" alt="">
+                            </div>
+                            <div class="location-list__content">
+                                <h3 class="location-list__title">Cпортивний майданчик</h3>
+                                <div class="location-list__text">
+                                    <p>На дворі буде чим зайнятися і дітям, і дорослим.
+                                        Зручний та безпечний дитячий майданчик, вуличні тренажери та
+                                        комфортний внутрішній двір стануть місцями, де захочеться
+                                        гуляти якомога довше.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-documents">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">Documents</span>
+                    <h2 class="section__title">Документи</h2>
+                </header>
+
+                <div class="section__inner">
+                    <div class="section__part_left">
+                        <ul class="radio-list" id="documents-list">
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="pasport" name="documents" checked />
+                                    <span class="radio__control"></span>
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D" />
+                                    </svg>
+                                    <span class="radio__label">Паспорт об’єкта</span>
+                                </label>
+                            </li>
+
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="land-docs" name="documents" />
+                                    <span class="radio__control"></span>
+
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D" />
+                                    </svg>
+
+                                    <span class="radio__label">Документи на земельну ділянку</span>
+                                </label>
+                            </li>
+
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="building-docs" name="documents" />
+                                    <span class="radio__control"></span>
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D" />
+                                    </svg>
+                                    <span class="radio__label">Документи на будівництво</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__part_right">
+                        <ul class="documents-list active" id="pasport">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Право на виконання будівельних робіт:</h3>
+                                    <p>Дозвіл на виконання будівельних робіт серії
+                                        ЛВ № 012201002117 від жовтня 2020 року </p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="documents-list" id="land-docs">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="documents-list" id="building-docs">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Право на виконання будівельних робіт:</h3>
+                                    <p>Дозвіл на виконання будівельних робіт серії
+                                        ЛВ № 012201002117 від жовтня 2020 року </p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section class="section-building">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">Building</span>
+                    <h2 class="section__title">Будівництво</h2>
+                </header>
+            </div>
             <div class="swiper-container gallery" id="building">
                 <div class="swiper-wrapper">
 

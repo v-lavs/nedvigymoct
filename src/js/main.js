@@ -9,6 +9,31 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
+    let locationCards;
+
+    function slidersInit() {
+        if ($(window).width() <= 760) {
+            if (!locationCards) {
+                locationCards = new Swiper('#locationCards', {
+                    pagination: {
+                        el: '.banner-slider .swiper-pagination',
+                        clickable: true,
+                    }
+                });
+            }
+        } else {
+            if (locationCards) {
+                locationCards.destroy(true, true);
+                locationCards = null;
+            }
+        }
+    }
+
+    slidersInit();
+
+    $(window).on('resize', function () {
+        slidersInit();
+    });
 
     //MOBILE MENU
     var nav = $('.header__nav');
@@ -43,6 +68,15 @@ $(document).ready(function () {
 
     $(document).on('scroll', function () {
         onHeaderScrol()
+    });
+
+    $('#documents-list input').on('change', function () {
+        const id = $(this).val();
+        $('.section-documents .documents-list').fadeOut(700);
+        setTimeout(function () {
+            $('.section-documents .documents-list').hide().removeClass('active');
+            $('#' + id).fadeIn(700).addClass('active');
+        }, 701);
     });
 
     var bannerSlider = new Swiper(".banner", {

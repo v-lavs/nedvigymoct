@@ -15,3 +15,7 @@
     background-color: $gold;
   }
 }
+
+.swiper-container-initialized .swiper-wrapper {
+  flex-wrap: nowrap!important;
+}

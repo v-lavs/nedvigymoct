@@ -3,12 +3,21 @@
 
 @import 'base/reset';
 @import 'base/base';
+@import 'base/base';
 @import 'base/typography';
 
 @import 'components/button';
 @import 'components/nav';
+@import 'components/radio';
 @import 'components/slider';
 @import 'components/filter';
+
+@import 'layout/section';
+@import 'layout/layout';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/aside';
 
 @import 'layout/sections/section-intro';
 @import 'layout/sections/section-investments';
@@ -16,13 +25,8 @@
 @import 'layout/sections/section-projects';
 @import 'layout/sections/about';
 @import 'layout/sections/section-advantages';
-
-
-@import 'layout/layout';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/aside';
+@import 'layout/sections/location';
+@import 'layout/sections/documents';
 
 @import 'pages/single';
 
