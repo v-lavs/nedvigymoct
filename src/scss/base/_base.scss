@@ -95,3 +95,13 @@ body {
   }
 }
 
+.lightbox {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  justify-content: center;
+  .lb-nav a {
+    opacity: 1;
+  }
+}
+

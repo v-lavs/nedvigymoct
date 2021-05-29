@@ -4,6 +4,7 @@
 
 //= include ../../node_modules/jquery/dist/jquery.js ;
 
+//= include ../lib/lightbox2/js/lightbox.js
 //= include ../lib/waypoints/index.js
 
 // CUSTOM SCRIPTS
@@ -79,13 +80,15 @@ $(document).ready(function () {
         }, 701);
     });
 
-    var bannerSlider = new Swiper(".banner", {
+    let bannerSlider = new Swiper(".banner", {
         grabCursor: true,
         pagination: {
-            el: ".swiper-pagination",
+            el: "#mainBannerPagination",
+            clickable: true
         },
     });
-    var sliderGallery = new Swiper("#gallery", {
+
+    let sliderGallery = new Swiper("#gallery", {
         spaceBetween: 60,
         loop:true,
         slidesPerView: "auto",
@@ -95,7 +98,8 @@ $(document).ready(function () {
             clickable: true
         },
     });
-    var sliderBuilding = new Swiper("#building", {
+
+    let sliderBuilding = new Swiper("#building", {
         spaceBetween: 60,
         loop:true,
         slidesPerView: "auto",
