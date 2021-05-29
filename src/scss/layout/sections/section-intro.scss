@@ -76,41 +76,59 @@
     -webkit-background-size: cover;
     background-size: cover;
   }
-  .logo-big{
+
+  .logo-big {
     max-width: 327px;
     width: 50%;
     margin-left: auto;
   }
-  .social-bar{
+
+  .social-bar {
     display: flex;
     justify-content: flex-end;
-    .social__link{
+
+    .social__link {
       display: block;
       width: 22px;
       margin-left: 45px;
-      &:first-child{
-      margin-left: 0;
+      transition: .35s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          path {
+            fill: $gold;
+          }
+        }
+      }
     }
 
-    }
-    .icon-svg{
+    .icon-svg {
       width: 100%;
-      path{
+      path {
         fill: #ffffff;
       }
     }
   }
-  .block-btn{
-    .btn{
+
+  .block-btn {
+    .btn {
       display: block;
     }
-    .btn_gold{
+
+    .btn_gold {
       margin-bottom: 28px;
     }
-    .btn_glass-dark{
+
+    .btn_glass-dark {
       padding-left: 76px;
       position: relative;
-      &:before{
+
+      &:before {
         position: absolute;
         display: block;
         content: '';

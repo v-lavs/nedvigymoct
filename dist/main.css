@@ -1012,10 +1012,16 @@ body {
   display: block;
   width: 22px;
   margin-left: 45px;
+  transition: .35s;
 }
 
 .section-intro .social-bar .social__link:first-child {
   margin-left: 0;
+}
+
+.section-intro .social-bar .social__link:hover svg path,
+.section-intro .social-bar .social__link:focus svg path {
+  fill: #fcc214;
 }
 
 .section-intro .social-bar .icon-svg {
