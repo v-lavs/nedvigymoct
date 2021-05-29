@@ -54,15 +54,21 @@ $(document).ready(function () {
     var sliderGallery = new Swiper("#gallery", {
         spaceBetween: 60,
         loop:true,
+        slidesPerView: "auto",
+        centeredSlides: true,
         pagination: {
-            el: ".swiper-pagination",
+            el: "#gallery .swiper-pagination",
+            clickable: true
         },
     });
     var sliderBuilding = new Swiper("#building", {
         spaceBetween: 60,
         loop:true,
+        slidesPerView: "auto",
+        centeredSlides: true,
         pagination: {
-            el: ".swiper-pagination",
+            el: "#building .swiper-pagination",
+            clickable: true
         },
     });
 
