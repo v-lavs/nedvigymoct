@@ -1,4 +1,5 @@
 .section-banner {
+  position: relative;
   padding-top: 70px;
   margin-bottom: 75px;
 
@@ -114,6 +115,7 @@
       font-size: 144px;
     }
   }
+
   @include respond-to($xl) {
     .building-area {
       font-size: 122px;
@@ -164,6 +166,7 @@
     }
     .section-banner__nav-link {
       width: 33.33%;
+
       &:last-child {
         border-bottom: 1px solid $gold;
       }
@@ -172,9 +175,18 @@
 
   @include respond-to($md) {
     padding-top: 0;
+    .section-banner__content {
+      padding-bottom: 50px;
+    }
     .container {
       max-width: none;
       padding: 0;
+    }
+    .section-banner__logo {
+      position: absolute;
+      top: 45px;
+      left: 30px;
+      z-index: 2;
     }
   }
 }

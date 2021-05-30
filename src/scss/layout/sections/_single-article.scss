@@ -132,13 +132,125 @@
   }
 
   @include respond-to($lg) {
+    padding-bottom: 100px;
+    .desc-table {
+      .container {
+        flex-direction: column;
+      }
+    }
+    .desc-table__column-download {
+      position: relative;
+      width: 100%;
+      border-right: none;
+
+      &:before {
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+        border-bottom: 1px solid $gold;
+        z-index: 1;
+      }
+
+      .download-link {
+        padding: 25px 25px 25px 0;
+        flex-direction: row;
+
+        img {
+          margin-right: 50px;
+        }
+      }
+    }
     .desc-table__row {
       flex-direction: column;
       align-items: flex-start;
     }
+    .desc-table__content {
+      border-right: 0;
+    }
+
     .desc-table__col {
+      &:nth-child(n) {
+        width: 50%;
+      }
+
       &:nth-child(even) {
         padding-left: 35px;
+
+        &:before {
+          right: auto;
+          left: 50%;
+          width: 200vw;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  @include respond-to($xs) {
+    .desc-table {
+      box-shadow: 0px 4px 28px 5px rgba(0, 0, 0, 0.05);
+
+      &__label {
+        position: relative;
+        width: 100px;
+        padding-right: 15px;
+        word-break: break-all;
+        color: #9B9B9B;
+        font-size: 13px;
+      }
+
+      &__row {
+        width: 100%;
+        flex-direction: row;
+        overflow: hidden;
+      }
+
+      &__cell {
+        &:nth-child(2n) {
+          position: relative;
+          padding-left: 25px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 100vh;
+            width: 1px;
+            border-left: 1px solid $gold;
+            transform: translateY(-50%);
+            z-index: 1;
+          }
+        }
+      }
+
+      &__col:nth-child(n) {
+        width: 100%;
+        padding: 0;
+        border-left: 0;
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 150vw;
+          display: block;
+          border-bottom: 1px solid $gold;
+          z-index: 1;
+        }
+
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
       }
     }
   }
