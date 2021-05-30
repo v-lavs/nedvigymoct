@@ -119,7 +119,7 @@ $(document).ready(function () {
 
     let sliderGallery = new Swiper("#gallery", {
         spaceBetween: 60,
-        loop:true,
+        loop: true,
         slidesPerView: "auto",
         centeredSlides: true,
         pagination: {
@@ -130,12 +130,20 @@ $(document).ready(function () {
 
     let sliderBuilding = new Swiper("#building", {
         spaceBetween: 60,
-        loop:true,
+        loop: true,
         slidesPerView: "auto",
         centeredSlides: true,
         pagination: {
             el: "#building .swiper-pagination",
             clickable: true
         },
+    });
+
+    //ANIMATION
+
+    var waypoints = $('.section_anim').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '75%'
     });
 });

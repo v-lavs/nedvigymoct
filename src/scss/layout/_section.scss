@@ -21,5 +21,14 @@
   }
 }
 
+.section_anim{
+  &.active{
+    .heading_anim{
+      width: 100%;
+      overflow: visible;
+    }
+
+  }
+}
 
 

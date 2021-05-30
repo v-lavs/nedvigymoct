@@ -376,11 +376,13 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
+  overflow: hidden;
   width: 0;
+  transition: 1.8s;
   z-index: 3;
 }
 
@@ -484,11 +486,13 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
+  overflow: hidden;
   width: 0;
+  transition: 1.8s;
   z-index: 3;
 }
 
@@ -987,6 +991,11 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
+}
+
+.section_anim.active .heading_anim {
+  width: 100%;
+  overflow: visible;
 }
 
 .wrapper {
@@ -1800,21 +1809,17 @@ body {
   padding-bottom: 320px;
 }
 
-.section-about .part_content {
+.section-about .part {
   width: 50%;
-  position: relative;
-  padding-top: 20px;
-  padding-left: 7%;
 }
 
-.section-about .part_media {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  left: 100%;
+.section-about .part_left {
+  padding-top: 20px;
+  padding-left: 118px;
+}
+
+.section-about .part_right {
   padding-right: 6%;
-  transform: translateY(-50%);
-  z-index: 1;
 }
 
 .section-about .text p {
@@ -1824,10 +1829,6 @@ body {
 
 .section-about .text p:last-child {
   margin-bottom: 0;
-}
-
-.section-about .btn_read-more {
-  display: none;
 }
 
 .section-about .wrap-img {
@@ -2614,12 +2615,8 @@ body {
     padding-left: 0;
   }
 
-  .section-about .part_content {
+  .section-about .part_left {
     padding-left: 0;
-  }
-
-  .section-about .wrap-img {
-    max-width: 80%;
   }
 
   .section-advantages__header {
@@ -2774,34 +2771,6 @@ body {
 
   .card-list .card-list__item .card__inner {
     padding: 30px 20px;
-  }
-
-  .section-about {
-    padding-top: 75px;
-    padding-bottom: 180px;
-  }
-
-  .section-about .part_content {
-    width: 100%;
-  }
-
-  .section-about .aside {
-    display: none;
-  }
-
-  .section-about .part_media {
-    position: static;
-    transform: none;
-  }
-
-  .section-about .wrap-img {
-    max-width: 255px;
-    margin: 0 auto 30px;
-  }
-
-  .section-about .btn_read-more {
-    display: inline-block;
-    margin-top: 25px;
   }
 
   .section-documents .section__inner {
