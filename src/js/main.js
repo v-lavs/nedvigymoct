@@ -139,6 +139,15 @@ $(document).ready(function () {
         },
     });
 
+
+    //READ MORE BTN
+
+    $('.btn_read-more').click(function(e) {
+        e.preventDefault();
+        $('.text-hide .mob-hide').removeClass('mob-hide');
+        $(this).hide();
+    });
+
     //ANIMATION
 
     var waypoints = $('.section_anim').waypoint(function (direction) {

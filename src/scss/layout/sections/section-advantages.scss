@@ -134,7 +134,14 @@
       height: 330px;
     }
   }
+  .section-advantages__header {
+    top: 53px;
+    .big-logo {
+      width: 170px;
+    }
+  }
 }
+
 @include respond-to($xs) {
   .advantages {
 

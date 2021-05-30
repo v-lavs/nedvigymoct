@@ -104,19 +104,27 @@
       display: inline-block;
       margin-top: 25px;
     }
+
+    .mob-hide {
+      display: none;
+    }
   }
   @include respond-to($sm) {
+    padding-bottom: 180px;
     .section__header {
       margin-bottom: 0;
     }
+
     .text p{
       margin-bottom: 15px;
     }
 
   }
   @include respond-to($xs){
-    //.btn_read-more{
-    //  display: block;
-    //}
+    .btn_read-more {
+      margin-top: 5px;
+      padding: 3px;
+      min-width: 147px;
+    }
   }
 }

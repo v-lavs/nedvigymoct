@@ -2954,6 +2954,10 @@ body {
     margin-top: 25px;
   }
 
+  .section-about .mob-hide {
+    display: none;
+  }
+
   .section-banner {
     padding-top: 0;
   }
@@ -3147,6 +3151,10 @@ body {
     display: none;
   }
 
+  .section-about {
+    padding-bottom: 180px;
+  }
+
   .section-about .section__header {
     margin-bottom: 0;
   }
@@ -3157,6 +3165,14 @@ body {
 
   .advantages-card__wrap-img img {
     height: 330px;
+  }
+
+  .section-advantages__header {
+    top: 53px;
+  }
+
+  .section-advantages__header .big-logo {
+    width: 170px;
   }
 
   .section-location .section__header {
@@ -3194,6 +3210,12 @@ body {
 
   .section-investments .profit {
     padding-bottom: 47px;
+  }
+
+  .section-about .btn_read-more {
+    margin-top: 5px;
+    padding: 3px;
+    min-width: 147px;
   }
 
   .advantages-card__title {
