@@ -18,6 +18,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 70px;
+
+  }
+  @include respond-to($md){
+    .section__header{
+      margin-bottom: 0;
+    }
   }
 }
 
