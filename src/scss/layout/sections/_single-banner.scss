@@ -207,6 +207,22 @@
       width: 33px;
       height: 37px;
     }
+
+
+   .section-banner__footer{
+      .btn{
+        font-size: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        //padding: 9px 23px;
+      }
+      .btn_glass-dark_from-icon:before{
+        width: 22px;
+        height: 23px;
+        left: 25px;
+        top: 13px;
+      }
+    }
   }
 
   @include respond-to($xs) {

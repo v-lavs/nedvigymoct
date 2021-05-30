@@ -3,28 +3,19 @@
   cursor: pointer;
   text-align: center;
   transition: .35s;
+  font-family: $main-font;
   border: 2px solid;
   color: #ffffff;
   font-weight: 600;
+
   &:hover,
-  &:focus{
+  &:focus {
     filter: drop-shadow(0px 0px 17px #FCC21D);
   }
 
   &_gold {
     background-color: $gold;
     border-color: $gold;
-  }
-
-  &_glass-dark {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: #FFFFFF;
-  }
-
-  &_white {
-    background-color: #ffffff;
-    border-color: $gold;
-    color: $dark-100;
   }
 
   &_uppercase {
@@ -43,7 +34,21 @@
     padding: 12px;
   }
 
-  &_white-icon {
+  &_glass-dark {
+    background: rgba(64, 62, 61, 0.5);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border-color: $gold;
+      color: $dark-100;
+    }
+
+  }
+
+  &_glass-dark_from-icon {
     padding-left: 76px;
     position: relative;
 
@@ -60,6 +65,11 @@
       left: 45px;
       top: 17px;
       z-index: 1;
+
+    }
+
+    &:hover::before,
+    &:focus::before {
       filter: invert(1);
     }
   }

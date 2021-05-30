@@ -126,26 +126,6 @@
     .btn_gold {
       margin-bottom: 28px;
     }
-
-    .btn_glass-dark {
-      padding-left: 76px;
-      position: relative;
-
-      &:before {
-        position: absolute;
-        display: block;
-        content: '';
-        background-image: url(../assets/img/svg/phone.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 28px;
-        height: 30px;
-        left: 45px;
-        top: 17px;
-        z-index: 1;
-      }
-    }
   }
 
   .swiper-pagination-bullets {

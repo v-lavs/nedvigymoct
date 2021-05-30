@@ -558,6 +558,7 @@ body {
   cursor: pointer;
   text-align: center;
   transition: .35s;
+  font-family: "Raleway", sans-serif;
   border: 2px solid;
   color: #ffffff;
   font-weight: 600;
@@ -571,17 +572,6 @@ body {
 .btn_gold {
   background-color: #fcc214;
   border-color: #fcc214;
-}
-
-.btn_glass-dark {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: #FFFFFF;
-}
-
-.btn_white {
-  background-color: #ffffff;
-  border-color: #fcc214;
-  color: #403e3d;
 }
 
 .btn_uppercase {
@@ -600,12 +590,25 @@ body {
   padding: 12px;
 }
 
-.btn_white-icon {
+.btn_glass-dark {
+  background: rgba(64, 62, 61, 0.5);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn_glass-dark:hover,
+.btn_glass-dark:focus {
+  background-color: #ffffff;
+  border-color: #fcc214;
+  color: #403e3d;
+}
+
+.btn_glass-dark_from-icon {
   padding-left: 76px;
   position: relative;
 }
 
-.btn_white-icon:before {
+.btn_glass-dark_from-icon:before {
   position: absolute;
   display: block;
   content: '';
@@ -618,6 +621,10 @@ body {
   left: 45px;
   top: 17px;
   z-index: 1;
+}
+
+.btn_glass-dark_from-icon:hover::before,
+.btn_glass-dark_from-icon:focus::before {
   filter: invert(1);
 }
 
@@ -1411,26 +1418,6 @@ body {
 
 .section-intro .block-btn .btn_gold {
   margin-bottom: 28px;
-}
-
-.section-intro .block-btn .btn_glass-dark {
-  padding-left: 76px;
-  position: relative;
-}
-
-.section-intro .block-btn .btn_glass-dark:before {
-  position: absolute;
-  display: block;
-  content: '';
-  background-image: url(../assets/img/svg/phone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 28px;
-  height: 30px;
-  left: 45px;
-  top: 17px;
-  z-index: 1;
 }
 
 .section-intro .swiper-pagination-bullets {
@@ -3528,6 +3515,19 @@ body {
   .section-banner .section-banner__nav-icon {
     width: 33px;
     height: 37px;
+  }
+
+  .section-banner .section-banner__footer .btn {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .section-banner .section-banner__footer .btn_glass-dark_from-icon:before {
+    width: 22px;
+    height: 23px;
+    left: 25px;
+    top: 13px;
   }
 
   .section-location .section__header {
