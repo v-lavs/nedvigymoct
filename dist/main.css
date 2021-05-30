@@ -2345,6 +2345,10 @@ body {
   padding-bottom: 110px;
 }
 
+.section-map .section-map_mob {
+  display: none;
+}
+
 .section-map .part_left {
   width: 333px;
   margin-right: 57px;
@@ -2759,12 +2763,22 @@ body {
   .section-location .location-list__item {
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
+    line-height: 1.56;
+  }
+
+  .section-location .location-list__title {
+    text-align: center;
   }
 
   .section-location .location-list__icon {
     width: 103px;
     height: 103px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .section-location .location-list__icon img {
+    width: 100%;
   }
 
   .section-location .location-list__content {
@@ -3191,7 +3205,11 @@ body {
 
   .section-location .location-list__content {
     max-width: 305px;
-    padding-bottom: 40px;
+    padding-bottom: 8px;
+  }
+
+  .section-map .section-map_mob {
+    display: block;
   }
 }
 
@@ -3220,6 +3238,10 @@ body {
 
   .advantages-card__title {
     font-size: 25px;
+  }
+
+  .section-location {
+    padding-bottom: 20px;
   }
 }
 

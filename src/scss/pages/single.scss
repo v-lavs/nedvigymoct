@@ -25,6 +25,10 @@
   padding-top: 135px;
   padding-bottom: 110px;
 
+  .section-map_mob{
+    display: none;
+  }
+
   .part_left {
     width: 333px;
     margin-right: 57px;
@@ -126,6 +130,12 @@
         align-items: center;
         text-align: center;
       }
+    }
+  }
+
+  @include respond-to($sm){
+    .section-map_mob{
+      display: block;
     }
   }
 }
