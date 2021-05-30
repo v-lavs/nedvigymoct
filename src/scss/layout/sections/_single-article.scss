@@ -196,6 +196,7 @@
   }
 
   @include respond-to($xs) {
+    padding-bottom: 110px;
     .text_mob {
       display: flex;
       flex-wrap: wrap;
@@ -277,7 +278,7 @@
 
         &:nth-child(1),
         &:nth-child(3) {
-          .text_label{
+          .text_label {
             font-size: 40px;
           }
         }
