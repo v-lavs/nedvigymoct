@@ -270,5 +270,20 @@
     .public-spaces__list {
       margin: 0 -10px;
     }
+
+    .list-places {
+      &__link {
+        font-size: 14px;
+      }
+      .icon {
+        -webkit-background-size: 80%;
+        background-size: 80%;
+      }
+
+      .city-mall {
+        -webkit-background-size: 50%;
+        background-size: 50%;
+      }
+    }
   }
 }
