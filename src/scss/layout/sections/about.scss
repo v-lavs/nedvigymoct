@@ -25,7 +25,8 @@
   .text p {
     margin-bottom: 30px;
     line-height: 1.47;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -39,29 +40,33 @@
     width: 100%;
     margin-left: auto;
   }
-  .partners{
+
+  .partners {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    &__link{
+
+    &__link {
       display: inline-block;
       margin-right: 45px;
-      &:first-child{
+
+      &:first-child {
         padding-top: 7px;
       }
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
     }
   }
 
-  .heading_anim{
+  .heading_anim {
     font-size: 150px;
     letter-spacing: 3rem;
     left: 60px;
   }
 
-  .section__header{
+  .section__header {
     margin-bottom: 55px;
   }
 
@@ -98,6 +103,14 @@
     .btn_read-more {
       display: inline-block;
       margin-top: 25px;
+    }
+  }
+  @include respond-to($sm) {
+    .section__header {
+      margin-bottom: 0;
+    }
+    .text p{
+      margin-bottom: 15px;
     }
   }
 }
