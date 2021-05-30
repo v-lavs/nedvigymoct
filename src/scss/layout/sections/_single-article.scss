@@ -202,6 +202,7 @@
         word-break: break-all;
         color: #9B9B9B;
         font-size: 13px;
+        flex-shrink: 0;
       }
 
       &__row {

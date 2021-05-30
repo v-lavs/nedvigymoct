@@ -3318,7 +3318,8 @@ body {
 
   .section-location .location-list__item {
     width: 100%;
-    margin-bottom: 25px;
+    margin: 0;
+    padding-bottom: 45px;
   }
 
   .section-location .location-list__item:nth-child(n) {
@@ -3433,6 +3434,7 @@ body {
     word-break: break-all;
     color: #9B9B9B;
     font-size: 13px;
+    flex-shrink: 0;
   }
 
   .section-article .desc-table__row {
