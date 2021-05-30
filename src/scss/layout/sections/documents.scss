@@ -80,6 +80,14 @@
     }
   }
 
+  @include respond-to($lg) {
+    .btn {
+      min-width: 190px;
+    }
+    .documents-list__btns {
+      padding-left: 15px;
+    }
+  }
   @include respond-to($md) {
     padding-top: 0;
     .section__inner {
@@ -116,18 +124,22 @@
 
     .documents-list__item {
       flex-direction: column;
+      margin-bottom: 87px;
     }
 
     .documents-list__desc,
     .documents-list__btns {
       width: 100%;
       max-width: 480px;
+      padding-left: 0;
     }
   }
   @include respond-to($sm) {
+
     .radio-list__item {
       margin-bottom: 37px;
-      .icon-wrap{
+
+      .icon-wrap {
         width: 27px;
         height: 28px;
         flex-shrink: 0;
@@ -135,6 +147,7 @@
     }
     .radio {
       font-size: 16px;
+
       .radio__control {
         margin-right: 28px;
         width: 23px;
@@ -148,6 +161,22 @@
     .section__part_right {
       padding-left: 14px;
       padding-right: 14px;
+    }
+    .documents-list {
+      font-size: 14px;
+
+      &__title {
+        font-size: 16px;
+      }
+
+    }
+    .btn {
+      //min-width: 190px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    &__btns {
+      padding-top: 25px;
     }
   }
 }

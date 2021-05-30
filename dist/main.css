@@ -2785,6 +2785,14 @@ body {
     padding-left: 0;
   }
 
+  .section-documents .btn {
+    min-width: 190px;
+  }
+
+  .section-documents .documents-list__btns {
+    padding-left: 15px;
+  }
+
   .section-map .part_left {
     margin-right: 30px;
   }
@@ -3025,12 +3033,14 @@ body {
 
   .section-documents .documents-list__item {
     flex-direction: column;
+    margin-bottom: 87px;
   }
 
   .section-documents .documents-list__desc,
   .section-documents .documents-list__btns {
     width: 100%;
     max-width: 480px;
+    padding-left: 0;
   }
 
   .section-building .swiper-slide {
@@ -3260,6 +3270,23 @@ body {
   .section-documents .section__part_right {
     padding-left: 14px;
     padding-right: 14px;
+  }
+
+  .section-documents .documents-list {
+    font-size: 14px;
+  }
+
+  .section-documents .documents-list__title {
+    font-size: 16px;
+  }
+
+  .section-documents .btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .section-documents__btns {
+    padding-top: 25px;
   }
 
   .section-map {
