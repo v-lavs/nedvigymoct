@@ -112,5 +112,11 @@
     .text p{
       margin-bottom: 15px;
     }
+
+  }
+  @include respond-to($xs){
+    //.btn_read-more{
+    //  display: block;
+    //}
   }
 }
