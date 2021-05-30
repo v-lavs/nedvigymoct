@@ -2373,8 +2373,21 @@ body {
   border-bottom: .3px solid #FFFFFF;
 }
 
+.projects .section-projects {
+  padding-bottom: 36px;
+}
+
 .projects .section-projects .section__header {
   display: none;
+}
+
+.projects .load-more-projects {
+  font-weight: 500;
+  font-size: 13px;
+  display: none;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 23px;
 }
 
 .projects .filter {
@@ -3261,6 +3274,7 @@ body {
     display: flex;
     flex-grow: 0;
     width: 210px;
+    border-top: 1px solid #FCC21D;
   }
 
   .footer .social-bar {
@@ -3565,6 +3579,10 @@ body {
   .projects .section-projects .section__header {
     display: flex;
     margin-bottom: 5px;
+  }
+
+  .projects .load-more-projects {
+    display: block;
   }
 
   .projects .filter__top-bar {

@@ -1,8 +1,19 @@
 .projects {
   .section-projects {
+    padding-bottom: 36px;
     .section__header {
       display: none;
     }
+  }
+
+  .load-more-projects {
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 23px;
+
   }
 
   .filter {
@@ -17,6 +28,9 @@
         display: flex;
         margin-bottom: 5px;
       }
+    }
+    .load-more-projects {
+      display: block;
     }
     .filter__top-bar {
       margin-bottom: 23px;
