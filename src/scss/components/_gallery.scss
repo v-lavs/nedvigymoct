@@ -1,0 +1,97 @@
+.gallery {
+  padding-bottom: 32px;
+  position: relative;
+
+  &_small {
+    .gallery__link {
+      height: 335px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    height: 415px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 64px;
+      height: 64px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(../assets/img/svg/zoom.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1;
+      transition: .35s;
+      opacity: 0;
+    }
+  }
+
+  .overlay {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 30px 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &__slide {
+    opacity: .5;
+  }
+
+  .swiper-slide {
+    width: 55%;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+
+    .gallery__link:before {
+      opacity: 1;
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination-bullets {
+    bottom: 0;
+
+    .swiper-pagination-bullet {
+      border-color: #000000;
+    }
+  }
+
+  @include respond-to($xl) {
+    .overlay {
+      padding: 30px;
+    }
+  }
+
+  @include respond-to($sm) {
+    .gallery__link {
+      height: 330px;
+    }
+  }
+}

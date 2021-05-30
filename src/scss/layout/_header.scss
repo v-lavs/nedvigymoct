@@ -5,24 +5,36 @@
   background-color: #fff;
   z-index: 999;
 
-
-  &__inner {
-    padding: 50px 0 30px;
-  }
-
-  .container {
-    border-bottom: 1px solid $gold;
-  }
-
   .header__logo {
     display: block;
     width: 77px;
-    height: 88px;
+    height: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: .35s;
     z-index: 1;
+  }
+
+  &_active {
+    .header__inner {
+      padding: 15px 0;
+    }
+
+    .header__logo {
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  &__inner {
+    padding: 50px 0 30px;
+    transition: .35s;
+  }
+
+  .container {
+    border-bottom: 1px solid $gold;
   }
 
   .header__nav {
@@ -252,7 +264,7 @@
 
     .header__logo {
       width: 50px;
-      height: 55px;
+      height: auto;
     }
     .menu_right{
       .menu__item:last-child{
@@ -282,4 +294,18 @@
   background-color: #000;
   opacity: .5;
   z-index: 500;
+}
+
+@include respond-to($lg) {
+  .header {
+    &__inner {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+      max-width: none;
+    }
+  }
 }

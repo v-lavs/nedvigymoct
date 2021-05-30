@@ -1,0 +1,127 @@
+.section-banner {
+  padding-top: 70px;
+  margin-bottom: 75px;
+
+  &__sidebar {
+    width: 380px;
+  }
+
+  &__logo {
+    width: 252px;
+    display: block;
+    margin: 0 auto 70px;
+  }
+
+  &__wrap-img {
+    height: 100%;
+  }
+
+  &__banner {
+    position: relative;
+    margin-left: 6.4%;
+    flex-grow: 1;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 8.75%;
+    padding-right: 8.75%;
+    padding-left: 8.75%;
+    text-align: right;
+    z-index: 1;
+
+  }
+
+  &__info {
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1;
+    text-align: right;
+    margin-bottom: 70px;
+
+    .sub-text {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .building-area {
+      line-height: .75;
+      font-size: 175px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .name-object {
+      font-weight: 600;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    margin-left: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: $dark-100;
+    border-bottom: 1px solid $gold;
+    padding: 22px 30px 22px 35px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  &__nav-icon {
+    width: 41px;
+    height: 42px;
+    margin-right: 35px;
+  }
+
+  @include respond-to($xxl) {
+    .building-area {
+      font-size: 144px;
+    }
+  }
+  @include respond-to($xl) {
+    .building-area {
+      font-size: 122px;
+    }
+    .section-banner__content {
+      padding-bottom: 4.75%;
+      padding-right: 4.75%;
+      padding-left: 4.75%;
+    }
+  }
+}

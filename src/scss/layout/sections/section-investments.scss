@@ -36,5 +36,11 @@
     width: 100%;
     margin-bottom: 96px;
   }
+
+  @include respond-to($lg) {
+    .part_left {
+      padding-left: 0;
+    }
+  }
 }
 

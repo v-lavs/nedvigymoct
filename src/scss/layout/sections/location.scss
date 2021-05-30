@@ -73,6 +73,9 @@
   }
 
   @include respond-to($sm) {
+    .section__header {
+      display: none;  
+    }
     .location-list {
       &__item {
         width: 100%;
@@ -84,6 +87,7 @@
       }
       &__content {
         max-width: 305px;
+        padding-bottom: 40px;
       }
     }
   }
