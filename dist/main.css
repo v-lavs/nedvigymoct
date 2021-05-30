@@ -2065,6 +2065,10 @@ body {
   max-width: 960px;
 }
 
+.section-article .text_mob {
+  display: none;
+}
+
 .section-article .desc-table {
   border-top: 1px solid #fcc214;
   border-bottom: 1px solid #fcc214;
@@ -3611,6 +3615,22 @@ body {
 
   .advantages-card__title {
     font-size: 25px;
+  }
+
+  .section-article .text_mob {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .section-article .text_mob .text_label {
+    font-size: 40px;
+    margin-right: 18px;
+  }
+
+  .section-article .text_desktop {
+    display: none;
   }
 
   .section-article .desc-table {
