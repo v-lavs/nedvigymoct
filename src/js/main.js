@@ -138,5 +138,9 @@ $(document).ready(function () {
             clickable: true
         },
     });
+//ANIMATION
+    setTimeout(function () {
+        $('.section').addClass('active');
+    }, 300);
 
 });
