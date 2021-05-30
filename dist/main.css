@@ -3797,6 +3797,12 @@ body {
     top: 9px;
   }
 
+  .section-intro .block-btn .section-intro__title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+  }
+
   .section-investments .profit {
     padding-bottom: 47px;
   }
