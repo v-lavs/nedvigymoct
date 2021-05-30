@@ -1,7 +1,7 @@
 .section-advantages {
   background-color: #403E3D;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.07) 51.12%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.01);
-  border-bottom: 0.5px solid #FCC21D;
+  border-bottom: 1px solid #FCC21D;
   color: #ffffff;
 
   .heading {
@@ -30,7 +30,6 @@
       margin-top: 100px;
     }
   }
-
 
   &__content {
     padding-left: 65px;
@@ -129,6 +128,9 @@
 }
 
 @include respond-to($sm) {
+  .section-advantages__content {
+    width: 100%;
+  }
   .advantages-card__wrap-img {
     img {
       height: 330px;
@@ -143,9 +145,6 @@
 }
 
 @include respond-to($xs) {
-  .advantages {
-
-  }
   .advantages-card__title {
     font-size: 25px;
   }
