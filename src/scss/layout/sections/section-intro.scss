@@ -37,6 +37,8 @@
     margin-bottom: 40px;
     max-width: 550px;
 
+    margin-right: 14%;
+
     &:before {
       content: '';
       position: absolute;
@@ -186,6 +188,30 @@
 
   @include respond-to($sm) {
     padding-bottom: 60px;
+    .section-intro__content{
+      padding: 50px 3.5% 60px;
+    }
+    .block-btn{
+
+      .btn{
+        font-size: 15px;
+        padding: 15px 10px;
+        min-width: 200px;
+      }
+      .btn_gold{
+        margin-bottom: 18px;
+      }
+      .btn_glass-dark_from-icon{
+        padding-left: 30px;
+        margin: 0;
+        &:before{
+          width: 22px;
+          height: 23px;
+          left: 25px;
+          top: 13px;
+        }
+      }
+    }
   }
 
   @media (max-width: 340px) {

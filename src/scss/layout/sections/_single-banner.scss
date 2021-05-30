@@ -170,7 +170,6 @@
       margin: auto;
     }
   }
-
   @include respond-to($md) {
     padding-top: 0;
     .section-banner__content {
@@ -212,7 +211,6 @@
       font-size: 95px;
     }
    .section-banner__footer{
-
       .btn{
         font-size: 15px;
         padding: 15px 10px;
