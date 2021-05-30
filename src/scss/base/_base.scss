@@ -85,6 +85,7 @@ body {
   line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
+  overflow: hidden;
   text-transform: uppercase;
   transition: width 1.8s;
   z-index: 3;
@@ -104,6 +105,7 @@ body {
     color: rgba(255, 255, 255, .03);
   }
 }
+
 
 .section__header {
   @include respond-to($md) {
