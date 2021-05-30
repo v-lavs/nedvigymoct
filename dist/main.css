@@ -3713,8 +3713,28 @@ body {
     font-size: 88px;
   }
 
+  .section-banner .section-banner__info .address,
   .section-banner .section-banner__info .name-object {
     display: none;
+  }
+
+  .section-banner .unit {
+    margin-left: auto;
+  }
+
+  .section-banner .section-banner__footer .btn {
+    width: 144px;
+    min-width: 0;
+  }
+
+  .section-banner .section-banner__footer .btn_glass-dark_from-icon {
+    padding: 23px 5px 5px;
+  }
+
+  .section-banner .section-banner__footer .btn_glass-dark_from-icon:before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
   }
 
   .section-article {
