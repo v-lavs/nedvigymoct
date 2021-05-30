@@ -16,6 +16,27 @@
 
   }
 
+  @include respond-to($sm) {
+      padding-top: 32px;
+    padding-bottom: 0;
+    .section__header{
+      margin-bottom: 0;
+    }
+    .card-list {
+      padding-bottom: 0;
+      .card-list__item {
+        .card {
+          width: 240px;
+          height: 390px;
+          &:before {
+            top: -25px;
+            bottom: -25px;
+            width: 55px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -187,7 +208,8 @@
       padding-bottom: 30px;
     }
   }
-  @media #{$xxl} and (min-width: 1441px)  {
+
+  @media #{$xxl} and (min-width: 1441px) {
     .card {
       width: 350px;
       height: 580px;
@@ -204,7 +226,7 @@
     }
   }
 
-  @media #{$xl} and (min-width: 1181px)  {
+  @media #{$xl} and (min-width: 1181px) {
     .card-list__item {
       margin-bottom: 150px;
     }
@@ -232,16 +254,18 @@
     }
   }
 
-  @media #{$lg} and (min-width: 941px)  {
+  @media #{$lg} and (min-width: 941px) {
     justify-content: space-between;
     .card-list__item {
       .card {
         width: 290px;
         height: 480px;
+
         &__title {
           font-size: 32px;
           line-height: 1.25;
         }
+
         &__footer {
           font-size: 24px;
         }
@@ -282,25 +306,31 @@
         margin-right: auto;
         margin-bottom: 120px;
         width: 100%;
+
         .card {
           margin-top: 0;
         }
       }
+
       .card {
         width: 280px;
         height: 410px;
+
         &:before {
           top: -14px;
           bottom: -14px;
           width: 58px;
         }
+
         &__title {
           font-size: 32px;
           line-height: 1.1;
         }
+
         &__footer {
           font-size: 18px;
         }
+
         &__inner {
           padding: 30px 20px;
         }
