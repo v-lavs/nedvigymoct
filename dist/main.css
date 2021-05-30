@@ -376,7 +376,7 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
@@ -484,7 +484,7 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
@@ -1854,8 +1854,8 @@ body {
 
 .section-advantages .container {
   position: relative;
-  transform: translateY(-140px);
-  margin-bottom: -140px;
+  transform: translateY(-155px);
+  margin-bottom: -155px;
 }
 
 .section-advantages__header {
@@ -1869,10 +1869,6 @@ body {
 
 .section-advantages__header .text_lg {
   font-weight: 600;
-}
-
-.section-advantages__header .heading_anim .white {
-  margin-top: 100px;
 }
 
 .section-advantages__content {
@@ -2732,6 +2728,10 @@ body {
     flex-direction: column;
   }
 
+  .heading_anim {
+    font-size: 75px;
+  }
+
   .section-advantages__content {
     padding-left: 0;
   }
@@ -2942,6 +2942,8 @@ body {
   .section-intro .section-intro__title {
     font-size: 38px;
     line-height: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .section-intro .section-intro__content {
@@ -3543,6 +3545,10 @@ body {
 
   .section-advantages__content {
     width: 100%;
+  }
+
+  .heading_anim {
+    font-size: 55px;
   }
 
   .advantages-card__wrap-img img {

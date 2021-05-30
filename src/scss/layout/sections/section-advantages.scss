@@ -10,8 +10,8 @@
 
   .container {
     position: relative;
-    transform: translateY(-140px);
-    margin-bottom: -140px;
+    transform: translateY(-155px);
+    margin-bottom: -155px;
   }
 
   &__header {
@@ -24,10 +24,6 @@
 
     .text_lg {
       font-weight: 600;
-    }
-
-    .heading_anim .white {
-      margin-top: 100px;
     }
   }
 
@@ -107,9 +103,14 @@
     flex-direction: column;
   }
 
+  .heading_anim {
+    font-size: 75px;
+  }
+
   .section-advantages__content {
     padding-left: 0;
   }
+
   .section-advantages {
     .advantages__item {
       width: 50%;
@@ -131,6 +132,11 @@
   .section-advantages__content {
     width: 100%;
   }
+
+  .heading_anim {
+    font-size: 55px;
+  }
+
   .advantages-card__wrap-img {
     img {
       height: 330px;
