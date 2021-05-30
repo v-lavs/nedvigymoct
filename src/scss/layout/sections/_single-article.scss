@@ -32,6 +32,7 @@
       width: 240px;
       font-size: 17px;
       font-weight: 400;
+      padding-right: 10px;
     }
 
     &__row {
@@ -62,10 +63,16 @@
       position: relative;
       display: flex;
       width: 40%;
+
+      &:nth-child(even) {
+        padding-right: 10px;
+      }
+
       &:nth-child(even) {
         width: 60%;
         padding-left: 7%;
         border-left: 1px solid $gold;
+
         &:before {
           content: '';
           position: absolute;
@@ -77,6 +84,7 @@
           z-index: 1;
         }
       }
+
       &:last-child {
         &:before {
           display: none;
@@ -106,6 +114,32 @@
       display: block;
       width: 48px;
       height: 51px;
+    }
+  }
+
+  @include respond-to($xl) {
+    .desc-table {
+      font-size: 20px;
+
+      &__label {
+        width: 180px;
+      }
+
+      &__column-download {
+        width: 180px;
+      }
+    }
+  }
+
+  @include respond-to($lg) {
+    .desc-table__row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .desc-table__col {
+      &:nth-child(even) {
+        padding-left: 35px;
+      }
     }
   }
 }
