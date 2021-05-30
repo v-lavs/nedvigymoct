@@ -2364,6 +2364,10 @@ body {
   border-bottom: .3px solid #FFFFFF;
 }
 
+.projects .section-projects .section__header {
+  display: none;
+}
+
 .projects .filter {
   margin-bottom: 24px;
 }
@@ -3451,6 +3455,15 @@ body {
 
   .section-map .section-map__item {
     padding: 15px 5px;
+  }
+
+  .projects .section-projects {
+    padding-top: 0;
+  }
+
+  .projects .section-projects .section__header {
+    display: flex;
+    margin-bottom: 5px;
   }
 }
 

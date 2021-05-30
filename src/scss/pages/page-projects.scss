@@ -1,8 +1,19 @@
 .projects{
   .section-projects{
-
+    .section__header{
+      display: none;
+    }
   }
   .filter{
     margin-bottom: 24px;
+  }
+  @include respond-to($sm){
+    .section-projects{
+      padding-top: 0;
+      .section__header{
+        display: flex;
+        margin-bottom: 5px;
+      }
+    }
   }
 }
