@@ -250,8 +250,26 @@
     .building-area {
       font-size: 88px;
     }
+    .section-banner__info .address,
     .section-banner__info .name-object {
       display: none;
+    }
+    .unit{
+      margin-left: auto;
+    }
+    .section-banner__footer{
+      .btn{
+        width: 144px;
+        min-width: 0;
+      }
+      .btn_glass-dark_from-icon{
+        padding: 23px 5px 5px;
+        &:before{
+          left: 50%;
+          transform: translateX(-50%);
+          top: 9px;
+        }
+      }
     }
   }
 }
