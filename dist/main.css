@@ -3772,6 +3772,10 @@ body {
     margin-left: auto;
   }
 
+  .section-banner .section-banner__footer {
+    justify-content: center;
+  }
+
   .section-banner .section-banner__footer .btn {
     width: 144px;
     min-width: 0;
