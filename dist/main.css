@@ -2943,6 +2943,8 @@ body {
   .section-intro .section-intro__title {
     font-size: 38px;
     line-height: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .section-intro .section-intro__content {
