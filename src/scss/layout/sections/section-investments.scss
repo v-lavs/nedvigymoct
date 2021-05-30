@@ -1,14 +1,22 @@
 .section-investments {
   position: relative;
 
-  .part {
+  .part_content {
+    position: relative;
     width: 50%;
+    min-height: 800px;
+    padding: 90px 20px 120px 7%;
   }
 
-  .part_left {
-    padding-top: 90px;
-    padding-left: 118px;
-    padding-right: 20px;
+  .part_media {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
   .section__header {
@@ -38,9 +46,59 @@
   }
 
   @include respond-to($lg) {
-    .part_left {
+    .section__title-bg {
+      left: -0.5em;
+    }
+    .part_content {
+      padding-left: 0;
+    }
+    .profit {
+      font-size: 22px;
+      line-height: 30px;
+      padding-bottom: 40px;
+    }
+    .percent {
+      font-size: 70px;
+      padding-right: 20px;
+    }
+    .part_media {
       padding-left: 0;
     }
   }
+
+  @include respond-to($md) {
+    .part_content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        order: 1;
+        margin-bottom: 0;
+      }
+    }
+    .part_media {
+      position: static;
+      display: block;
+      order: 2;
+    }
+
+    .wrap-img {
+      max-width: 335px;
+      margin: 0 auto -30px;
+      z-index: 1;
+    }
+
+    .profit {
+      position: relative;
+      order: 3;
+      z-index: 3;
+    }
+
+    .btn {
+      order: 4;
+    }
+  }
 }
+
 
