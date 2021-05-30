@@ -8,6 +8,9 @@ body {
   font: 400 17px/1.25 $main-font;
   color: $dark;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  @include respond-to($sm) {
+    font-size: 16px;
+  }
 }
 
 .hide {
@@ -51,11 +54,11 @@ body {
   font-weight: 500;
   font-size: 55px;
   color: $dark-100;
-  @include respond-to($md){
+  @include respond-to($md) {
     padding-top: 20px;
     font-size: 50px;
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
     font-size: 40px;
     margin: 0 auto;
   }
@@ -68,6 +71,10 @@ body {
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include respond-to($sm) {
+      font-size: 16px;
     }
   }
 }
@@ -99,24 +106,24 @@ body {
 }
 
 .section__header {
-    @include respond-to($md){
-      justify-content: center;
-      .heading_anim {
-        font-size: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+  @include respond-to($md) {
+    justify-content: center;
+    .heading_anim {
+      font-size: 75px;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    @include respond-to($sm) {
-      .heading_anim {
-        font-size: 50px;
-        font-weight: 500;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+  }
+  @include respond-to($sm) {
+    .heading_anim {
+      font-size: 50px;
+      font-weight: 500;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    @include respond-to($xs) {
-      .heading_anim {
+  }
+  @include respond-to($xs) {
+    .heading_anim {
       font-size: 40px;
     }
   }

@@ -197,6 +197,7 @@
 
   @include respond-to($xs) {
     padding-bottom: 110px;
+    padding-top: 20px;
     .text_mob {
       display: flex;
       flex-wrap: wrap;
@@ -284,6 +285,13 @@
         }
       }
 
+    }
+    .section__title {
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+    .dynamic-content {
+      margin-bottom: 55px;
     }
   }
 }

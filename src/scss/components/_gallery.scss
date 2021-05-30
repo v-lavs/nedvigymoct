@@ -103,6 +103,10 @@
   }
 
   @include respond-to($sm) {
+
+    .section__header{
+      margin-bottom: 20px;
+    }
     .gallery__link {
       height: 330px;
     }

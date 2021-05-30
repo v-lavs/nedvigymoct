@@ -2756,6 +2756,7 @@ body {
 
   .section-banner .container {
     flex-wrap: wrap;
+    position: relative;
   }
 
   .section-banner .section-banner__banner {
@@ -2768,20 +2769,17 @@ body {
   .section-banner .section-banner__sidebar {
     width: 100%;
     order: 2;
+    display: flex;
   }
 
   .section-banner .section-banner__nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 50%;
+    padding-top: 20px;
   }
 
-  .section-banner .section-banner__nav-link {
-    width: 33.33%;
-  }
-
-  .section-banner .section-banner__nav-link:last-child {
-    border-bottom: 1px solid #fcc214;
+  .section-banner .section-banner__logo {
+    width: 200px;
+    margin: auto;
   }
 
   .section-article {
@@ -3081,6 +3079,19 @@ body {
     z-index: 2;
   }
 
+  .section-banner .section-banner__nav {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .section-banner .section-banner__nav-link {
+    width: 33.33%;
+  }
+
+  .section-banner .section-banner__nav-link:last-child {
+    border-bottom: 1px solid #fcc214;
+  }
+
   .section-documents {
     padding-top: 0;
   }
@@ -3188,9 +3199,17 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+
   .section__title {
     font-size: 40px;
     margin: 0 auto;
+  }
+
+  .dynamic-content p {
+    font-size: 16px;
   }
 
   .section__header .heading_anim {
@@ -3200,9 +3219,17 @@ body {
     transform: translateX(-50%);
   }
 
+  body {
+    font-size: 16px;
+  }
+
   .section__title {
     font-size: 40px;
     margin: 0 auto;
+  }
+
+  .dynamic-content p {
+    font-size: 16px;
   }
 
   .section__header .heading_anim {
@@ -3243,6 +3270,10 @@ body {
 
   .filter__link.active {
     background-color: rgba(252, 194, 29, 0.1);
+  }
+
+  .gallery .section__header {
+    margin-bottom: 20px;
   }
 
   .gallery .gallery__link {
@@ -3489,6 +3520,16 @@ body {
     width: 170px;
   }
 
+  .section-banner .section-banner__nav-link {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .section-banner .section-banner__nav-icon {
+    width: 33px;
+    height: 37px;
+  }
+
   .section-location .section__header {
     display: none;
   }
@@ -3554,6 +3595,10 @@ body {
 
   .section-documents__btns {
     padding-top: 25px;
+  }
+
+  .section-gallery {
+    padding-bottom: 50px;
   }
 
   .section-map {
@@ -3633,6 +3678,30 @@ body {
 
   .advantages-card__title {
     font-size: 25px;
+  }
+
+  .section-banner {
+    margin-bottom: 0;
+  }
+
+  .section-banner .section-banner__nav {
+    flex-direction: column;
+    padding-top: 15px;
+  }
+
+  .section-banner .section-banner__nav-link {
+    width: 80%;
+    font-size: 16px;
+    padding: 23px 20px;
+  }
+
+  .section-banner .section-banner__nav-link:last-child {
+    border: none;
+  }
+
+  .section-article {
+    padding-bottom: 110px;
+    padding-top: 20px;
   }
 
   .section-article .text_mob {
@@ -3718,6 +3787,15 @@ body {
   .section-article .desc-table__col:nth-child(n):nth-child(1) .text_label,
   .section-article .desc-table__col:nth-child(n):nth-child(3) .text_label {
     font-size: 40px;
+  }
+
+  .section-article .section__title {
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+
+  .section-article .dynamic-content {
+    margin-bottom: 55px;
   }
 
   .section-location {

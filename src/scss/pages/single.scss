@@ -5,6 +5,9 @@
 
 .section-gallery {
   padding-bottom: 108px;
+  @include  respond-to($sm){
+    padding-bottom: 50px;
+  }
 }
 
 .section-building {
