@@ -118,10 +118,63 @@
     .building-area {
       font-size: 122px;
     }
+    .section-banner__banner {
+      margin-left: 4.5%;
+    }
+    .section-banner__nav {
+      padding-bottom: 40px;
+    }
     .section-banner__content {
       padding-bottom: 4.75%;
       padding-right: 4.75%;
       padding-left: 4.75%;
+    }
+
+    .section-banner__info {
+      margin-bottom: 55px;
+    }
+
+    .section-banner__nav-link {
+      padding: 15px 20px;
+    }
+    .section-banner__nav-icon {
+      margin-right: 25px;
+    }
+  }
+
+  @include respond-to($lg) {
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .section-banner__banner {
+      width: 100%;
+      margin-left: 0;
+      order: 1;
+      height: 680px;
+    }
+    .section-banner__sidebar {
+      width: 100%;
+      order: 2;
+    }
+    .section-banner__nav {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .section-banner__nav-link {
+      width: 33.33%;
+      &:last-child {
+        border-bottom: 1px solid $gold;
+      }
+    }
+  }
+
+  @include respond-to($md) {
+    padding-top: 0;
+    .container {
+      max-width: none;
+      padding: 0;
     }
   }
 }
