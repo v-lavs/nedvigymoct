@@ -2411,6 +2411,10 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+  .btn_big {
+    min-width: 260px;
+  }
+
   .gallery .overlay {
     padding: 30px;
   }
@@ -2501,6 +2505,10 @@ body {
 
   .main {
     padding-top: 90px;
+  }
+
+  .gallery .overlay {
+    display: none;
   }
 
   .container {
@@ -2799,6 +2807,10 @@ body {
     font-size: 75px;
   }
 
+  .gallery .swiper-slide {
+    width: 80%;
+  }
+
   .container {
     max-width: 670px;
   }
@@ -2985,6 +2997,10 @@ body {
     max-width: 480px;
   }
 
+  .section-building .swiper-slide {
+    width: 55%;
+  }
+
   .section-map {
     padding-top: 100px;
   }
@@ -3091,6 +3107,10 @@ body {
 
   .gallery .gallery__link {
     height: 330px;
+  }
+
+  .gallery .swiper-slide {
+    width: 100%;
   }
 
   .container {
