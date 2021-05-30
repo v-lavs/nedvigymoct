@@ -3449,18 +3449,31 @@ body {
     padding-bottom: 60px;
   }
 
+  .section-intro .section-intro__part {
+    flex-grow: 1;
+  }
+
   .section-intro .section-intro__content {
     padding: 50px 3.5% 60px;
+  }
+
+  .section-intro .block-btn {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
   }
 
   .section-intro .block-btn .btn {
     font-size: 15px;
     padding: 15px 10px;
     min-width: 200px;
+    margin-bottom: 0;
+    margin-right: 15px;
   }
 
-  .section-intro .block-btn .btn_gold {
-    margin-bottom: 18px;
+  .section-intro .block-btn .btn:last-child {
+    margin-right: 0;
   }
 
   .section-intro .block-btn .btn_glass-dark_from-icon {
@@ -3767,6 +3780,21 @@ body {
 
   .footer .footer__logo-wrap {
     display: none;
+  }
+
+  .section-intro .block-btn .btn {
+    width: 144px;
+    min-width: 0;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon {
+    padding: 23px 5px 5px;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon:before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
   }
 
   .section-investments .profit {
