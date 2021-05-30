@@ -1,19 +1,41 @@
-.projects{
-  .section-projects{
-    .section__header{
+.projects {
+  .section-projects {
+    .section__header {
       display: none;
     }
   }
-  .filter{
-    margin-bottom: 24px;
+
+  .filter {
+    margin-bottom: 35px;
   }
-  @include respond-to($sm){
-    .section-projects{
+
+  @include respond-to($sm) {
+    .section-projects {
       padding-top: 0;
-      .section__header{
+
+      .section__header {
         display: flex;
         margin-bottom: 5px;
       }
+    }
+    .filter__top-bar {
+      margin-bottom: 23px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+
+      .btn {
+        min-width: 140px;
+        margin: 0;
+      }
+    }
+  }
+  @include respond-to($xs) {
+    .filter__category {
+      font-size: 13px;
+    }
+    .filter__link .active {
+      font-size: 14px;
     }
   }
 }

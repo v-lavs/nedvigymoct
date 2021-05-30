@@ -2374,7 +2374,7 @@ body {
 }
 
 .projects .filter {
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 }
 
 @media lg and (min-width: 941px) {
@@ -3562,6 +3562,18 @@ body {
     display: flex;
     margin-bottom: 5px;
   }
+
+  .projects .filter__top-bar {
+    margin-bottom: 23px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .projects .filter__top-bar .btn {
+    min-width: 140px;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 760px) and (max-width: 480px) {
@@ -3663,6 +3675,14 @@ body {
 
   .section-location {
     padding-bottom: 20px;
+  }
+
+  .projects .filter__category {
+    font-size: 13px;
+  }
+
+  .projects .filter__link .active {
+    font-size: 14px;
   }
 }
 
