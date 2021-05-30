@@ -51,6 +51,13 @@ body {
   font-weight: 500;
   font-size: 55px;
   color: $dark-100;
+  @include respond-to($md){
+    font-size: 50px;
+  }
+  @include respond-to($sm){
+    font-size: 40px;
+    margin: 0 auto;
+  }
 }
 
 .dynamic-content {
@@ -84,7 +91,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 
   span {
@@ -101,12 +108,20 @@ body {
     -webkit-text-stroke: 2px rgba(255, 255, 255, .03);
     color: rgba(255, 255, 255, .03);
   }
+}
 
-  @include respond-to($sm) {
+.section__header  .heading_anim{
+  @include respond-to($md){
     font-size: 75px;
   }
+  @include respond-to($sm) {
+    font-size: 50px;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   @include respond-to($xs) {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 

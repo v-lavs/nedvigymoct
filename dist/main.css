@@ -381,7 +381,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 }
 
@@ -490,7 +490,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 }
 
@@ -993,7 +993,6 @@ body {
 
 .section_anim.active .heading_anim {
   width: 100%;
-  overflow: visible;
 }
 
 .wrapper {
@@ -1444,7 +1443,6 @@ body {
 
 .section-investments {
   position: relative;
-  overflow: hidden;
 }
 
 .section-investments .part_content {
@@ -1497,11 +1495,11 @@ body {
 
 .public-location .part_left {
   position: relative;
-  flex-grow: 1;
+  width: 60%;
 }
 
 .public-location .part_right {
-  width: 595px;
+  width: 40%;
 }
 
 .public-location .wrap-map {
@@ -1512,13 +1510,6 @@ body {
   max-width: 1440px;
   width: 85vw;
   z-index: -1;
-}
-
-.public-location .wrap-map .img_map {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .public-location .field-markers {
@@ -1557,6 +1548,7 @@ body {
   padding: 56px 47px 47px;
   font-weight: 600;
   color: #ffffff;
+  min-width: 596px;
   min-height: 647px;
 }
 
@@ -1580,7 +1572,7 @@ body {
   padding-top: 56.75%;
   overflow: hidden;
   margin-right: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 28px;
   max-width: 186px;
   float: left;
 }
@@ -1601,15 +1593,12 @@ body {
   flex-wrap: wrap;
 }
 
-.list-places__link {
-  display: flex;
-  align-items: center;
-}
-
 .list-places__item {
   width: 50%;
   padding: 5px 25px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .list-places__item:nth-child(1) .icon:before {
@@ -2391,12 +2380,6 @@ body {
   margin-bottom: 24px;
 }
 
-@media lg and (min-width: 941px) {
-  .public-location .container {
-    max-width: none;
-  }
-}
-
 @media only screen and (max-width: 1680px) {
   .container {
     max-width: 1400px;
@@ -2435,25 +2418,6 @@ body {
 
   .footer .wrap-item:nth-child(3) {
     padding-left: 50px;
-  }
-
-  .public-location .container {
-    padding: 0;
-  }
-
-  .public-location .public-spaces__list {
-    min-height: 0;
-    padding: 30px;
-  }
-
-  .public-location .public-spaces__list .wrap-img {
-    padding-top: 45%;
-    max-width: 150px;
-    margin-right: 30px;
-  }
-
-  .public-location .public-spaces__list .title {
-    font-size: 46px;
   }
 
   .advantages-card__wrap-img img {
@@ -2676,19 +2640,6 @@ body {
     padding-left: 0;
   }
 
-  .public-location .container {
-    padding: 0 30px;
-  }
-
-  .public-location .part_right {
-    width: 50%;
-  }
-
-  .public-location .wrap-map {
-    right: 0;
-    width: 50vw;
-  }
-
   .section-about .part_content {
     padding-left: 0;
   }
@@ -2782,6 +2733,22 @@ body {
 }
 
 @media only screen and (max-width: 940px) {
+  .section__title {
+    font-size: 50px;
+  }
+
+  .section__header .heading_anim {
+    font-size: 75px;
+  }
+
+  .section__title {
+    font-size: 50px;
+  }
+
+  .section__header .heading_anim {
+    font-size: 75px;
+  }
+
   .container {
     max-width: 670px;
   }
@@ -2838,24 +2805,8 @@ body {
     z-index: 3;
   }
 
-  .section-investments .btn {
+  .section-investments .wrap-btn {
     order: 4;
-  }
-
-  .public-location .container {
-    flex-direction: column;
-  }
-
-  .public-location .part_right {
-    width: 100%;
-  }
-
-  .public-location .wrap-map {
-    position: relative;
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
-    height: 400px;
   }
 
   .card-list {
@@ -3015,12 +2966,28 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-  .heading_anim {
-    font-size: 75px;
+  .section__title {
+    font-size: 40px;
+    margin: 0 auto;
   }
 
-  .heading_anim {
-    font-size: 75px;
+  .section__header .heading_anim {
+    font-size: 50px;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section__title {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .section__header .heading_anim {
+    font-size: 50px;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .filter__top-bar .btn {
@@ -3073,8 +3040,17 @@ body {
     font-size: 15px;
   }
 
-  .public-location .part_right .wrap-img {
-    display: none;
+  .section-intro {
+    padding-bottom: 60px;
+  }
+
+  .section-investments .part_content {
+    padding-top: 20px;
+    padding-right: 0;
+  }
+
+  .section-investments .section__header {
+    margin-bottom: 0;
   }
 
   .home .section-projects .filter {
@@ -3106,16 +3082,20 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  .heading_anim {
-    font-size: 42px;
+  .section__header .heading_anim {
+    font-size: 40px;
   }
 
-  .heading_anim {
-    font-size: 42px;
+  .section__header .heading_anim {
+    font-size: 40px;
   }
 
   .container {
     max-width: 100%;
+  }
+
+  .section-investments .profit {
+    padding-bottom: 47px;
   }
 
   .advantages-card__title {
