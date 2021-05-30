@@ -1332,6 +1332,7 @@ body {
   mix-blend-mode: multiply;
   margin-bottom: 40px;
   max-width: 550px;
+  margin-right: 14%;
 }
 
 .section-intro__title:before {
@@ -3450,6 +3451,45 @@ body {
     padding-bottom: 60px;
   }
 
+  .section-intro .section-intro__part {
+    flex-grow: 1;
+  }
+
+  .section-intro .section-intro__content {
+    padding: 50px 3.5% 60px;
+  }
+
+  .section-intro .block-btn {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .section-intro .block-btn .btn {
+    font-size: 15px;
+    padding: 15px 10px;
+    min-width: 200px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .section-intro .block-btn .btn:last-child {
+    margin-right: 0;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon {
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon:before {
+    width: 22px;
+    height: 23px;
+    left: 25px;
+    top: 13px;
+  }
+
   .section-investments .part_content {
     padding-top: 20px;
     padding-right: 0;
@@ -3748,6 +3788,27 @@ body {
     display: none;
   }
 
+  .section-intro .block-btn .btn {
+    width: 144px;
+    min-width: 0;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon {
+    padding: 23px 5px 5px;
+  }
+
+  .section-intro .block-btn .btn_glass-dark_from-icon:before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
+  }
+
+  .section-intro .block-btn .section-intro__title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+  }
+
   .section-investments .profit {
     padding-bottom: 47px;
   }
@@ -3792,6 +3853,10 @@ body {
 
   .section-banner .unit {
     margin-left: auto;
+  }
+
+  .section-banner .section-banner__footer {
+    justify-content: center;
   }
 
   .section-banner .section-banner__footer .btn {
