@@ -70,18 +70,6 @@ body {
       margin-bottom: 0;
     }
   }
-
-  h2 {
-
-  }
-
-  ul {
-
-
-    li {
-
-    }
-  }
 }
 
 .heading_anim {
@@ -91,7 +79,6 @@ body {
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
-  width: 0;
   transition: width 1.8s;
   z-index: 3;
 
@@ -113,9 +100,11 @@ body {
 
 .section__header {
     @include respond-to($md){
-
+      justify-content: center;
       .heading_anim {
         font-size: 75px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
     @include respond-to($sm) {
