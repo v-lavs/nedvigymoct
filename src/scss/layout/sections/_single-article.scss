@@ -203,7 +203,7 @@
       line-height: 1;
 
       .text_label {
-        font-size: 40px;
+        font-size: 32px;
         margin-right: 18px;
       }
     }
@@ -211,11 +211,11 @@
       display: none;
     }
     .desc-table {
-      box-shadow: 0px 4px 28px 5px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 28px 5px rgba(0, 0, 0, 0.05);
 
       &__label {
         position: relative;
-        width: 100px;
+        width: 68px;
         padding-right: 15px;
         word-break: break-all;
         color: #9B9B9B;
@@ -232,7 +232,8 @@
       &__cell {
         &:nth-child(2n) {
           position: relative;
-          padding-left: 25px;
+          padding-left: 24px;
+
           &:before {
             content: '';
             position: absolute;
@@ -265,12 +266,23 @@
           z-index: 1;
         }
 
-        &:last-child {
-          &:before {
-            display: none;
+        &:nth-child(2) {
+          order: 1;
+
+        }
+
+        &:nth-child(2):before {
+          display: none;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          .text_label{
+            font-size: 40px;
           }
         }
       }
+
     }
   }
 }
