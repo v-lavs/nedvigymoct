@@ -1183,7 +1183,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 36px;
-  border-right: 0.5px solid #FCC21D;
+  border-right: 1px solid #FCC21D;
 }
 
 .footer .social-bar {
@@ -1192,8 +1192,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 0.5px solid #FCC21D;
-  border-left: 0.5px solid #FCC21D;
+  border-right: 1px solid #FCC21D;
+  border-left: 1px solid #FCC21D;
 }
 
 .footer .social__link {
@@ -1225,7 +1225,7 @@ body {
 
 .footer__contacts-item {
   display: flex;
-  border-bottom: 0.5px solid #FCC21D;
+  border-bottom: 1px solid #FCC21D;
 }
 
 .footer__contacts-item a {
@@ -1246,6 +1246,11 @@ body {
   line-height: 1.8;
 }
 
+.footer .work-row {
+  display: flex;
+  align-items: center;
+}
+
 .footer .wrap-item {
   max-width: 335px;
   width: 30%;
@@ -1253,7 +1258,7 @@ body {
   padding-bottom: 35px;
   padding-right: 20px;
   flex-grow: 1;
-  border-right: 0.5px solid #FCC21D;
+  border-right: 1px solid #FCC21D;
 }
 
 .footer .wrap-item:first-child {
@@ -1852,7 +1857,7 @@ body {
 .section-advantages {
   background-color: #403E3D;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.07) 51.12%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.01);
-  border-bottom: 0.5px solid #FCC21D;
+  border-bottom: 1px solid #FCC21D;
   color: #ffffff;
 }
 
@@ -2915,27 +2920,8 @@ body {
     max-width: 670px;
   }
 
-  .footer .wrap-item:nth-child(n) {
-    width: 100%;
-    max-width: 100%;
-    border: none;
-  }
-
-  .footer .wrap-item {
-    border-bottom: 0.5px solid #fcc214;
-  }
-
-  .footer .footer__contacts {
-    display: flex;
-  }
-
-  .footer .footer__contacts-item {
-    display: block;
-    width: 50%;
-  }
-
-  .footer .footer__contacts-item:first-child {
-    border-right: 0.5px solid #fcc214;
+  .footer .footer__logo-wrap {
+    display: none;
   }
 
   .section-investments .part_content {
@@ -3263,6 +3249,113 @@ body {
     font-size: 15px;
   }
 
+  .footer .footer__contacts-item {
+    border-bottom: 0;
+  }
+
+  .footer .footer__logo-wrap {
+    display: flex;
+    flex-grow: 0;
+    width: 210px;
+  }
+
+  .footer .social-bar {
+    padding-top: 5px;
+  }
+
+  .footer .work-row {
+    margin-bottom: 5px;
+  }
+
+  .footer .footer__contacts-item {
+    flex-direction: column;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+  }
+
+  .footer .footer__contacts-item:first-child .work {
+    display: none;
+  }
+
+  .footer .footer__contacts-item .title {
+    font-size: 22px;
+  }
+
+  .footer .footer__contacts-item .wrap-item {
+    width: 100%;
+    border-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .footer .footer__contacts-item .wrap-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer .footer__contacts-item .work {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 35px;
+    padding-top: 35px;
+  }
+
+  .footer .footer__contacts-item:before,
+  .footer .work:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    border-top: 1px solid #fcc214;
+    z-index: 1;
+  }
+
+  .footer .text-sm {
+    font-size: 12px;
+  }
+
+  .footer .social-bar {
+    justify-content: flex-start;
+  }
+
+  .footer .social__link {
+    margin: 40px 0;
+  }
+
+  .footer .mob-order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .footer .mob-order .email {
+    order: 1;
+  }
+
+  .footer .mob-order .tel-text {
+    order: 2;
+  }
+
+  .footer .wrap-item {
+    font-size: 12px;
+  }
+
+  .footer .working-hours {
+    font-size: 22px;
+    line-height: 1;
+    margin-left: 7px;
+  }
+
+  .footer .day-label {
+    flex-shrink: 0;
+    width: 55px;
+  }
+
   .section-intro {
     padding-bottom: 60px;
   }
@@ -3360,6 +3453,10 @@ body {
 
   .section-about .text p {
     margin-bottom: 15px;
+  }
+
+  .section-advantages__content {
+    width: 100%;
   }
 
   .advantages-card__wrap-img img {
@@ -3484,6 +3581,10 @@ body {
 
   .container {
     max-width: 100%;
+  }
+
+  .footer .footer__logo-wrap {
+    display: none;
   }
 
   .section-investments .profit {
