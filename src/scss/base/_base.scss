@@ -111,18 +111,25 @@ body {
   }
 }
 
-.section__header  .heading_anim{
-  @include respond-to($md){
-    font-size: 75px;
-  }
-  @include respond-to($sm) {
-    font-size: 50px;
-    font-weight: 500;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  @include respond-to($xs) {
-    font-size: 40px;
+.section__header {
+    @include respond-to($md){
+
+      .heading_anim {
+        font-size: 75px;
+      }
+    }
+    @include respond-to($sm) {
+      .heading_anim {
+        font-size: 50px;
+        font-weight: 500;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @include respond-to($xs) {
+      .heading_anim {
+      font-size: 40px;
+    }
   }
 }
 
