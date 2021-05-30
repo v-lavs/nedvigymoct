@@ -3734,6 +3734,20 @@ body {
   .public-spaces__list {
     margin: 0 -10px;
   }
+
+  .list-places__link {
+    font-size: 14px;
+  }
+
+  .list-places .icon {
+    -webkit-background-size: 80%;
+    background-size: 80%;
+  }
+
+  .list-places .city-mall {
+    -webkit-background-size: 50%;
+    background-size: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
