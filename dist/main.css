@@ -3517,10 +3517,20 @@ body {
     height: 37px;
   }
 
+  .section-banner .building-area {
+    font-size: 95px;
+  }
+
   .section-banner .section-banner__footer .btn {
     font-size: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
+    padding: 15px 10px;
+    min-width: 200px;
+    margin-left: 20px;
+  }
+
+  .section-banner .section-banner__footer .btn_glass-dark_from-icon {
+    padding-left: 30px;
+    margin: 0;
   }
 
   .section-banner .section-banner__footer .btn_glass-dark_from-icon:before {
@@ -3697,6 +3707,14 @@ body {
 
   .section-banner .section-banner__nav-link:last-child {
     border: none;
+  }
+
+  .section-banner .building-area {
+    font-size: 88px;
+  }
+
+  .section-banner .section-banner__info .name-object {
+    display: none;
   }
 
   .section-article {

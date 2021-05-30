@@ -208,19 +208,26 @@
       height: 37px;
     }
 
-
+    .building-area {
+      font-size: 95px;
+    }
    .section-banner__footer{
+
       .btn{
         font-size: 15px;
-        padding-left: 15px;
-        padding-top: 15px;
-        //padding: 9px 23px;
+        padding: 15px 10px;
+        min-width: 200px;
+        margin-left: 20px;
       }
-      .btn_glass-dark_from-icon:before{
-        width: 22px;
-        height: 23px;
-        left: 25px;
-        top: 13px;
+      .btn_glass-dark_from-icon{
+        padding-left: 30px;
+        margin: 0;
+        &:before{
+          width: 22px;
+          height: 23px;
+          left: 25px;
+          top: 13px;
+        }
       }
     }
   }
@@ -239,6 +246,12 @@
       &:last-child{
         border: none;
       }
+    }
+    .building-area {
+      font-size: 88px;
+    }
+    .section-banner__info .name-object {
+      display: none;
     }
   }
 }
