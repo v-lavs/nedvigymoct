@@ -67,5 +67,11 @@
   &:disabled {
     opacity: .3;
   }
+
+  @include respond-to($xl) {
+    &_big {
+      min-width: 260px;
+    }
+  }
 }
 

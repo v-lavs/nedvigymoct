@@ -1443,6 +1443,7 @@ body {
 
 .section-investments {
   position: relative;
+  overflow: hidden;
 }
 
 .section-investments .part_content {
@@ -1495,11 +1496,11 @@ body {
 
 .public-location .part_left {
   position: relative;
-  width: 60%;
+  flex-grow: 1;
 }
 
 .public-location .part_right {
-  width: 40%;
+  width: 595px;
 }
 
 .public-location .wrap-map {
@@ -1510,6 +1511,13 @@ body {
   max-width: 1440px;
   width: 85vw;
   z-index: -1;
+}
+
+.public-location .wrap-map .img_map {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .public-location .field-markers {
@@ -1548,7 +1556,6 @@ body {
   padding: 56px 47px 47px;
   font-weight: 600;
   color: #ffffff;
-  min-width: 596px;
   min-height: 647px;
 }
 
@@ -1572,7 +1579,7 @@ body {
   padding-top: 56.75%;
   overflow: hidden;
   margin-right: 50px;
-  margin-bottom: 28px;
+  margin-bottom: 5px;
   max-width: 186px;
   float: left;
 }
@@ -1593,12 +1600,15 @@ body {
   flex-wrap: wrap;
 }
 
+.list-places__link {
+  display: flex;
+  align-items: center;
+}
+
 .list-places__item {
   width: 50%;
   padding: 5px 25px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
 }
 
 .list-places__item:nth-child(1) .icon:before {
@@ -2380,6 +2390,12 @@ body {
   margin-bottom: 24px;
 }
 
+@media lg and (min-width: 941px) {
+  .public-location .container {
+    max-width: none;
+  }
+}
+
 @media only screen and (max-width: 1680px) {
   .container {
     max-width: 1400px;
@@ -2395,6 +2411,10 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+  .btn_big {
+    min-width: 260px;
+  }
+
   .gallery .overlay {
     padding: 30px;
   }
@@ -2418,6 +2438,25 @@ body {
 
   .footer .wrap-item:nth-child(3) {
     padding-left: 50px;
+  }
+
+  .public-location .container {
+    padding: 0;
+  }
+
+  .public-location .public-spaces__list {
+    min-height: 0;
+    padding: 30px;
+  }
+
+  .public-location .public-spaces__list .wrap-img {
+    padding-top: 45%;
+    max-width: 150px;
+    margin-right: 30px;
+  }
+
+  .public-location .public-spaces__list .title {
+    font-size: 46px;
   }
 
   .advantages-card__wrap-img img {
@@ -2466,6 +2505,10 @@ body {
 
   .main {
     padding-top: 90px;
+  }
+
+  .gallery .overlay {
+    display: none;
   }
 
   .container {
@@ -2640,6 +2683,19 @@ body {
     padding-left: 0;
   }
 
+  .public-location .container {
+    padding: 0 30px;
+  }
+
+  .public-location .part_right {
+    width: 50%;
+  }
+
+  .public-location .wrap-map {
+    right: 0;
+    width: 50vw;
+  }
+
   .section-about .part_content {
     padding-left: 0;
   }
@@ -2749,6 +2805,10 @@ body {
     font-size: 75px;
   }
 
+  .gallery .swiper-slide {
+    width: 80%;
+  }
+
   .container {
     max-width: 670px;
   }
@@ -2807,6 +2867,22 @@ body {
 
   .section-investments .wrap-btn {
     order: 4;
+  }
+
+  .public-location .container {
+    flex-direction: column;
+  }
+
+  .public-location .part_right {
+    width: 100%;
+  }
+
+  .public-location .wrap-map {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    height: 400px;
   }
 
   .card-list {
@@ -2919,6 +2995,10 @@ body {
     max-width: 480px;
   }
 
+  .section-building .swiper-slide {
+    width: 55%;
+  }
+
   .section-map {
     padding-top: 100px;
   }
@@ -3027,6 +3107,10 @@ body {
     height: 330px;
   }
 
+  .gallery .swiper-slide {
+    width: 100%;
+  }
+
   .container {
     max-width: 480px;
   }
@@ -3051,6 +3135,10 @@ body {
 
   .section-investments .section__header {
     margin-bottom: 0;
+  }
+
+  .public-location .part_right .wrap-img {
+    display: none;
   }
 
   .home .section-projects .filter {

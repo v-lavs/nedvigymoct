@@ -89,9 +89,25 @@
     }
   }
 
+  @include respond-to($lg) {
+    .overlay {
+      display: none;
+    }
+
+  }
+
+  @include respond-to($md) {
+    .swiper-slide {
+      width: 80%;
+    }
+  }
+
   @include respond-to($sm) {
     .gallery__link {
       height: 330px;
+    }
+    .swiper-slide {
+      width: 100%;
     }
   }
 }
