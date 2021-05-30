@@ -154,5 +154,8 @@
     pointer-events: all;
     bottom: 23px;
   }
+  @include respond-to($sm){
+    padding-bottom: 60px;
+  }
 }
 

@@ -381,7 +381,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 }
 
@@ -490,7 +490,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 }
 
@@ -993,7 +993,6 @@ body {
 
 .section_anim.active .heading_anim {
   width: 100%;
-  overflow: visible;
 }
 
 .wrapper {
@@ -2740,7 +2739,7 @@ body {
     z-index: 3;
   }
 
-  .section-investments .btn {
+  .section-investments .wrap-btn {
     order: 4;
   }
 
@@ -2892,12 +2891,22 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-  .heading_anim {
-    font-size: 75px;
+  .section__title {
+    font-size: 40px;
+    margin: 0 auto;
   }
 
   .heading_anim {
-    font-size: 75px;
+    font-size: 50px;
+  }
+
+  .section__title {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .heading_anim {
+    font-size: 50px;
   }
 
   .filter__top-bar .btn {
@@ -2950,6 +2959,23 @@ body {
     font-size: 15px;
   }
 
+  .section-intro {
+    padding-bottom: 60px;
+  }
+
+  .section-investments .part_content {
+    padding-top: 20px;
+    padding-right: 0;
+  }
+
+  .section-investments .section__title-bg {
+    top: 45px;
+  }
+
+  .section-investments .section__header {
+    margin-bottom: 0;
+  }
+
   .home .section-projects .filter {
     display: none;
   }
@@ -2980,15 +3006,19 @@ body {
 
 @media only screen and (max-width: 480px) {
   .heading_anim {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .heading_anim {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .container {
     max-width: 100%;
+  }
+
+  .section-investments .profit {
+    padding-bottom: 47px;
   }
 
   .advantages-card__title {

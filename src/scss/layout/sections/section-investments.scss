@@ -95,8 +95,25 @@
       z-index: 3;
     }
 
-    .btn {
+    .wrap-btn {
       order: 4;
+    }
+  }
+  @include respond-to($sm) {
+    .part_content {
+      padding-top: 20px;
+      padding-right: 0;
+    }
+    .section__title-bg {
+      top: 45px;
+    }
+    .section__header {
+      margin-bottom: 0;
+    }
+  }
+  @include respond-to($xs){
+    .profit {
+      padding-bottom: 47px;
     }
   }
 }

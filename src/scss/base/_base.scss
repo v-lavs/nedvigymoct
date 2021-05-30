@@ -51,6 +51,10 @@ body {
   font-weight: 500;
   font-size: 55px;
   color: $dark-100;
+  @include respond-to($sm){
+    font-size: 40px;
+    margin: 0 auto;
+  }
 }
 
 .dynamic-content {
@@ -84,7 +88,7 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   width: 0;
-  transition: 1.8s;
+  transition: width 1.8s;
   z-index: 3;
 
   span {
@@ -103,10 +107,10 @@ body {
   }
 
   @include respond-to($sm) {
-    font-size: 75px;
+    font-size: 50px;
   }
   @include respond-to($xs) {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 
