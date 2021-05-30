@@ -376,11 +376,12 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
-  z-index: 3;
+  overflow: hidden;
+  width: 0;
 }
 
 .heading_anim span {
@@ -483,11 +484,12 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
-  z-index: 3;
+  overflow: hidden;
+  width: 0;
 }
 
 .heading_anim span {
@@ -1437,22 +1439,14 @@ body {
   position: relative;
 }
 
-.section-investments .part_content {
-  position: relative;
+.section-investments .part {
   width: 50%;
-  min-height: 800px;
-  padding: 90px 20px 120px 7%;
 }
 
-.section-investments .part_media {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  left: 100%;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+.section-investments .part_left {
+  padding-top: 90px;
+  padding-left: 118px;
+  padding-right: 20px;
 }
 
 .section-investments .section__header {
@@ -2581,26 +2575,7 @@ body {
     padding-right: 18px;
   }
 
-  .section-investments .section__title-bg {
-    left: -0.5em;
-  }
-
-  .section-investments .part_content {
-    padding-left: 0;
-  }
-
-  .section-investments .profit {
-    font-size: 22px;
-    line-height: 30px;
-    padding-bottom: 40px;
-  }
-
-  .section-investments .percent {
-    font-size: 70px;
-    padding-right: 20px;
-  }
-
-  .section-investments .part_media {
+  .section-investments .part_left {
     padding-left: 0;
   }
 
@@ -2688,39 +2663,6 @@ body {
 
   .footer .footer__contacts-item:first-child {
     border-right: 0.5px solid #fcc214;
-  }
-
-  .section-investments .part_content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section-investments .part_content .text {
-    order: 1;
-    margin-bottom: 0;
-  }
-
-  .section-investments .part_media {
-    position: static;
-    display: block;
-    order: 2;
-  }
-
-  .section-investments .wrap-img {
-    max-width: 335px;
-    margin: 0 auto -30px;
-    z-index: 1;
-  }
-
-  .section-investments .profit {
-    position: relative;
-    order: 3;
-    z-index: 3;
-  }
-
-  .section-investments .btn {
-    order: 4;
   }
 
   .card-list {

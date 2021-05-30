@@ -79,10 +79,12 @@ body {
 .heading_anim {
   font-weight: 600;
   font-size: 140px;
-  line-height: .5;
+  line-height: 1;
   letter-spacing: 0.2em;
   white-space: nowrap;
   text-transform: uppercase;
+  overflow: hidden;
+  width: 0;
   z-index: 3;
 
   span {
