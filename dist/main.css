@@ -1605,24 +1605,7 @@ body {
   margin-bottom: 30px;
 }
 
-.list-places__item:nth-child(1) .icon:before {
-  background-image: url(../assets/img/svg/shopping.svg);
-}
-
-.list-places__item:nth-child(2) .icon:before {
-  background-image: url(../assets/img/svg/school.svg);
-}
-
-.list-places__item:nth-child(3) .icon:before {
-  background-image: url(../assets/img/svg/park.svg);
-}
-
-.list-places__item:nth-child(4) .icon:before {
-  background-image: url(../assets/img/svg/station.svg);
-}
-
 .list-places .icon {
-  position: relative;
   display: block;
   width: 50px;
   height: 50px;
@@ -1630,19 +1613,9 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   margin-right: 18px;
-}
-
-.list-places .icon:before {
-  position: absolute;
-  content: '';
-  width: 45px;
-  height: 45px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .section-projects {
@@ -2713,6 +2686,18 @@ body {
     width: 50vw;
   }
 
+  .field-markers .img-marker:nth-child(1) {
+    width: 40px;
+  }
+
+  .field-markers .img-marker:nth-child(2) {
+    width: 60px;
+  }
+
+  .field-markers .img-marker:nth-child(3) {
+    width: 30px;
+  }
+
   .section-about .part_content {
     padding-left: 0;
   }
@@ -3287,8 +3272,50 @@ body {
     margin-bottom: 0;
   }
 
+  .public-location {
+    padding-bottom: 130px;
+  }
+
   .public-location .part_right .wrap-img {
     display: none;
+  }
+
+  .public-spaces__list .preview {
+    padding-bottom: 0;
+    margin-bottom: 35px;
+  }
+
+  .public-spaces__list .preview .title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .public-spaces__list .preview .title br {
+    display: none;
+  }
+
+  .public-spaces__list .preview p {
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .list-places {
+    font-size: 16px;
+  }
+
+  .list-places .icon {
+    width: 41px;
+    height: 41px;
+    margin-right: 7px;
+  }
+
+  .list-places .icon:before {
+    background-size: 100%;
+  }
+
+  .list-places__item {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .home .section-projects .filter {
@@ -3400,6 +3427,12 @@ body {
 
   .section-map .section-map__item {
     padding: 15px 5px;
+  }
+}
+
+@media only screen and (max-width: 760px) and (max-width: 480px) {
+  .public-spaces__list {
+    margin: 0 -10px;
   }
 }
 

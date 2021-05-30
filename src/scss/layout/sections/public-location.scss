@@ -117,34 +117,9 @@
     width: 50%;
     padding: 5px 25px;
     margin-bottom: 30px;
-
-    &:nth-child(1) {
-      .icon:before {
-        background-image: url(../assets/img/svg/shopping.svg);
-      }
-    }
-
-    &:nth-child(2) {
-      .icon:before {
-        background-image: url(../assets/img/svg/school.svg);
-      }
-    }
-
-    &:nth-child(3) {
-      .icon:before {
-        background-image: url(../assets/img/svg/park.svg);
-      }
-    }
-
-    &:nth-child(4) {
-      .icon:before {
-        background-image: url(../assets/img/svg/station.svg);
-      }
-    }
   }
 
   .icon {
-    position: relative;
     display: block;
     width: 50px;
     height: 50px;
@@ -152,20 +127,9 @@
     border-radius: 50%;
     background-color: #ffffff;
     margin-right: 18px;
-
-    &:before {
-      position: absolute;
-      content: '';
-      width: 45px;
-      height: 45px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
   }
 }
 
@@ -206,6 +170,7 @@
     .container {
       padding: 0 30px;
     }
+
     .part_right {
       width: 50%;
     }
@@ -213,6 +178,21 @@
     .wrap-map {
       right: 0;
       width: 50vw;
+    }
+  }
+  .field-markers {
+    .img-marker {
+      &:nth-child(1) {
+        width: 40px;
+      }
+
+      &:nth-child(2) {
+        width: 60px;
+      }
+
+      &:nth-child(3) {
+        width: 30px;
+      }
     }
   }
 }
@@ -240,10 +220,55 @@
 
 @include respond-to($sm) {
   .public-location {
+    padding-bottom: 130px;
+
     .part_right {
       .wrap-img {
         display: none;
       }
+    }
+  }
+  .public-spaces__list {
+    .preview {
+      padding-bottom: 0;
+      margin-bottom: 35px;
+
+      .title {
+        font-size: 35px;
+        margin-bottom: 15px;
+
+        br {
+          display: none;
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 17px;
+      }
+    }
+  }
+  .list-places {
+    font-size: 16px;
+
+    .icon {
+      width: 41px;
+      height: 41px;
+      margin-right: 7px;
+
+      &:before {
+        background-size: 100%;
+      }
+    }
+
+    &__item {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  @include respond-to($xs) {
+    .public-spaces__list {
+      margin: 0 -10px;
     }
   }
 }
