@@ -3318,6 +3318,30 @@ body {
     padding-right: 5px;
   }
 
+  .section-projects {
+    padding-top: 32px;
+    padding-bottom: 0;
+  }
+
+  .section-projects .section__header {
+    margin-bottom: 0;
+  }
+
+  .section-projects .card-list {
+    padding-bottom: 0;
+  }
+
+  .section-projects .card-list .card-list__item .card {
+    width: 240px;
+    height: 390px;
+  }
+
+  .section-projects .card-list .card-list__item .card:before {
+    top: -25px;
+    bottom: -25px;
+    width: 55px;
+  }
+
   .home .section-projects .filter {
     display: none;
   }
