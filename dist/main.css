@@ -1004,7 +1004,7 @@ body {
 .container {
   width: 100%;
   max-width: 1690px;
-  padding: 0 25px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -2429,10 +2429,30 @@ body {
     font-size: 122px;
   }
 
+  .section-banner .section-banner__banner {
+    margin-left: 4.5%;
+  }
+
+  .section-banner .section-banner__nav {
+    padding-bottom: 40px;
+  }
+
   .section-banner .section-banner__content {
     padding-bottom: 4.75%;
     padding-right: 4.75%;
     padding-left: 4.75%;
+  }
+
+  .section-banner .section-banner__info {
+    margin-bottom: 55px;
+  }
+
+  .section-banner .section-banner__nav-link {
+    padding: 15px 20px;
+  }
+
+  .section-banner .section-banner__nav-icon {
+    margin-right: 25px;
   }
 
   .section-map .part_left {
@@ -2651,6 +2671,36 @@ body {
     margin-bottom: 20px;
   }
 
+  .section-banner .container {
+    flex-wrap: wrap;
+  }
+
+  .section-banner .section-banner__banner {
+    width: 100%;
+    margin-left: 0;
+    order: 1;
+    height: 680px;
+  }
+
+  .section-banner .section-banner__sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .section-banner .section-banner__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .section-banner .section-banner__nav-link {
+    width: 33.33%;
+  }
+
+  .section-banner .section-banner__nav-link:last-child {
+    border-bottom: 1px solid #fcc214;
+  }
+
   .section-location .location-list__item {
     flex-direction: column;
     align-items: center;
@@ -2809,6 +2859,15 @@ body {
   .section-about .btn_read-more {
     display: inline-block;
     margin-top: 25px;
+  }
+
+  .section-banner {
+    padding-top: 0;
+  }
+
+  .section-banner .container {
+    max-width: none;
+    padding: 0;
   }
 
   .section-documents .section__inner {

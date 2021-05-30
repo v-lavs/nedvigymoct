@@ -6,7 +6,7 @@
 .container{
   width: 100%;
   max-width: 1690px;
-  padding: 0 25px;
+  padding: 0 30px;
   margin: 0 auto;
 
   @include respond-to($xxl){
