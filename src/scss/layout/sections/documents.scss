@@ -81,6 +81,7 @@
   }
 
   @include respond-to($md) {
+    padding-top: 0;
     .section__inner {
       flex-wrap: wrap;
     }

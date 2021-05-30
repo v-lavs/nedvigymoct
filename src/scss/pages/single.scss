@@ -25,7 +25,7 @@
   padding-top: 135px;
   padding-bottom: 110px;
 
-  .section-map_mob{
+  .section-map_mob {
     display: none;
   }
 
@@ -94,17 +94,22 @@
 
   @include respond-to($md) {
     padding-top: 100px;
+    padding-bottom: 76px;
     .container {
       flex-direction: column-reverse;
     }
     .part_left,
     .part_right {
       width: 100%;
-      min-height: 0;
+    }
+    .part_right {
+      min-height: 400px;
     }
     .section-map__wrap-maps {
-      position: static;
-      height: 400px;
+      width: 100vw;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .section-map__list-location {
       display: flex;
@@ -133,10 +138,19 @@
     }
   }
 
-  @include respond-to($sm){
-    .section-map_mob{
+  @include respond-to($sm) {
+    padding-top: 60px;
+    .section-map_mob {
       display: block;
     }
+    .section__header {
+      margin-bottom: 12px;
+    }
+
+    .section-map__item {
+      padding: 15px 5px;
+    }
+
   }
 }
 
