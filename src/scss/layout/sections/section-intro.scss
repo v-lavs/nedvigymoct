@@ -111,6 +111,7 @@
 
     .icon-svg {
       width: 100%;
+
       path {
         fill: #ffffff;
       }
@@ -119,6 +120,7 @@
 
   .block-btn {
     pointer-events: all;
+
     .btn {
       display: block;
     }
@@ -134,8 +136,62 @@
     pointer-events: all;
     bottom: 23px;
   }
-  @include respond-to($sm){
+
+  @include respond-to($xl) {
+    .section-intro__title {
+      font-size: 50px;
+    }
+  }
+
+  @include respond-to($lg) {
+    .section-intro__title {
+      margin-top: 50px;
+      font-size: 42px;
+    }
+  }
+
+  @include respond-to($md) {
+    padding: 0;
+
+    .section-intro__title {
+      font-size: 38px;
+      line-height: 45px;
+    }
+    .section-intro__content {
+      flex-direction: column;
+    }
+    .section-intro__part_left,
+    .section-intro__part_right {
+      width: 100%;
+      order: 2;
+    }
+    .section-intro__part_right {
+      order: 1;
+    }
+    .social-bar {
+      display: none;
+    }
+    .logo-big {
+      width: 158px;
+      height: 158px;
+      margin-left: 0;
+    }
+    .container {
+      padding: 0;
+    }
+    .swiper-slide {
+      padding: 0;
+    }
+  }
+
+  @include respond-to($sm) {
     padding-bottom: 60px;
+  }
+
+  @media (max-width: 340px) {
+    .section-intro__title {
+      font-size: 32px;
+    }
   }
 }
 

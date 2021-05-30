@@ -46,7 +46,7 @@ body {
 .main {
   padding-top: 135px;
   @include respond-to($lg) {
-    padding-top: 90px;
+    padding-top: 85px;
   }
 }
 
