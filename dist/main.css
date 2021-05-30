@@ -2431,6 +2431,10 @@ body {
     padding-left: 50px;
   }
 
+  .section-intro .section-intro__title {
+    font-size: 50px;
+  }
+
   .public-location .container {
     padding: 0;
   }
@@ -2503,11 +2507,11 @@ body {
 
 @media only screen and (max-width: 1180px) {
   .main {
-    padding-top: 90px;
+    padding-top: 85px;
   }
 
   .main {
-    padding-top: 90px;
+    padding-top: 85px;
   }
 
   .gallery .overlay {
@@ -2661,6 +2665,11 @@ body {
   .footer .social-bar {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .section-intro .section-intro__title {
+    margin-top: 50px;
+    font-size: 42px;
   }
 
   .section-investments .section__title-bg {
@@ -2924,6 +2933,47 @@ body {
 
   .footer .footer__logo-wrap {
     display: none;
+  }
+
+  .section-intro {
+    padding: 0;
+  }
+
+  .section-intro .section-intro__title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .section-intro .section-intro__content {
+    flex-direction: column;
+  }
+
+  .section-intro .section-intro__part_left,
+  .section-intro .section-intro__part_right {
+    width: 100%;
+    order: 2;
+  }
+
+  .section-intro .section-intro__part_right {
+    order: 1;
+  }
+
+  .section-intro .social-bar {
+    display: none;
+  }
+
+  .section-intro .logo-big {
+    width: 158px;
+    height: 158px;
+    margin-left: 0;
+  }
+
+  .section-intro .container {
+    padding: 0;
+  }
+
+  .section-intro .swiper-slide {
+    padding: 0;
   }
 
   .section-investments .part_content {
@@ -3846,6 +3896,12 @@ body {
 
   .projects .filter__link .active {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 340px) {
+  .section-intro .section-intro__title {
+    font-size: 32px;
   }
 }
 
