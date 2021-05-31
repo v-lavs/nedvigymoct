@@ -447,18 +447,6 @@ body {
   text-align: center;
 }
 
-.banner_anim.slide-in .banner {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 2.5s linear;
-}
-
-.banner_anim.slide-in .section-intro__part_left {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 5.5s linear;
-}
-
 .wrapper {
   max-width: 1920px;
   width: 100%;
@@ -591,18 +579,6 @@ body {
 .section_anim.section-projects.active .inner_text {
   width: 100vw;
   text-align: center;
-}
-
-.banner_anim.slide-in .banner {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 2.5s linear;
-}
-
-.banner_anim.slide-in .section-intro__part_left {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 5.5s linear;
 }
 
 .title {

@@ -191,19 +191,19 @@ body {
   }
 }
 
-.banner_anim{
-  &.slide-in{
-    .banner{
-      transform: translateX(0);
-      opacity: 1;
-      transition: 2.5s linear;
-
-    }
-    .section-intro__part_left {
-      transform: translateX(0);
-      opacity: 1;
-      transition: 5.5s linear;
-    }
-  }
-
-}
+//.banner_anim{
+//  &.slide-in{
+//    .banner{
+//      transform: translateX(0);
+//      opacity: 1;
+//      transition: 2.5s linear;
+//
+//    }
+//    .section-intro__part_left {
+//      transform: translateX(0);
+//      opacity: 1;
+//      transition: 5.5s linear;
+//    }
+//  }
+//
+//}
