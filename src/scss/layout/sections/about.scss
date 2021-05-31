@@ -63,7 +63,6 @@
   .heading_anim {
     font-size: 150px;
     letter-spacing: 3rem;
-    left: 60px;
   }
 
   .section__header {
@@ -71,6 +70,10 @@
   }
 
   @include respond-to($lg) {
+    .heading_anim {
+      font-size: 110px;
+      letter-spacing: .2em;
+    }
     .part_content {
       padding-left: 0;
     }
