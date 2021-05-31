@@ -1,7 +1,7 @@
 .section-investments {
   position: relative;
   overflow: hidden;
-
+  padding-top: 100px;
   .part_content {
     position: relative;
     width: 50%;
@@ -68,6 +68,7 @@
   }
 
   @include respond-to($md) {
+    padding-top: 30px;
     .part_content {
       width: 100%;
       display: flex;
@@ -101,6 +102,7 @@
     }
   }
   @include respond-to($sm) {
+    padding-top: 60px;
     .part_content {
       padding-top: 20px;
       padding-right: 0;

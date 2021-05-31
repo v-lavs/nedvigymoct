@@ -84,6 +84,23 @@ $(document).ready(function () {
         $(this).toggleClass('sub-menu__toggle_active')
     });
 
+    // SMOOTH SCROLL TO ANCHOR
+    function smoothScrollToAnchor(selector) {
+        $(selector).on('click', function (event) {
+            let anchor = $.attr(this, 'href')
+
+            if (anchor.match(/^#/) && anchor !== '#') {
+                event.preventDefault()
+                let offsetSize = $("header").innerHeight();
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
+                }, 2000)
+            }
+        })
+
+    }
+
+    smoothScrollToAnchor('.menu__link')
 
     //HEADER SCROLL
 
@@ -149,9 +166,9 @@ $(document).ready(function () {
     });
 
     //ANIMATION
-    setTimeout(function () {
-        $('.banner_anim').addClass('slide-in');
-    }, 300);
+    // setTimeout(function () {
+        $('.section-intro').addClass('banner_anim');
+    // }, 300);
 
     var waypoints = $('.section_anim').waypoint(function (direction) {
         $(this.element).addClass('active')

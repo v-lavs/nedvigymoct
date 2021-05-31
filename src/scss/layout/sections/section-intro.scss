@@ -1,5 +1,5 @@
 .section-intro {
-  padding: 60px 0 100px;
+  padding: 60px 0 0;
   overflow: hidden;
 
   &__content {
@@ -58,6 +58,7 @@
     }
   }
 
+
   .swiper-container {
     position: absolute;
     top: 0;
@@ -65,7 +66,15 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+
+    transform: translateX(-100%);
   }
+
+  &__part_left {
+    transform: translateX(-150%);
+    //opacity: 0;
+  }
+
 
   .swiper-slide {
     padding: 0 8%;
@@ -139,19 +148,31 @@
     bottom: 23px;
   }
 
+
+  &.banner_anim {
+    .swiper-container {
+      transform: translateX(0);
+      transition: 550ms all 50ms linear;
+    }
+
+    .section-intro__part_left {
+      transform: translateX(0);
+      //opacity: 1;
+      transition: 100ms all 250ms linear;
+    }
+  }
+
   @include respond-to($xl) {
     .section-intro__title {
       font-size: 50px;
     }
   }
-
   @include respond-to($lg) {
     .section-intro__title {
       margin-top: 50px;
       font-size: 42px;
     }
   }
-
   @include respond-to($md) {
     padding: 0;
 
@@ -188,11 +209,10 @@
       padding: 0;
     }
   }
-
   @include respond-to($sm) {
-    padding-bottom: 60px;
+
     .section-intro__part {
-        flex-grow: 1;
+      flex-grow: 1;
     }
 
     .section-intro__content {
@@ -210,6 +230,7 @@
         min-width: 200px;
         margin-bottom: 0;
         margin-right: 15px;
+
         &:last-child {
           margin-right: 0;
         }
@@ -230,22 +251,23 @@
     }
   }
   @include respond-to($xs) {
-   .block-btn{
-     .btn {
-       width: 144px;
-       min-width: 0;
-     }
-     .btn_glass-dark_from-icon {
-       padding: 23px 5px 5px;
+    .block-btn {
+      .btn {
+        width: 144px;
+        min-width: 0;
+      }
 
-       &:before {
-         left: 50%;
-         transform: translateX(-50%);
-         top: 9px;
-       }
-     }
-   }
-    .section-intro__title{
+      .btn_glass-dark_from-icon {
+        padding: 23px 5px 5px;
+
+        &:before {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 9px;
+        }
+      }
+    }
+    .section-intro__title {
       padding-top: 20px;
       padding-bottom: 30px;
       margin-right: 20px;
