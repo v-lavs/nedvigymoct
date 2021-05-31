@@ -3019,6 +3019,11 @@ body {
     text-align: center;
   }
 
+  .section_anim .heading_anim.active .inner_text {
+    width: 100vw;
+    text-align: center;
+  }
+
   .section__title {
     padding-top: 20px;
     font-size: 50px;
@@ -3032,6 +3037,11 @@ body {
     font-size: 75px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .section_anim .heading_anim.active .inner_text {
+    width: 100vw;
     text-align: center;
   }
 

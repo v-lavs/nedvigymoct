@@ -180,6 +180,15 @@ body {
 
     }
   }
+  @include respond-to($md){
+    .heading_anim.active{
+      .inner_text{
+        width: 100vw;
+        text-align: center;
+
+      }
+    }
+  }
 }
 
 .banner_anim{
@@ -196,4 +205,5 @@ body {
       transition: 5.5s linear;
     }
   }
+
 }
