@@ -89,8 +89,6 @@ body {
   text-transform: uppercase;
   transition: width 1.8s linear;
   z-index: 3;
-  width: 0;
-
 
   span {
     display: inline-block;
@@ -156,3 +154,13 @@ body {
 }
 
 
+.section_anim{
+  .heading_anim{
+    width: 0;
+  }
+  &.active{
+    .heading_anim{
+      width: 100vw;
+    }
+  }
+}
