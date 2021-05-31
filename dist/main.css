@@ -381,8 +381,9 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-transform: uppercase;
-  transition: width 1.8s;
+  transition: width 1.8s linear;
   z-index: 3;
+  width: 0;
 }
 
 .heading_anim span {
@@ -490,8 +491,9 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-transform: uppercase;
-  transition: width 1.8s;
+  transition: width 1.8s linear;
   z-index: 3;
+  width: 0;
 }
 
 .heading_anim span {
@@ -627,6 +629,30 @@ body {
 
 .btn_glass-dark_from-icon:hover::before,
 .btn_glass-dark_from-icon:focus::before {
+  filter: invert(1);
+}
+
+.btn_white {
+  background-color: #ffffff;
+  border-color: #fcc214;
+  color: #403e3d;
+  padding-left: 76px;
+  position: relative;
+}
+
+.btn_white:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(../assets/img/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 30px;
+  left: 45px;
+  top: 17px;
+  z-index: 1;
   filter: invert(1);
 }
 
@@ -1622,6 +1648,7 @@ body {
 .section-projects .section__header {
   justify-content: center;
   margin-bottom: 43px;
+  text-align: center;
 }
 
 .section-projects .section__title {
@@ -3803,7 +3830,7 @@ body {
     top: 9px;
   }
 
-  .section-intro .block-btn .section-intro__title {
+  .section-intro .section-intro__title {
     padding-top: 20px;
     padding-bottom: 30px;
     margin-right: 20px;
