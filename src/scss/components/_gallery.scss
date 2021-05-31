@@ -93,7 +93,6 @@
     .overlay {
       display: none;
     }
-
   }
 
   @include respond-to($md) {
@@ -103,7 +102,6 @@
   }
 
   @include respond-to($sm) {
-
     .section__header{
       margin-bottom: 20px;
     }

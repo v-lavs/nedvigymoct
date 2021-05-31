@@ -779,8 +779,8 @@ body {
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet {
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   background-color: transparent;
   border: 1px solid #ffffff;
   margin: 0 7px;
