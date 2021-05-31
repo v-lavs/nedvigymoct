@@ -125,6 +125,10 @@
       color: rgba(255, 255, 255, 0.03);
       margin-bottom: 20px;
     }
+    .heading_anim_dark {
+      color: rgba(255, 255, 255, 0.03);
+      -webkit-text-stroke: 2px rgba(255, 255, 255, .03);
+    }
   }
 }
 
@@ -144,6 +148,7 @@
   }
   .section-advantages__header {
     top: 53px;
+
     .big-logo {
       width: 170px;
     }
@@ -151,7 +156,22 @@
 }
 
 @include respond-to($xs) {
+  .section-advantages .heading_anim {
+    font-size: 42px;
+
+  }
+
+  .section-advantages .text_lg {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .section-advantages .text{
+    padding-top: 0;
+  }
   .advantages-card__title {
     font-size: 25px;
+  }
+  .section-advantages__content{
+    padding-top: 0;
   }
 }

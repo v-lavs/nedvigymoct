@@ -153,7 +153,7 @@ $(document).ready(function () {
     var waypoints = $('.section_anim').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '75%'
+        offset: '80%'
     });
 
 });

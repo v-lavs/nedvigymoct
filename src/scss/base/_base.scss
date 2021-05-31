@@ -114,14 +114,17 @@ body {
       font-size: 75px;
       left: 50%;
       transform: translateX(-50%);
-    }
+      text-align: center;    }
   }
   @include respond-to($sm) {
-    .heading_anim {
+   .heading_anim {
       font-size: 50px;
       font-weight: 500;
       left: 50%;
       transform: translateX(-50%);
+    }
+    .section__title-bg{
+      text-align: center;
     }
   }
   @include respond-to($xs) {
