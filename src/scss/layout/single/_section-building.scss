@@ -1,0 +1,13 @@
+.section-building {
+  padding-bottom: 87px;
+
+  .swiper-slide {
+    width: 39.75%;
+  }
+
+  @include respond-to($md) {
+    .swiper-slide {
+      width: 55%;
+    }
+  }
+}

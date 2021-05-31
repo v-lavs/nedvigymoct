@@ -71,8 +71,7 @@
   }
 
   &__part_left {
-    transform: translateX(-150%);
-    //opacity: 0;
+    transform: translateX(-140%);
   }
 
 
@@ -90,9 +89,17 @@
   }
 
   .logo-big {
-    max-width: 327px;
+    max-width: 325px;
     width: 50%;
     margin-left: auto;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   .social-bar {
@@ -152,13 +159,17 @@
   &.banner_anim {
     .swiper-container {
       transform: translateX(0);
-      transition: 550ms all 50ms linear;
+      transition: 1s all .95s linear;
     }
 
     .section-intro__part_left {
       transform: translateX(0);
-      //opacity: 1;
-      transition: 100ms all 250ms linear;
+      transition: 1s all 1s ease-out;
+    }
+    .logo-big {
+      opacity: 1;
+      transform-origin: bottom center;
+      transition: 1.6s all 1.25s linear;
     }
   }
 

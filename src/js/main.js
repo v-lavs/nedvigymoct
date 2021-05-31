@@ -66,7 +66,7 @@ $(document).ready(function () {
     });
 
     //MOBILE MENU
-    var nav = $('.header__nav');
+    const nav = $('.header__nav');
 
     $('.btn-burger').click(function (e) {
         e.preventDefault();
@@ -104,7 +104,7 @@ $(document).ready(function () {
 
     //HEADER SCROLL
 
-    function onHeaderScrol() {
+    function onHeaderScroll() {
         scrolled = window.pageYOffset || document.documentElement.scrollTop;
         if (scrolled > 40) {
             jQuery(".header").addClass('header_active');
@@ -113,8 +113,10 @@ $(document).ready(function () {
         }
     }
 
+    onHeaderScroll();
+
     $(document).on('scroll', function () {
-        onHeaderScrol()
+        onHeaderScroll()
     });
 
     $('#documents-list input').on('change', function () {
@@ -166,9 +168,9 @@ $(document).ready(function () {
     });
 
     //ANIMATION
-    // setTimeout(function () {
+    setTimeout(function () {
         $('.section-intro').addClass('banner_anim');
-    // }, 300);
+    }, 400);
 
     var waypoints = $('.section_anim').waypoint(function (direction) {
         $(this.element).addClass('active')

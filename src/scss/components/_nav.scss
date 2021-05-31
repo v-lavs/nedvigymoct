@@ -8,6 +8,11 @@
   justify-content: space-evenly;
 
   &__item {
+    &_active {
+      & > .menu__link {
+        color: $gold;
+      }
+    }
     &:hover > .sub-menu {
       opacity: 1;
       height: auto;

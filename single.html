@@ -29,18 +29,22 @@
                             <a href="projects.html" class="menu__link">Проекти</a>
                             <button class="sub-menu__toggle"></button>
                             <ul class="sub-menu">
-                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Житлові проекти</a></li>
-                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Офісні проекти</a></li>
-                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Паркінги</a></li>
-                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Комерційні проекти</a>
+                                <li class="sub-menu__item"><a href="projects.html" class="sub-menu__link">Житлові
+                                    проекти</a></li>
+                                <li class="sub-menu__item"><a href="projects.html" class="sub-menu__link">Офісні
+                                    проекти</a></li>
+                                <li class="sub-menu__item"><a href="projects.html" class="sub-menu__link">Паркінги</a>
+                                </li>
+                                <li class="sub-menu__item"><a href="projects.html" class="sub-menu__link">Комерційні
+                                    проекти</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Про компанію</a>
+                            <a href="#about" class="menu__link">Про компанію</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Інвестиції</a>
+                            <a href="#investments" class="menu__link">Інвестиції</a>
                         </li>
                     </ul>
 
@@ -49,9 +53,9 @@
                             <a href="#" class="menu__link">Партнери</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Контакти</a>
+                            <a href="#contacts" class="menu__link">Контакти</a>
                         </li>
-                        <li class="menu__item">
+                        <li class="menu__item ">
                             <div class="lang-switch">
                                 <ul class="lang-switch__list">
                                     <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
@@ -65,7 +69,7 @@
                 </nav>
 
                 <a href="index.html" class="header__logo">
-                    <img src="assets/img/svg/logo-site.svg" alt="Smart Estate" class="img">
+                    <img src="assets/img/logo-site.png" alt="Smart Estate" class="img">
                 </a>
 
                 <button type="button" class="btn-burger" aria-label="бургер-меню">
@@ -80,6 +84,7 @@
         </div>
         <div class="backdrop"></div>
     </header>
+
 
     <main class="main page-single">
 
@@ -231,7 +236,7 @@
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                            <img src="assets/img/slide1.jpg"  width="1609" height="690" alt="" class="img gallery__img">
+                            <img src="assets/img/slide1.jpg" width="1609" height="690" alt="" class="img gallery__img">
                             <div class="overlay">
                                 <button class="btn btn_main btn_big btn_white">Консультація</button>
                                 <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
@@ -241,7 +246,7 @@
 
                     <div class="swiper-slide gallery__slide">
                         <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                            <img src="assets/img/slide1.jpg"  width="1609" height="690" alt="" class="img gallery__img">
+                            <img src="assets/img/slide1.jpg" width="1609" height="690" alt="" class="img gallery__img">
                             <div class="overlay">
                                 <button class="btn btn_main btn_big btn_white">Консультація</button>
                                 <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
@@ -553,7 +558,8 @@
                 <img src="assets/img/svg/logo-site.svg" alt="" class="img">
             </a>
         </div>
-        <div class="footer__contacts">
+
+        <div id="contacts" class="footer__contacts">
             <div class="footer__contacts-item">
                 <div class="wrap-item address">
                     <h5 class="title text_sm">Відділи продажу </h5>
@@ -561,14 +567,19 @@
                         м. Львів, вул. Наукова, 30</span>
                 </div>
                 <div class="wrap-item tel">
-                    <a href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
+                    <a class="email" href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
                     <a href="tel: +38 (067) 3141 414" class="text_md"> +38 (067) 3141 414</a>
                 </div>
                 <div class="wrap-item work">
                     <h5 class="title text_sm">Графік роботи</h5>
-                    <span>Пн-Пт: 09:00-19:00<br>
-                            Сб: 10:00-15:00<br>
-                            Нд: Вихідний</span>
+                    <div>
+                        <div class="work-row"><span class="day-label">Пн-Пт: </span><span class="working-hours">09:00-19:00</span>
+                        </div>
+                        <div class="work-row"><span class="day-label">Сб: </span><span
+                                class="working-hours">10:00-15:00</span></div>
+                        <div class="work-row"><span class="day-label">Нд: </span><span
+                                class="working-hours">Вихідний</span></div>
+                    </div>
                 </div>
             </div>
             <div class="footer__contacts-item">
@@ -579,19 +590,26 @@
                     <span class="text_sm">Відділ постачання</span>
                     <span class="text_sm">Відкриті до пропозицій</span>
                 </div>
-                <div class="wrap-item tel">
-                    <a href="tel: +38 (067) 6381 115" class="text_md"> +38 (067) 6381 115</a>
-                    <a href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
-                    <a href="mailto: marketing@smartestate.eu">marketing@smartestate.eu</a>
+                <div class="wrap-item tel mob-order">
+                    <a href="tel: +38 (067) 6381 115" class="tel-text text_md"> +38 (067) 6381 115</a>
+                    <a class="email" href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
+                    <a class="email" href="mailto: marketing@smartestate.eu">marketing@smartestate.eu</a>
                 </div>
                 <div class="wrap-item work">
                     <h5 class="title text_sm">Графік роботи</h5>
-                    <span>Пн-Пт: 09:00-19:00<br>
-                            Сб: 10:00-15:00<br>
-                            Нд: Вихідний</span>
+                    <div>
+                        <div class="work-row"><span class="day-label">Пн-Пт: </span><span class="working-hours">09:00-19:00</span>
+                        </div>
+                        <div class="work-row"><span class="day-label">Сб: </span><span
+                                class="working-hours">10:00-15:00</span></div>
+                        <div class="work-row"><span class="day-label">Нд: </span><span
+                                class="working-hours">Вихідний</span></div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
         <div class="footer__item social-bar">
             <a href="#" class="social__link"><span class="hide">Instagram</span>
                 <img class="icon" src="assets/img/svg/insta.svg" alt="">
