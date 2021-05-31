@@ -7,8 +7,12 @@
   .section__header {
     justify-content: center;
     margin-bottom: 43px;
-    text-align: center;
+    //text-align: center;
 
+  }
+
+  .inner_text {
+    width: 0;
   }
 
   .section__title {
@@ -17,17 +21,19 @@
   }
 
   @include respond-to($sm) {
-      padding-top: 32px;
+    padding-top: 32px;
     padding-bottom: 0;
-    .section__header{
+    .section__header {
       margin-bottom: 0;
     }
     .card-list {
       padding-bottom: 0;
+
       .card-list__item {
         .card {
           width: 240px;
           height: 390px;
+
           &:before {
             top: -25px;
             bottom: -25px;

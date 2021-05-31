@@ -149,6 +149,9 @@ $(document).ready(function () {
     });
 
     //ANIMATION
+    setTimeout(function () {
+        $('.banner_anim').addClass('slide-in');
+    }, 300);
 
     var waypoints = $('.section_anim').waypoint(function (direction) {
         $(this.element).addClass('active')

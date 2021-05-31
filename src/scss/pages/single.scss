@@ -5,7 +5,7 @@
 
 .section-gallery {
   padding-bottom: 108px;
-  @include  respond-to($sm){
+  @include respond-to($sm) {
     padding-bottom: 50px;
   }
 }
@@ -29,6 +29,10 @@
   padding-bottom: 110px;
 
   .section-map_mob {
+    display: none;
+  }
+
+  .section__header {
     display: none;
   }
 
@@ -147,6 +151,7 @@
       display: block;
     }
     .section__header {
+      display: flex;
       margin-bottom: 12px;
     }
 
