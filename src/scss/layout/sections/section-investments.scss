@@ -2,18 +2,23 @@
   position: relative;
   overflow: hidden;
   padding-top: 100px;
+
   .part_content {
     position: relative;
-    width: 50%;
+    width: 55%;
     min-height: 800px;
     padding: 90px 20px 120px 7%;
+  }
+
+  .wrap-btn {
+    display: none;
   }
 
   .part_media {
     position: absolute;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
     left: 100%;
     top: 0;
     bottom: 0;
@@ -29,21 +34,45 @@
     align-items: center;
     color: $gold;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1;
-    padding-bottom: 60px;
+    padding-bottom: 24px;
   }
 
   .percent {
     font-weight: 500;
-    font-size: 86px;
-    padding-right: 33px;
+    font-size: 85px;
+    padding-right: 30px;
   }
-
+.top-content{
+  margin-bottom: 12px;
+  &__item{
+    font-size: 30px;
+    color: #3C3C3C;
+    margin-right: 76px;
+    display: inline-block;
+    &:last-child{
+      margin-right: 0;
+    }
+    .img{
+      width: initial;
+    }
+  }
+}
   .text {
     max-width: 570px;
     width: 100%;
     margin-bottom: 96px;
+    font-weight: 300;
+    line-height: 1.29;
+
+    p {
+      margin-bottom: 29px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   @include respond-to($lg) {
@@ -82,6 +111,7 @@
     .part_media {
       position: static;
       display: block;
+      width: 100%;
       order: 2;
     }
 
@@ -111,7 +141,7 @@
       margin-bottom: 0;
     }
   }
-  @include respond-to($xs){
+  @include respond-to($xs) {
     .profit {
       padding-bottom: 47px;
     }

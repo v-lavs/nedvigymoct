@@ -5,29 +5,50 @@
 
   &__sidebar {
     width: 380px;
+    transform: translateX(-100vw);
   }
 
   &__logo {
     width: 252px;
     display: block;
     margin: 0 auto 70px;
+
+    &_mob {
+      display: none;
+    }
   }
 
-  &__wrap-img {
-    height: 100%;
+  &__inner {
+    display: flex;
+    align-items: flex-end;
   }
 
   &__banner {
     position: relative;
     margin-left: 6.4%;
     flex-grow: 1;
+    transform: translateX(100vw);
+    min-height: 690px;
 
-    img {
-      display: block;
-      width: 100%;
+    .swiper-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  .single-banner-slider {
+    height: 100%;
+
+    .swiper-slide {
       height: 100%;
-      object-fit: cover;
-
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover;
     }
   }
 
@@ -41,6 +62,8 @@
     padding-left: 8.75%;
     text-align: right;
     z-index: 1;
+
+    pointer-events: none;
 
   }
 
@@ -79,6 +102,7 @@
 
   .btn {
     margin-left: 50px;
+    pointer-events: all;
   }
 
   &__nav {
@@ -108,6 +132,18 @@
     width: 41px;
     height: 42px;
     margin-right: 35px;
+  }
+
+  &.banner_anim {
+    .section-banner__banner {
+      transform: translateX(0);
+      transition: .8s all .85s linear;
+    }
+
+    .section-banner__sidebar {
+      transform: translateX(0);
+      transition: .8s all .9s linear;
+    }
   }
 
   @include respond-to($xxl) {
@@ -146,19 +182,17 @@
 
   @include respond-to($lg) {
     .container {
-      flex-wrap: wrap;
+      flex-direction: column-reverse;
       position: relative;
     }
 
     .section-banner__banner {
       width: 100%;
       margin-left: 0;
-      order: 1;
       height: 680px;
     }
     .section-banner__sidebar {
       width: 100%;
-      order: 2;
       display: flex;
     }
     .section-banner__nav {
@@ -180,8 +214,12 @@
       padding: 0;
     }
     .section-banner__logo {
+      display: none;
+    }
+    .section-banner__logo_mob {
+      display: block;
       position: absolute;
-      top: 45px;
+      top: 70px;
       left: 30px;
       z-index: 2;
     }
@@ -196,6 +234,7 @@
         border-bottom: 1px solid $gold;
       }
     }
+
   }
   @include respond-to($sm) {
     .section-banner__nav-link {
@@ -210,17 +249,19 @@
     .building-area {
       font-size: 95px;
     }
-   .section-banner__footer{
-      .btn{
+    .section-banner__footer {
+      .btn {
         font-size: 15px;
         padding: 15px 10px;
         min-width: 200px;
         margin-left: 20px;
       }
-      .btn_glass-dark_from-icon{
+
+      .btn_glass-dark_from-icon {
         padding-left: 30px;
         margin: 0;
-        &:before{
+
+        &:before {
           width: 22px;
           height: 23px;
           left: 25px;
@@ -241,7 +282,8 @@
       width: 80%;
       font-size: 16px;
       padding: 23px 20px;
-      &:last-child{
+
+      &:last-child {
         border: none;
       }
     }
@@ -252,18 +294,21 @@
     .section-banner__info .name-object {
       display: none;
     }
-    .unit{
+    .unit {
       margin-left: auto;
     }
-    .section-banner__footer{
+    .section-banner__footer {
       justify-content: center;
-      .btn{
+
+      .btn {
         width: 144px;
         min-width: 0;
       }
-      .btn_glass-dark_from-icon{
+
+      .btn_glass-dark_from-icon {
         padding: 23px 5px 5px;
-        &:before{
+
+        &:before {
           left: 50%;
           transform: translateX(-50%);
           top: 9px;

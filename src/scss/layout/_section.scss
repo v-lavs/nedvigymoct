@@ -15,6 +15,17 @@
     .heading_anim {
       width: 100vw;
     }
+
+    .section-advantages__header {
+      .big-logo {
+        transform: translateX(0);
+        transition: transform .8s linear;
+      }
+
+      .heading_anim {
+        animation-delay: 5s;
+      }
+    }
   }
 
   @include respond-to($md) {
@@ -26,6 +37,7 @@
     }
   }
 }
+
 
 .heading_anim {
   font-weight: 600;
@@ -68,10 +80,12 @@
     position: absolute;
     left: 0;
   }
+
   &__title-bg-center {
     position: absolute;
     left: auto;
     right: auto;
+
     .inner_text {
       position: relative;
       text-align: center;
@@ -94,6 +108,7 @@
     &__header {
       margin-bottom: 0;
       justify-content: center;
+
       .heading_anim {
         font-size: 75px;
         left: 50%;
@@ -115,6 +130,7 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
       .section__title-bg {
         text-align: center;
       }

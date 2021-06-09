@@ -92,10 +92,7 @@
             <div class="container d-flex">
                 <div class="section-banner__sidebar">
                     <a href="#" class="section-banner__logo">
-                        <picture>
-                            <source srcset="assets/img/svg/logo-big-gold.svg" media="(max-width: 940px)">
-                            <img src="assets/img/svg/logo-big-dark.svg" width="252" height="252" alt="" class="img">
-                        </picture>
+                        <img src="assets/img/svg/logo-big-dark.svg" width="252" height="252" alt="" class="img">
                     </a>
 
                     <nav class="section-banner__nav">
@@ -115,24 +112,37 @@
                 </div>
 
                 <div class="section-banner__banner">
-                    <div class="section-banner__wrap-img">
-                        <img height="689" width="1230" src="assets/img/single-banner.jpg" alt="" class="img">
-                    </div>
-                    <div class="section-banner__content">
-                        <div class="section-banner__info">
-                            <div class="name-object text_xl">SMART 266</div>
-                            <div class="building-area">20 000</div>
-                            <div class="sub-text">
-                                <div class="address text_md">вул. Стрийська 266</div>
-                                <div class="unit text_md">грн/м2</div>
+                    <div class="section-banner__inner">
+                        <a href="#" class="section-banner__logo_mob">
+                            <img src="assets/img/svg/logo-big-gold.svg" width="252" height="252" alt="" class="img">
+                        </a>
+
+                        <div class="swiper-container single-banner-slider" id="singleBannerSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                     style="background-image: url(assets/img/single-banner.jpg);"></div>
+
+                                <div class="swiper-slide" style="background-image: url(assets/img/terra.jpg);"></div>
                             </div>
                         </div>
-                        <footer class="section-banner__footer">
-                            <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon">Консультація
-                            </button>
-                            <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
-                        </footer>
 
+                        <div class="section-banner__content">
+                            <div class="section-banner__info">
+                                <div class="name-object text_xl">SMART 266</div>
+                                <div class="building-area">24 000</div>
+                                <div class="sub-text">
+                                    <div class="address text_md">вул. Стрийська 266</div>
+                                    <div class="unit text_md">грн/м2</div>
+                                </div>
+                            </div>
+                            <footer class="section-banner__footer">
+                                <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon popup-trigger-consultation">
+                                    Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </footer>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,9 +168,9 @@
                             <div class="desc-table__row">
                                 <div class="desc-table__cell desc-table__label">Ціна</div>
                                 <div class="desc-table__cell">
-                                    <div class="text_desktop"> від 20 100 грн/м2</div>
+                                    <div class="text_desktop"> від 24 100 грн/м2</div>
                                     <div class="text_mob">
-                                        <div class="text_label">20 100</div>
+                                        <div class="text_label">24 100</div>
                                         <span>від <br> грн/<sup>2</sup></span></div>
                                 </div>
                             </div>
@@ -169,9 +179,9 @@
                             <div class="desc-table__row">
                                 <div class="desc-table__cell desc-table__label ">Етап будівництва:</div>
                                 <div class="desc-table__cell">
-                                    <div class="text_desktop">V КВАРТАЛ 2022</div>
+                                    <div class="text_desktop">I КВАРТАЛ 2022</div>
                                     <div class="text_mob">
-                                        <div class="text_label">V КВАРТАЛ</div>
+                                        <div class="text_label">I КВАРТАЛ</div>
                                         2022
                                     </div>
                                 </div>
@@ -181,9 +191,9 @@
                             <div class="desc-table__row">
                                 <div class="desc-table__cell desc-table__label">Площа</div>
                                 <div class="desc-table__cell">
-                                    <div class="text_desktop">від 36 до 87 м2</div>
+                                    <div class="text_desktop">від 68 до 777 м2</div>
                                     <div class="text_mob">
-                                        <div class="text_label">36 - 87</div>
+                                        <div class="text_label">68 - 777</div>
                                         <span> м<sup>2</sup></span></div>
                                 </div>
                             </div>
@@ -555,61 +565,43 @@
     <footer class="footer">
         <div class="footer__logo-wrap">
             <a href="#" class="footer__logo">
-                <img src="assets/img/svg/logo-site.svg" alt="" class="img">
+                <img src="assets/img/logo-site.png" alt="" class="img">
             </a>
         </div>
-
         <div id="contacts" class="footer__contacts">
             <div class="footer__contacts-item">
                 <div class="wrap-item address">
-                    <h5 class="title text_sm">Відділи продажу </h5>
-                    <span>м. Львів, вул. Стрийська 266 <br>
-                        м. Львів, вул. Наукова, 30</span>
+                    <h5 class="title">Відділи продажу </h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
                 </div>
                 <div class="wrap-item tel">
-                    <a class="email" href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
-                    <a href="tel: +38 (067) 3141 414" class="text_md"> +38 (067) 3141 414</a>
+                    <a href="tel: +38 (067) 77 90 707" class="tel-text text_md"> +38 (067) 77 90 707</a>
+                    <a class="email" href="mailto: sales@smartestate.eu"> sales@smartestate.eu</a>
                 </div>
                 <div class="wrap-item work">
-                    <h5 class="title text_sm">Графік роботи</h5>
+                    <h5 class="title">Графік роботи</h5>
                     <div>
-                        <div class="work-row"><span class="day-label">Пн-Пт: </span><span class="working-hours">09:00-19:00</span>
-                        </div>
-                        <div class="work-row"><span class="day-label">Сб: </span><span
-                                class="working-hours">10:00-15:00</span></div>
-                        <div class="work-row"><span class="day-label">Нд: </span><span
-                                class="working-hours">Вихідний</span></div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
                     </div>
                 </div>
             </div>
             <div class="footer__contacts-item">
                 <div class="wrap-item address">
-                    <h5 class="title text_sm">Офіс</h5>
-                    <span>м. Львів, вул. Стрийська 66</span>
-
-                    <span class="text_sm">Відділ постачання</span>
-                    <span class="text_sm">Відкриті до пропозицій</span>
+                    <h5 class="title">Офіс / Відділ постачання</h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
                 </div>
                 <div class="wrap-item tel mob-order">
-                    <a href="tel: +38 (067) 6381 115" class="tel-text text_md"> +38 (067) 6381 115</a>
-                    <a class="email" href="mailto: supply@smartestate.eu"> supply@smartestate.eu</a>
-                    <a class="email" href="mailto: marketing@smartestate.eu">marketing@smartestate.eu</a>
+                    <a href="tel: +38 (067) 63 81 115" class="tel-text text_md"> +38 (067) 63 81 115</a>
+                    <a class="email" href="mailto: office@smartestate.eu">office@smartestate.eu</a>
                 </div>
                 <div class="wrap-item work">
-                    <h5 class="title text_sm">Графік роботи</h5>
+                    <h5 class="title">Графік роботи</h5>
                     <div>
-                        <div class="work-row"><span class="day-label">Пн-Пт: </span><span class="working-hours">09:00-19:00</span>
-                        </div>
-                        <div class="work-row"><span class="day-label">Сб: </span><span
-                                class="working-hours">10:00-15:00</span></div>
-                        <div class="work-row"><span class="day-label">Нд: </span><span
-                                class="working-hours">Вихідний</span></div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <div class="footer__item social-bar">
             <a href="#" class="social__link"><span class="hide">Instagram</span>
                 <img class="icon" src="assets/img/svg/insta.svg" alt="">
@@ -628,5 +620,36 @@
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="dist/main.js"></script>
+
+
+<div class="modal" tabindex="-1" id="popupConsultation">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <button type="button" id="closePopup" class="btn btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal__body">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label class="label hide">Ім’я</label>
+                        <input type="text" class="input" placeholder="Ім’я">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Телефон</label>
+                        <input type="text" class="input" placeholder="Телефон">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Коментар</label>
+                        <textarea class="textarea" rows="1" cols="25" name="text" placeholder="Коментар"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn_main btn_gold btn_submit">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

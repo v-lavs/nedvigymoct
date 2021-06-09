@@ -18,12 +18,15 @@
     max-width: 1440px;
     width: 85vw;
     z-index: -1;
-
+    height: 120%;
     .img_map {
-      display: block;
+      //display: block;
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      //object-fit: cover;
+      svg{
+        display: block;
+      }
     }
   }
 

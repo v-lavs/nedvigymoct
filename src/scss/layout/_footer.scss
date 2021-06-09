@@ -1,7 +1,7 @@
 .footer {
   color: #ffffff;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 15px;
+  line-height: 1.57;
   display: flex;
   padding-right: 7%;
   background-color: $dark;
@@ -14,6 +14,16 @@
     align-items: center;
     padding: 36px;
     border-right: 1px solid #FCC21D;
+  }
+
+  &__logo {
+    width: 128px;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .social-bar {
@@ -42,7 +52,9 @@
     flex-grow: 1;
 
     .title {
-      margin-bottom: 8px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      font-weight: 600;
     }
 
     a {
@@ -98,6 +110,11 @@
       padding-left: 15%;
     }
 
+    .tel-text {
+      margin-bottom: 35px;
+      line-height: 1;
+    }
+
     &:last-child {
       border-right: none;
     }
@@ -137,7 +154,7 @@
         font-size: 12px;
       }
 
-      .tel {
+      .tel-text {
         font-size: 14px;
 
         .text_md {
@@ -150,13 +167,11 @@
       padding-right: 18px;
     }
   }
-
   @include respond-to($md) {
     .footer__logo-wrap {
       display: none;
     }
   }
-
   @include respond-to($sm) {
     .footer__contacts-item {
       border-bottom: 0;
@@ -267,7 +282,6 @@
       width: 55px;
     }
   }
-
   @include respond-to($xs) {
     .footer__logo-wrap {
       display: none;

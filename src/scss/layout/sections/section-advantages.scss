@@ -45,6 +45,7 @@
 
   .big-logo {
     width: 303px;
+    transform: translateX(-50vw);
   }
 }
 
@@ -71,10 +72,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 
     img {
-      height: 350px;
+      height: 300px;
     }
   }
 
@@ -83,6 +84,7 @@
     font-size: 30px;
     line-height: 1.33;
     margin-bottom: 13px;
+    padding: 0 0 0 60px;
   }
 }
 
@@ -107,7 +109,9 @@
   .section-advantages__header {
     flex-direction: column;
   }
-
+  .advantages-card__title{
+    padding: 0;
+  }
   .heading_anim {
     font-size: 75px;
   }

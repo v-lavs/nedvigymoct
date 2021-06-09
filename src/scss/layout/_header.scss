@@ -4,6 +4,7 @@
   right: 0;
   background-color: #fff;
   z-index: 999;
+  transition: .35s linear;
 
   .header__logo {
     display: block;
@@ -18,14 +19,7 @@
   }
 
   &_active {
-    .header__inner {
-      padding: 15px 0;
-    }
-
-    .header__logo {
-      width: 60px;
-      height: auto;
-    }
+    transform: translateY(-100%);
   }
 
   &__inner {
@@ -291,8 +285,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
-  opacity: .5;
+  background: rgba(0, 0, 0, 0.3);
   z-index: 500;
 }
 
