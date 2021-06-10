@@ -1,5 +1,6 @@
 .public-location {
   padding-bottom: 164px;
+  padding-top: 214px;
 
   .part_left {
     position: relative;
@@ -19,12 +20,13 @@
     width: 85vw;
     z-index: -1;
     height: 120%;
+
     .img_map {
       //display: block;
       height: 100%;
       width: 100%;
       //object-fit: cover;
-      svg{
+      svg {
         display: block;
       }
     }
@@ -224,6 +226,7 @@
 @include respond-to($sm) {
   .public-location {
     padding-bottom: 130px;
+    padding-top: 120px;
 
     .part_right {
       .wrap-img {
@@ -278,6 +281,7 @@
       &__link {
         font-size: 14px;
       }
+
       .icon {
         -webkit-background-size: 80%;
         background-size: 80%;

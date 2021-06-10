@@ -63,21 +63,6 @@ $(document).ready(function () {
                 sliderAdvantages = null;
             }
         }
-        // if ($(window).width() <= 760) {
-        //     if (!locationCards) {
-        //         locationCards = new Swiper('#locationCards', {
-        //             pagination: {
-        //                 el: '#locationCards .swiper-pagination',
-        //                 clickable: true,
-        //             }
-        //         });
-        //     }
-        // } else {
-        //     if (locationCards) {
-        //         locationCards.destroy(true, true);
-        //         locationCards = null;
-        //     }
-        // }
 
         if ($(window).width() <= 760) {
             if (!particularityCards) {
@@ -285,5 +270,4 @@ $(document).ready(function () {
             };
         };
     });
-
 });
