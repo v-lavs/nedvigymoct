@@ -131,10 +131,12 @@
   .swiper-container {
     padding-bottom: 120px;
   }
-  .swiper-pagination-bullets{
+
+  .swiper-pagination-bullets {
     display: none;
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet{
+
+  .swiper-pagination-bullets .swiper-pagination-bullet {
     border-color: $dark-100;
   }
 
@@ -167,31 +169,36 @@
       padding-left: 0;
       padding-right: 0;
 
-      &:before {
+      &:before,
+      &:after {
+        position: absolute;
         content: '';
         display: block;
-        height: 1px;
-        position: absolute;
         top: 0;
         left: 50%;
         width: 100vw;
         transform: translateX(-50%);
+      }
+
+      &:before {
+        height: 1px;
         border-bottom: 1px solid $gold;
         z-index: 1;
+      }
+
+      &:after {
+        bottom: 0;
+        z-index: -1;
+        background-color: $gold;
       }
 
       .download-link {
         padding: 25px 25px 25px 0;
         flex-direction: row;
-        color: $gold;
 
         svg {
           margin-right: 50px;
           margin-bottom: 0;
-
-          path {
-            fill: #fcc214;
-          }
         }
       }
     }
@@ -221,11 +228,11 @@
     }
   }
 
-  @include respond-to($sm){
+  @include respond-to($sm) {
     .swiper-container {
       padding-bottom: 60px;
     }
-    .swiper-pagination-bullets{
+    .swiper-pagination-bullets {
       display: block;
     }
   }
@@ -328,6 +335,16 @@
     .dynamic-content {
       margin-bottom: 55px;
     }
+    .desc-table__column-download {
+      padding-left: 10px;
+      .download-link {
+        padding-right: 0;
+
+        svg {
+          margin-right: 44px;
+        }
+      }
+    }
   }
 }
 
@@ -360,6 +377,7 @@
       vertical-align: middle;
     }
   }
+
   @include respond-to($xl) {
     &__item {
       width: 23%;
@@ -367,17 +385,17 @@
   }
   @include respond-to($lg) {
     flex-wrap: wrap;
-    &__item{
+    &__item {
       width: 45%;
       margin-bottom: 30px;
     }
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
     padding-bottom: 0;
-    &__icon{
+    &__icon {
       margin: 0 auto 27px;
     }
-    &__item{
+    &__item {
       margin-bottom: 0;
       text-align: center;
     }

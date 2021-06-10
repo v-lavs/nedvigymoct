@@ -23,7 +23,11 @@
       left: 0;
       bottom: 0;
       width: 100vw;
-      background-color: $dark-100;
+      background-color: $dark;
+      background-image: url(../assets/img/bg-dark.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0;
     }
   }
 
