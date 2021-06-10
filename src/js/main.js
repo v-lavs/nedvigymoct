@@ -4,6 +4,7 @@
 
 //= include ../../node_modules/jquery/dist/jquery.js
 //= include ../../node_modules/lottie-web/build/player/lottie.js
+//= include ../lib/jquery-nice-select-1.1.0/js/jquery.nice-select.js
 //= include ../lib/lightbox2/js/lightbox.js
 //= include ../lib/waypoints/index.js
 
