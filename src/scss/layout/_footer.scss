@@ -88,6 +88,11 @@
       font-weight: 500;
       line-height: 1.8;
     }
+
+    .email {
+      flex: 14;
+      font-weight: 500;
+    }
   }
 
   .work-row {
@@ -129,6 +134,12 @@
 
   }
 
+  @include respond-to($xxl) {
+    .wrap-item:first-child {
+      padding-left: 10%;
+    }
+  }
+
   @include respond-to($xl) {
     .wrap-item {
       width: 33.33%;
@@ -151,7 +162,6 @@
     .footer__contacts {
       .wrap-item {
         padding: 25px;
-        font-size: 12px;
       }
 
       .tel-text {
@@ -184,7 +194,13 @@
     }
 
     .social-bar {
-      padding-top: 5px;
+      justify-content: space-around;
+      padding-left: 14px;
+      padding-right: 14px;
+
+      img {
+        width: 100%;
+      }
     }
 
     .work-row {
@@ -193,9 +209,16 @@
 
     .footer__contacts-item {
       flex-direction: column;
-      padding-top: 35px;
-      padding-bottom: 35px;
+      padding-top: 17px;
+      padding-bottom: 20px;
       position: relative;
+
+      &:last-child{
+        padding-bottom: 38px;
+        &:before {
+          display: none;
+        }
+      }
 
       &:first-child {
         .work {
@@ -204,7 +227,8 @@
       }
 
       .title {
-        font-size: 22px;
+        font-size: 19px;
+        margin-bottom: 5px;
       }
 
       .wrap-item {
@@ -213,9 +237,12 @@
         padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 0;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
 
         &:last-child {
-          margin-bottom: 0;
+          margin-bottom: 20px;
         }
       }
 
@@ -223,8 +250,14 @@
         position: relative;
         width: 100%;
         max-width: 100%;
-        margin-top: 35px;
-        padding-top: 35px;
+        order: -1;
+        padding-bottom: 23px;
+        padding-top: 10px;
+        font-size: 15px;
+
+        .title {
+          display: none;
+        }
       }
     }
 
@@ -232,25 +265,18 @@
     .work:before {
       content: '';
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       display: block;
-      width: 100vw;
+      width: 100%;
       height: 1px;
       border-top: 1px solid $gold;
       z-index: 1;
     }
 
-    .text-sm {
-      font-size: 12px;
-    }
-
-    .social-bar {
-      justify-content: flex-start;
-    }
-
     .social__link {
-      margin: 40px 0;
+      width: 30px;
+      height: 30px;
     }
 
     .mob-order {
@@ -260,10 +286,12 @@
 
       .email {
         order: 1;
+        margin-bottom: 25px;
       }
 
       .tel-text {
         order: 2;
+        margin-bottom: 0;
       }
     }
 

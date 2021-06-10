@@ -2,7 +2,16 @@
   padding-top: 135px;
   padding-bottom: 110px;
   background-color: $dark-100;
-
+&__top-content{
+  justify-content: space-between;
+}
+  .sub-title {
+    color: #fff;
+    width: 35%;
+    padding: 0 70px;
+    max-width: 510px;
+    line-height: 1.59;
+  }
   .section__header {
     margin-bottom: 134px;
   }
@@ -55,8 +64,20 @@
   }
 
   @include respond-to($xl) {
+    .header{
+      margin-bottom: 100px;
+    }
     .part_left {
       padding-left: 0;
+    }
+    &__top-content{
+      flex-wrap: wrap;
+    }
+    .sub-title{
+      max-width: 70%;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 100px;
     }
   }
 
@@ -80,6 +101,9 @@
     padding-bottom: 76px;
     .container {
       flex-direction: column-reverse;
+    }
+    .sub-title{
+      display: none;
     }
     .part_left,
     .part_right {

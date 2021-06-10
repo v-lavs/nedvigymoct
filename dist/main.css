@@ -1391,6 +1391,11 @@ body.modal_open {
   line-height: 1.8;
 }
 
+.footer__contacts-item .email {
+  flex: 14;
+  font-weight: 500;
+}
+
 .footer .work-row {
   display: flex;
   align-items: center;
@@ -2769,6 +2774,18 @@ body.modal_open {
   background-color: #403e3d;
 }
 
+.section-map__top-content {
+  justify-content: space-between;
+}
+
+.section-map .sub-title {
+  color: #fff;
+  width: 35%;
+  padding: 0 70px;
+  max-width: 510px;
+  line-height: 1.59;
+}
+
 .section-map .section__header {
   margin-bottom: 134px;
 }
@@ -2853,6 +2870,10 @@ body.modal_open {
 @media only screen and (max-width: 1680px) {
   .container {
     max-width: 1400px;
+  }
+
+  .footer .wrap-item:first-child {
+    padding-left: 10%;
   }
 
   .section-investments .reasons-investing .part_left {
@@ -2998,8 +3019,23 @@ body.modal_open {
     width: 23%;
   }
 
+  .section-map .header {
+    margin-bottom: 100px;
+  }
+
   .section-map .part_left {
     padding-left: 0;
+  }
+
+  .section-map__top-content {
+    flex-wrap: wrap;
+  }
+
+  .section-map .sub-title {
+    max-width: 70%;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -3149,7 +3185,6 @@ body.modal_open {
 
   .footer .footer__contacts .wrap-item {
     padding: 25px;
-    font-size: 12px;
   }
 
   .footer .footer__contacts .tel-text {
@@ -3789,6 +3824,10 @@ body.modal_open {
     flex-direction: column-reverse;
   }
 
+  .section-map .sub-title {
+    display: none;
+  }
+
   .section-map .part_left,
   .section-map .part_right {
     width: 100%;
@@ -3930,7 +3969,13 @@ body.modal_open {
   }
 
   .footer .social-bar {
-    padding-top: 5px;
+    justify-content: space-around;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .footer .social-bar img {
+    width: 100%;
   }
 
   .footer .work-row {
@@ -3939,9 +3984,17 @@ body.modal_open {
 
   .footer .footer__contacts-item {
     flex-direction: column;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 17px;
+    padding-bottom: 20px;
     position: relative;
+  }
+
+  .footer .footer__contacts-item:last-child {
+    padding-bottom: 38px;
+  }
+
+  .footer .footer__contacts-item:last-child:before {
+    display: none;
   }
 
   .footer .footer__contacts-item:first-child .work {
@@ -3949,7 +4002,8 @@ body.modal_open {
   }
 
   .footer .footer__contacts-item .title {
-    font-size: 22px;
+    font-size: 19px;
+    margin-bottom: 5px;
   }
 
   .footer .footer__contacts-item .wrap-item {
@@ -3958,43 +4012,45 @@ body.modal_open {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .footer .footer__contacts-item .wrap-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .footer .footer__contacts-item .work {
     position: relative;
     width: 100%;
     max-width: 100%;
-    margin-top: 35px;
-    padding-top: 35px;
+    order: -1;
+    padding-bottom: 23px;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .footer .footer__contacts-item .work .title {
+    display: none;
   }
 
   .footer .footer__contacts-item:before,
   .footer .work:before {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 1px;
     border-top: 1px solid #fcc214;
     z-index: 1;
   }
 
-  .footer .text-sm {
-    font-size: 12px;
-  }
-
-  .footer .social-bar {
-    justify-content: flex-start;
-  }
-
   .footer .social__link {
-    margin: 40px 0;
+    width: 30px;
+    height: 30px;
   }
 
   .footer .mob-order {
@@ -4005,10 +4061,12 @@ body.modal_open {
 
   .footer .mob-order .email {
     order: 1;
+    margin-bottom: 25px;
   }
 
   .footer .mob-order .tel-text {
     order: 2;
+    margin-bottom: 0;
   }
 
   .footer .wrap-item {
@@ -4203,6 +4261,10 @@ body.modal_open {
     margin-bottom: 15px;
   }
 
+  .advantages {
+    padding-bottom: 98px;
+  }
+
   .section-advantages__content {
     width: 100%;
   }
@@ -4221,6 +4283,10 @@ body.modal_open {
 
   .section-advantages__header .big-logo {
     width: 170px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 50px;
   }
 
   .section-banner .section-banner__nav-link {
