@@ -2291,12 +2291,12 @@ body.modal_open {
 }
 
 .section-article .section__title {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .section-article .dynamic-content {
   margin-bottom: 65px;
-  max-width: 960px;
+  max-width: 1304px;
 }
 
 .section-article .text_mob {
@@ -2333,7 +2333,7 @@ body.modal_open {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 23px 0;
+  padding: 33px 0;
 }
 
 .section-article .desc-table__row:after {
@@ -2389,21 +2389,70 @@ body.modal_open {
   justify-content: center;
   align-items: center;
   border-right: 1px solid #fcc214;
+  background-color: #fcc214;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-article .download-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fcc214;
+  color: #ffffff;
   font-weight: 700;
-  line-height: 45px;
+  font-size: 19px;
+  line-height: 18px;
 }
 
-.section-article .download-link img {
+.section-article .download-link svg {
   display: block;
   width: 48px;
   height: 51px;
+  margin-bottom: 20px;
+}
+
+.section-article .swiper-container {
+  padding-bottom: 120px;
+}
+
+.section-article .swiper-pagination-bullets {
+  display: none;
+}
+
+.section-article .swiper-pagination-bullets .swiper-pagination-bullet {
+  border-color: #403e3d;
+}
+
+.particularity-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 1.47;
+}
+
+.particularity-list__item {
+  width: 20.5%;
+  padding: 10px;
+}
+
+.particularity-list__title {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.particularity-list__icon {
+  width: 83px;
+  height: 83px;
+  margin-bottom: 27px;
+}
+
+.particularity-list__icon img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .section-location {
@@ -2556,14 +2605,15 @@ body.modal_open {
 .section-map {
   padding-top: 135px;
   padding-bottom: 110px;
-}
-
-.section-map .section-map_mob {
-  display: none;
+  background-color: #403e3d;
 }
 
 .section-map .section__header {
-  display: none;
+  margin-bottom: 134px;
+}
+
+.section-map .section__title {
+  color: #ffffff;
 }
 
 .section-map .part_left {
@@ -2585,6 +2635,7 @@ body.modal_open {
   right: 70vw;
   width: 70vw;
   height: 100%;
+  z-index: 1;
 }
 
 .section-map__img {
@@ -2749,6 +2800,10 @@ body.modal_open {
 
   .section-article .desc-table__column-download {
     width: 180px;
+  }
+
+  .particularity-list__item {
+    width: 23%;
   }
 
   .section-map .part_left {
@@ -3057,6 +3112,9 @@ body.modal_open {
     position: relative;
     width: 100%;
     border-right: none;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .section-article .desc-table__column-download:before {
@@ -3075,10 +3133,16 @@ body.modal_open {
   .section-article .desc-table__column-download .download-link {
     padding: 25px 25px 25px 0;
     flex-direction: row;
+    color: #fcc214;
   }
 
-  .section-article .desc-table__column-download .download-link img {
+  .section-article .desc-table__column-download .download-link svg {
     margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .section-article .desc-table__column-download .download-link svg path {
+    fill: #fcc214;
   }
 
   .section-article .desc-table__row {
@@ -3103,6 +3167,15 @@ body.modal_open {
     left: 50%;
     width: 200vw;
     transform: translateX(-50%);
+  }
+
+  .particularity-list {
+    flex-wrap: wrap;
+  }
+
+  .particularity-list__item {
+    width: 45%;
+    margin-bottom: 30px;
   }
 
   .section-location .location-list__item {
@@ -3895,6 +3968,27 @@ body.modal_open {
     height: 23px;
     left: 25px;
     top: 13px;
+  }
+
+  .section-article .swiper-container {
+    padding-bottom: 60px;
+  }
+
+  .section-article .swiper-pagination-bullets {
+    display: block;
+  }
+
+  .particularity-list {
+    padding-bottom: 0;
+  }
+
+  .particularity-list__icon {
+    margin: 0 auto 27px;
+  }
+
+  .particularity-list__item {
+    margin-bottom: 0;
+    text-align: center;
   }
 
   .section-location .section__header {

@@ -10,8 +10,9 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
-    let locationCards;
+    // let locationCards;
     let sliderAdvantages;
+    let particularityCards;
 
     lightbox.option({
         disableScrolling: true,
@@ -62,19 +63,35 @@ $(document).ready(function () {
                 sliderAdvantages = null;
             }
         }
+        // if ($(window).width() <= 760) {
+        //     if (!locationCards) {
+        //         locationCards = new Swiper('#locationCards', {
+        //             pagination: {
+        //                 el: '#locationCards .swiper-pagination',
+        //                 clickable: true,
+        //             }
+        //         });
+        //     }
+        // } else {
+        //     if (locationCards) {
+        //         locationCards.destroy(true, true);
+        //         locationCards = null;
+        //     }
+        // }
+
         if ($(window).width() <= 760) {
-            if (!locationCards) {
-                locationCards = new Swiper('#locationCards', {
+            if (!particularityCards) {
+                particularityCards = new Swiper('#particularityCards', {
                     pagination: {
-                        el: '#locationCards .swiper-pagination',
+                        el: '#particularityCards .swiper-pagination',
                         clickable: true,
                     }
                 });
             }
         } else {
-            if (locationCards) {
-                locationCards.destroy(true, true);
-                locationCards = null;
+            if (particularityCards) {
+                particularityCards.destroy(true, true);
+                particularityCards = null;
             }
         }
     }

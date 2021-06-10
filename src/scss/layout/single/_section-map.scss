@@ -1,15 +1,13 @@
 .section-map {
   padding-top: 135px;
   padding-bottom: 110px;
-
-  .section-map_mob {
-    display: none;
-  }
-
+  background-color: $dark-100;
   .section__header {
-    display: none;
+    margin-bottom: 134px;
   }
-
+.section__title{
+  color: #ffffff;
+}
   .part_left {
     width: 333px;
     margin-right: 57px;
@@ -29,6 +27,7 @@
     right: 70vw;
     width: 70vw;
     height: 100%;
+    z-index: 1;
   }
 
   &__img {
