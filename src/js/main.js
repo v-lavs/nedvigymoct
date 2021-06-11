@@ -216,11 +216,14 @@ $(document).ready(function () {
     });
 
     //READ MORE BTN
-    $('.btn_read-more').click(function(e) {
+    $('.btn_read-more').click(function (e) {
         e.preventDefault();
         $('.text-hide .mob-hide').removeClass('mob-hide');
         $(this).hide();
     });
+
+    //CUSTOM SELECT
+    $('.custom-select').niceSelect();
 
     //ANIMATION
     setTimeout(function () {
@@ -241,19 +244,20 @@ $(document).ready(function () {
 
     let animationDiv = document.getElementById('scrollingArea')
     animationDiv.style.display = "none";
+
     function map(div, pathLocation) {
-    let animationMap = bodymovin.loadAnimation({
-        container: document.getElementById('img_map'),
-        renderer: 'svg',
-        loop: false,
-        autoplay: true,
-        rendererSettings : {
-            preserveAspectRatio : 'xMidYMax slice'
-        },
-        path: 'Map_animation.json'
-    });
-    animationMap.play();
-}
+        let animationMap = bodymovin.loadAnimation({
+            container: document.getElementById('img_map'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMax slice'
+            },
+            path: 'Map_animation.json'
+        });
+        animationMap.play();
+    }
 
     window.addEventListener('scroll', () => {
 
@@ -264,11 +268,24 @@ $(document).ready(function () {
             let animationDiv = document.getElementById('scrollingArea');
             if (animationDiv.style.display === 'none') {
 
-                animationDiv.style.display= ""
+                animationDiv.style.display = ""
 
                 let bodyMotion1 = document.getElementById('lottie-scroll-1');
                 map(bodyMotion1, 'Map_animation.json')
-            };
-        };
+            }
+            ;
+        }
+        ;
+    });
+
+    $('.btn_choose').click(function (e) {
+        e.preventDefault();
+        $('.search-table').addClass('open-choose');
+        var items = $('.search-table__tbody .search-table__row');
+        setTimeout(function () {
+            for (var i = 0; i < items.length; i++) {
+                $(items[i]).delay(i * 400).animate({opacity: 1}, 400);
+            }
+        }, 400);
     });
 });

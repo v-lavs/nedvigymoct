@@ -434,18 +434,6 @@
   margin-bottom: 140px;
   z-index: 1;
 
-  //&:after {
-  //  position: absolute;
-  //  content: '';
-  //  display: block;
-  //  background-color: $gold;
-  //  height: 1px;
-  //  left: 8%;
-  //  top: 80px;
-  //  width: 80%;
-  //  z-index: 1;
-  //}
-
   &__item {
     position: relative;
     width: 20%;
@@ -512,14 +500,14 @@
     }
     &:after{
       width: 33px;
-      height: 12px;
+      height: 8px;
       background-image:url(../assets/img/svg/arrow.svg);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: initial;
       background-position: center;
       transform: rotate(-90deg);
       top: -23px;
-      left: 22.5%;
+      left: 22.25%;
       z-index: 1;
     }
   }
@@ -527,12 +515,6 @@
   @include respond-to($md) {
     flex-wrap: wrap;
     margin-bottom: 92px;
-    //&:after {
-    //  left: 11px;
-    //  width: 1px;
-    //  height: 80%;
-    //  top: 8%;
-    //}
     &__item {
       padding-left: 73px;
      padding-bottom: 50px;
@@ -577,6 +559,7 @@
         top: -6px;
         left: -62px;
         width: 45px;
+        height: 11px;
       }
     }
   }
