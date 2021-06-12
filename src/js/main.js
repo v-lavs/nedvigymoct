@@ -117,7 +117,9 @@ $(document).ready(function () {
                 let offsetSize = $("header").innerHeight();
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
-                }, 2000)
+                }, 2000);
+                nav.removeClass('open');
+                jQuery('.backdrop').fadeOut();
             }
         })
 
