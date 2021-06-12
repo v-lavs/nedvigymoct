@@ -207,14 +207,14 @@ $(document).ready(function () {
     $('.popup-trigger-consultation').click(function (e) {
         e.preventDefault();
         $('#popupConsultation').addClass('open_modal');
-        $('.backdrop').fadeIn();
-        $('body').addClass('open_modal');
+        $('#overlay').fadeIn();
+        $('body').addClass('modal_open');
     })
 
-    $('#closePopup,  .backdrop').click(function () {
+    $('#closePopup,  #overlay').click(function () {
         $('#popupConsultation').removeClass('open_modal');
-        $('.backdrop').fadeOut();
-        $('body').removeClass('open_modal');
+        $('#overlay').fadeOut();
+        $('body').removeClass('modal_open');
     });
 
     //READ MORE BTN

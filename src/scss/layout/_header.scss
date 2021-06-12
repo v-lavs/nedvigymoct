@@ -19,7 +19,9 @@
   }
 
   &_active {
+
     transform: translateY(-100%);
+    //top: -100%;
   }
 
   &__inner {
