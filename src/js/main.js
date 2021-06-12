@@ -95,12 +95,14 @@ $(document).ready(function () {
         e.preventDefault();
         nav.addClass('open');
         jQuery('.backdrop').fadeIn();
+        $('body').addClass('modal_open');
     });
 
     $('.btn-close, .backdrop').click(function (e) {
         e.preventDefault();
         nav.removeClass('open');
         jQuery('.backdrop').fadeOut();
+        $('body').removeClass('modal_open');
     });
 
     $('.sub-menu__toggle').click(function (e) {
