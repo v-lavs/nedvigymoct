@@ -122,6 +122,7 @@ $(document).ready(function () {
                 }, 2000);
                 nav.removeClass('open');
                 jQuery('.backdrop').fadeOut();
+                $('body').removeClass('modal_open');
             }
         })
 
