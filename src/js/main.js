@@ -272,10 +272,8 @@ $(document).ready(function () {
 
                 let bodyMotion1 = document.getElementById('lottie-scroll-1');
                 map(bodyMotion1, 'Map_animation.json')
-            }
-            ;
-        }
-        ;
+            };
+        };
     });
 
     $('.btn_choose').click(function (e) {
