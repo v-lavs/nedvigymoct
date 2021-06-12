@@ -259,7 +259,7 @@ $(document).ready(function () {
             rendererSettings: {
                 preserveAspectRatio: 'xMidYMax slice'
             },
-            path: 'Map_animation.json'
+            path: 'assets/img/Map_animation.json'
         });
         animationMap.play();
     }
