@@ -1897,7 +1897,7 @@ select {
 .section-investments {
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .section-investments:after {
@@ -2649,6 +2649,7 @@ select {
 
 .find-estate {
   padding-top: 83px;
+  padding-bottom: 45px;
 }
 
 .find-estate__title {
@@ -4755,6 +4756,7 @@ select {
 
   .find-estate {
     padding-top: 35px;
+    padding-bottom: 0;
   }
 
   .find-estate__title {

@@ -287,8 +287,8 @@ $(document).ready(function () {
         var items = $('.search-table__tbody .search-table__row');
         setTimeout(function () {
             for (var i = 0; i < items.length; i++) {
-                $(items[i]).delay((items.length - i + 1) * 400).animate({opacity: 1}, 400);
+                $(items[i]).delay((items.length - i + 1) * 200).animate({opacity: 1}, 400);
             }
-        }, 400);
+        }, 100);
     });
 });
