@@ -210,13 +210,13 @@ $(document).ready(function () {
     $('.popup-trigger-consultation').click(function (e) {
         e.preventDefault();
         $('#popupConsultation').addClass('open_modal');
-        $('#overlay').fadeIn();
+        jQuery('.overlay').fadeIn();
         $('body').addClass('modal_open');
     })
 
-    $('#closePopup,  #overlay').click(function () {
+    $('#closePopup,  .overlay').click(function () {
         $('#popupConsultation').removeClass('open_modal');
-        $('#overlay').fadeOut();
+        jQuery('.overlay').fadeOut();
         $('body').removeClass('modal_open');
     });
 

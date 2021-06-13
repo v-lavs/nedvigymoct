@@ -19,6 +19,7 @@
   }
 
   &_active {
+    top: -100%;
     transform: translateY(-100%);
   }
 
