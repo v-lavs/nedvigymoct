@@ -46,6 +46,7 @@
   .big-logo {
     width: 303px;
     transform: translateX(-50vw);
+    flex-shrink: 0;
   }
 }
 
