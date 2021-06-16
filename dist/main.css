@@ -2012,6 +2012,12 @@ select {
   width: 100%;
   margin: 0 auto;
   max-width: 1582px;
+  transform: translateX(100vw);
+  transition: .8s;
+}
+
+.section-investments .reasons-investing.active {
+  transform: translateX(0);
 }
 
 .section-investments .reasons-investing .text {

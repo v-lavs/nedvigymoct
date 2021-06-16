@@ -227,6 +227,11 @@ $(document).ready(function () {
     }, {
         offset: '80%'
     });
+    var waypoints = $('.slide-in-left').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '80%'
+    });
 
     // window.addEventListener('resize', function() {
     //     window.require("lottie").lottie.resize();

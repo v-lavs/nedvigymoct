@@ -109,7 +109,11 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1582px;
-
+    transform: translateX(100vw);
+    transition: .8s;
+    &.active{
+      transform: translateX(0);
+    }
     .text {
       width: 100%;
       background-color: transparent;
