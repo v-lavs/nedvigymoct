@@ -70,7 +70,7 @@
                 </nav>
 
                 <a href="index.html" class="header__logo">
-                    <img src="assets/img/logo-site.png" alt="Smart Estate" class="img">
+                    <img src="assets/img/svg/logo-site.svg" alt="Smart Estate" class="img">
                 </a>
 
                 <button type="button" class="btn-burger" aria-label="бургер-меню">
@@ -112,43 +112,33 @@
                     </nav>
                 </div>
 
-                <div class="section-banner__banner">
-                    <div class="section-banner__inner">
+                <div class="section-banner__banner" style="background-image: url(assets/img/single-banner.jpg);">
+                    <div class="section-banner__inner" style="background-image: url(assets/img/single-banner.jpg);">
                         <a href="#" class="section-banner__logo_mob">
                             <img src="assets/img/svg/logo-big-gold.svg" width="252" height="252" alt="" class="img">
                         </a>
+                    </div>
 
-                        <div class="swiper-container single-banner-slider" id="singleBannerSlider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"
-                                     style="background-image: url(assets/img/single-banner.jpg);"></div>
-
-                                <div class="swiper-slide" style="background-image: url(assets/img/terra.jpg);"></div>
+                    <div class="section-banner__content">
+                        <div class="section-banner__info">
+                            <div class="name-object text_xl">SMART 266</div>
+                            <div class="building-area">24 000</div>
+                            <div class="sub-text">
+                                <div class="address text_md">вул. Стрийська 266</div>
+                                <div class="unit text_md">грн/м2</div>
                             </div>
                         </div>
+                        <footer class="section-banner__footer">
+                            <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon popup-trigger-consultation">
+                                Консультація
+                            </button>
+                            <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                        </footer>
 
-                        <div class="section-banner__content">
-                            <div class="section-banner__info">
-                                <div class="name-object text_xl">SMART 266</div>
-                                <div class="building-area">24 000</div>
-                                <div class="sub-text">
-                                    <div class="address text_md">вул. Стрийська 266</div>
-                                    <div class="unit text_md">грн/м2</div>
-                                </div>
-                            </div>
-                            <footer class="section-banner__footer">
-                                <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon popup-trigger-consultation">
-                                    Консультація
-                                </button>
-                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
-                            </footer>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <article class="section-article">
             <div class="container">
@@ -225,10 +215,10 @@
                             <div class="desc-table__row">
                                 <div class="desc-table__cell desc-table__label">Ціна</div>
                                 <div class="desc-table__cell">
-                                    <div class="text_desktop"> від 24 100 грн/м2</div>
+                                    <div class="text_desktop"> від 24 100 грн/м<sup>2</sup></div>
                                     <div class="text_mob">
                                         <div class="text_label">24 100</div>
-                                        <span>від <br> грн/<sup>2</sup></span></div>
+                                        <span>від <br> грн/м<sup>2</sup></span></div>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +238,7 @@
                             <div class="desc-table__row">
                                 <div class="desc-table__cell desc-table__label">Площа</div>
                                 <div class="desc-table__cell">
-                                    <div class="text_desktop">від 68 до 777 м2</div>
+                                    <div class="text_desktop">від 68 до 777 м<sup>2</sup></div>
                                     <div class="text_mob">
                                         <div class="text_label">68 - 777</div>
                                         <span> м<sup>2</sup></span></div>
@@ -557,7 +547,7 @@
     <footer class="footer">
         <div class="footer__logo-wrap">
             <a href="#" class="footer__logo">
-                <img src="assets/img/logo-site.png" alt="" class="img">
+                <img src="assets/img/svg/logo-site.svg" alt="" class="img">
             </a>
         </div>
         <div id="contacts" class="footer__contacts">

@@ -169,20 +169,6 @@ $(document).ready(function () {
         },
     });
 
-    let singleBannerSlider = new Swiper(".single-banner-slider", {
-        grabCursor: true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-            el: "#singleBannerSlide",
-            clickable: true
-        },
-    });
-
     let sliderGallery = new Swiper("#gallery", {
         spaceBetween: 60,
         loop: true,

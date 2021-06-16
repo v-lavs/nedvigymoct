@@ -20,7 +20,9 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 1.5;
-
+    sup {
+      font-size: .6em;
+    }
     .container {
       display: flex;
     }

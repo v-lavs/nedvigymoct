@@ -213,8 +213,9 @@
       padding-bottom: 20px;
       position: relative;
 
-      &:last-child{
+      &:last-child {
         padding-bottom: 38px;
+
         &:before {
           display: none;
         }
