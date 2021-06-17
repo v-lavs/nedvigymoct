@@ -3,4 +3,7 @@
   @include respond-to($sm) {
     padding-bottom: 50px;
   }
+  .section__header{
+    padding-left: 7%;
+  }
 }

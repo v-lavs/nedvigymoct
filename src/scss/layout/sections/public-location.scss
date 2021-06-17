@@ -13,53 +13,23 @@
 
   .wrap-map {
     position: absolute;
-    right: -15%;
+    right: 0;
     top: 0;
     bottom: 0;
     max-width: 1440px;
     width: 85vw;
     z-index: -1;
-    height: 120%;
+    height: 110%;
 
     .img_map {
-      //display: block;
+      display: block;
       height: 100%;
       width: 100%;
-      //object-fit: cover;
+      object-fit: cover;
+
       svg {
         display: block;
       }
-    }
-  }
-
-  .field-markers {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-
-  .img-marker {
-    width: auto;
-    display: block;
-    position: absolute;
-    z-index: 1;
-
-    &:nth-child(1) {
-      bottom: 30%;
-      left: 39%;
-    }
-
-    &:nth-child(2) {
-      bottom: 11%;
-      left: 40%;
-    }
-
-    &:nth-child(3) {
-      top: 25%;
-      right: 30%;
     }
   }
 }
@@ -70,6 +40,7 @@
   font-weight: 600;
   color: #ffffff;
   min-height: 647px;
+  margin-top: 14px;
 
   .preview {
     font-size: 17px;
@@ -138,6 +109,14 @@
   }
 }
 
+@include respond-to($xxl) {
+  .public-location {
+    .wrap-map {
+      right: -15%;
+    }
+  }
+
+}
 
 @include respond-to($xl) {
   .public-location {
@@ -176,34 +155,19 @@
       padding: 0 30px;
     }
 
+    .wrap-map {
+      width: 75vw;
+    }
+
     .part_right {
       width: 50%;
-    }
-
-    .wrap-map {
-      right: 0;
-      width: 50vw;
-    }
-  }
-  .field-markers {
-    .img-marker {
-      &:nth-child(1) {
-        width: 40px;
-      }
-
-      &:nth-child(2) {
-        width: 60px;
-      }
-
-      &:nth-child(3) {
-        width: 30px;
-      }
     }
   }
 }
 
 @include respond-to($md) {
   .public-location {
+    padding-top: 180px;
     .container {
       flex-direction: column;
     }
@@ -217,21 +181,26 @@
       left: 50%;
       width: 100vw;
       transform: translateX(-50%);
-      height: 400px;
     }
   }
 }
-
 
 @include respond-to($sm) {
   .public-location {
     padding-bottom: 130px;
     padding-top: 120px;
 
+    .part_left {
+      .wrap-map {
+        height: 395px;
+      }
+    }
+
     .part_right {
       .wrap-img {
         display: none;
       }
+
     }
   }
   .public-spaces__list {
@@ -272,25 +241,29 @@
       padding-right: 5px;
     }
   }
-  @include respond-to($xs) {
-    .public-spaces__list {
-      margin: 0 -10px;
+}
+
+@include respond-to($xs) {
+  .public-location {
+    padding-top: 75px;
+  }
+  .public-spaces__list {
+    margin: 0 -10px;
+  }
+
+  .list-places {
+    &__link {
+      font-size: 14px;
     }
 
-    .list-places {
-      &__link {
-        font-size: 14px;
-      }
+    .icon {
+      -webkit-background-size: 80%;
+      background-size: 80%;
+    }
 
-      .icon {
-        -webkit-background-size: 80%;
-        background-size: 80%;
-      }
-
-      .city-mall {
-        -webkit-background-size: 50%;
-        background-size: 50%;
-      }
+    .city-mall {
+      -webkit-background-size: 50%;
+      background-size: 50%;
     }
   }
 }

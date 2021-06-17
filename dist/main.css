@@ -1240,7 +1240,7 @@ body.modal_open {
   height: 85px;
 }
 
-.nice-select.open {
+.nice-select:hover {
   background-color: #f1f1f1;
 }
 
@@ -2215,53 +2215,24 @@ select {
 
 .public-location .wrap-map {
   position: absolute;
-  right: -15%;
+  right: 0;
   top: 0;
   bottom: 0;
   max-width: 1440px;
   width: 85vw;
   z-index: -1;
-  height: 120%;
+  height: 110%;
 }
 
 .public-location .wrap-map .img_map {
+  display: block;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .public-location .wrap-map .img_map svg {
   display: block;
-}
-
-.public-location .field-markers {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.public-location .img-marker {
-  width: auto;
-  display: block;
-  position: absolute;
-  z-index: 1;
-}
-
-.public-location .img-marker:nth-child(1) {
-  bottom: 30%;
-  left: 39%;
-}
-
-.public-location .img-marker:nth-child(2) {
-  bottom: 11%;
-  left: 40%;
-}
-
-.public-location .img-marker:nth-child(3) {
-  top: 25%;
-  right: 30%;
 }
 
 .public-spaces__list {
@@ -2270,6 +2241,7 @@ select {
   font-weight: 600;
   color: #ffffff;
   min-height: 647px;
+  margin-top: 14px;
 }
 
 .public-spaces__list .preview {
@@ -3194,6 +3166,10 @@ select {
   justify-content: space-between;
 }
 
+.section-map .container:nth-child(2) {
+  align-items: center;
+}
+
 .section-map .sub-title {
   color: #fff;
   width: 35%;
@@ -3212,13 +3188,12 @@ select {
 
 .section-map .part_left {
   width: 333px;
-  margin-right: 57px;
 }
 
 .section-map .part_right {
   position: relative;
   flex-grow: 1;
-  height: auto;
+  min-height: 704px;
 }
 
 .section-map__wrap-maps {
@@ -3248,12 +3223,16 @@ select {
 }
 
 .section-map__item {
-  padding: 32px 38px 33px;
+  padding: 30px 40px;
   border-bottom: .3px solid #FFFFFF;
 }
 
 .section-gallery {
   padding-bottom: 108px;
+}
+
+.section-gallery .section__header {
+  padding-left: 7%;
 }
 
 .projects .section-projects {
@@ -3300,6 +3279,10 @@ select {
 
   .section-investments .reasons-investing .part_left:before {
     border-width: 126.5px 0 126.5px 100px;
+  }
+
+  .public-location .wrap-map {
+    right: -15%;
   }
 
   .advantages-card__wrap-img img {
@@ -3661,25 +3644,12 @@ select {
     padding: 0 30px;
   }
 
+  .public-location .wrap-map {
+    width: 75vw;
+  }
+
   .public-location .part_right {
     width: 50%;
-  }
-
-  .public-location .wrap-map {
-    right: 0;
-    width: 50vw;
-  }
-
-  .field-markers .img-marker:nth-child(1) {
-    width: 40px;
-  }
-
-  .field-markers .img-marker:nth-child(2) {
-    width: 60px;
-  }
-
-  .field-markers .img-marker:nth-child(3) {
-    width: 30px;
   }
 
   .section-about .heading_anim {
@@ -3851,10 +3821,6 @@ select {
     padding-left: 15px;
   }
 
-  .section-map .part_left {
-    margin-right: 30px;
-  }
-
   .section-map .section-map__item {
     padding: 25px 30px;
   }
@@ -3864,7 +3830,7 @@ select {
   }
 
   .section-map .part_right {
-    min-height: 320px;
+    min-height: 433px;
   }
 }
 
@@ -4077,6 +4043,10 @@ select {
     height: 11px;
   }
 
+  .public-location {
+    padding-top: 180px;
+  }
+
   .public-location .container {
     flex-direction: column;
   }
@@ -4090,7 +4060,6 @@ select {
     left: 50%;
     width: 100vw;
     transform: translateX(-50%);
-    height: 400px;
   }
 
   .card-list {
@@ -4642,6 +4611,10 @@ select {
     padding-top: 120px;
   }
 
+  .public-location .part_left .wrap-map {
+    height: 395px;
+  }
+
   .public-location .part_right .wrap-img {
     display: none;
   }
@@ -4987,26 +4960,6 @@ select {
   }
 }
 
-@media only screen and (max-width: 760px) and (max-width: 480px) {
-  .public-spaces__list {
-    margin: 0 -10px;
-  }
-
-  .list-places__link {
-    font-size: 14px;
-  }
-
-  .list-places .icon {
-    -webkit-background-size: 80%;
-    background-size: 80%;
-  }
-
-  .list-places .city-mall {
-    -webkit-background-size: 50%;
-    background-size: 50%;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   .section__header .heading_anim {
     font-size: 40px;
@@ -5104,6 +5057,28 @@ select {
     border-radius: 0;
     background-color: transparent;
     left: 0;
+  }
+
+  .public-location {
+    padding-top: 75px;
+  }
+
+  .public-spaces__list {
+    margin: 0 -10px;
+  }
+
+  .list-places__link {
+    font-size: 14px;
+  }
+
+  .list-places .icon {
+    -webkit-background-size: 80%;
+    background-size: 80%;
+  }
+
+  .list-places .city-mall {
+    -webkit-background-size: 50%;
+    background-size: 50%;
   }
 
   .section-about .btn_read-more {

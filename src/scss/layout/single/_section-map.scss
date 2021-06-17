@@ -5,6 +5,9 @@
 &__top-content{
   justify-content: space-between;
 }
+  .container:nth-child(2){
+    align-items: center;
+  }
   .sub-title {
     color: #fff;
     width: 35%;
@@ -22,13 +25,12 @@
 
   .part_left {
     width: 333px;
-    margin-right: 57px;
   }
 
   .part_right {
     position: relative;
     flex-grow: 1;
-    height: auto;
+    min-height: 704px;
   }
 
   &__wrap-maps {
@@ -59,7 +61,7 @@
   }
 
   &__item {
-    padding: 32px 38px 33px;
+    padding: 30px 40px;
     border-bottom: .3px solid #FFFFFF;
   }
 
@@ -68,7 +70,7 @@
       margin-bottom: 100px;
     }
     .part_left {
-      padding-left: 0;
+    padding-left: 0;
     }
     &__top-content{
       flex-wrap: wrap;
@@ -82,9 +84,7 @@
   }
 
   @include respond-to($lg) {
-    .part_left {
-      margin-right: 30px;
-    }
+
     .section-map__item {
       padding: 25px 30px;
     }
@@ -92,7 +92,7 @@
       font-size: 20px;
     }
     .part_right {
-      min-height: 320px;
+      min-height: 433px;
     }
   }
 

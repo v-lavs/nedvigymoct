@@ -242,7 +242,7 @@ $(document).ready(function () {
     animationDiv.style.display = "none";
 
     function map(div, pathLocation) {
-        let animationMap = bodymovin.loadAnimation({
+        let animationMapWhite = bodymovin.loadAnimation({
             container: document.getElementById('img_map'),
             renderer: 'svg',
             loop: false,
@@ -250,26 +250,26 @@ $(document).ready(function () {
             rendererSettings: {
                 preserveAspectRatio: 'xMidYMax slice'
             },
-            path: 'assets/img/Map_animation.json'
+            path: 'assets/animation/map_white.json'
         });
-        animationMap.play();
+        animationMapWhite.play();
     }
 
     window.addEventListener('scroll', () => {
 
-        let scrollHeightPercent = document.documentElement.scrollHeight * 0.08
-        let currentPOS = document.documentElement.scrollTop || document.body.scrollTop
+        let scrollHeightPercent = document.documentElement.scrollHeight * .09;
+        let currentPOS = document.documentElement.scrollTop || document.body.scrollTop;
 
         if (currentPOS >= scrollHeightPercent) {
             let animationDiv = document.getElementById('scrollingArea');
             if (animationDiv.style.display === 'none') {
 
-                animationDiv.style.display = ""
+                animationDiv.style.display = ''
 
                 let bodyMotion1 = document.getElementById('lottie-scroll-1');
-                map(bodyMotion1, 'Map_animation.json')
-            };
-        };
+                map(bodyMotion1, 'assets/animation/map_white.jso')
+            }
+        }
     });
 
     $('.btn_choose').click(function (e) {

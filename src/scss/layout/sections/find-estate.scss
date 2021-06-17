@@ -16,6 +16,7 @@
     vertical-align: middle;
     margin-right: 15px;
   }
+
   @include respond-to($sm) {
     padding-top: 35px;
     padding-bottom: 0;
