@@ -183,4 +183,8 @@
       padding-top: 25px;
     }
   }
+  @include respond-to($xs){
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

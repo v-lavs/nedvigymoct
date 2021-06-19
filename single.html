@@ -86,7 +86,6 @@
         <div class="backdrop"></div>
     </header>
 
-
     <main class="main page-single">
 
         <section class="section-banner">
@@ -112,13 +111,14 @@
                     </nav>
                 </div>
 
-                <div class="section-banner__banner" style="background-image: url(assets/img/single-banner.jpg);">
-                    <div class="section-banner__inner" style="background-image: url(assets/img/single-banner.jpg);">
-                        <a href="#" class="section-banner__logo_mob">
-                            <img src="assets/img/svg/logo-big-gold.svg" width="252" height="252" alt="" class="img">
-                        </a>
-                    </div>
-
+                <div class="section-banner__banner">
+                    <picture>
+                        <source srcset="assets/img/single-banner-mob.jpg" media="(max-width: 480px)">
+                        <img src="assets/img/single-banner.jpg" alt="" class="section-banner__img">
+                    </picture>
+                    <a href="#" class="section-banner__logo_mob">
+                        <img src="assets/img/svg/logo-big-dark.svg" width="252" height="252" alt="" class="img">
+                    </a>
                     <div class="section-banner__content">
                         <div class="section-banner__info">
                             <div class="name-object text_xl">SMART 266</div>
@@ -292,11 +292,10 @@
 
             <div class="swiper-container gallery" id="gallery">
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery__inner-link">
-                            <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                                <img src="assets/img/slide1.jpg" width="1609" height="690" alt=""
+                            <a href="assets/img/stryska111-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska111.jpg" width="1609" height="690" alt=""
                                      class="img gallery__img">
                             </a>
                             <div class="gallery__slide-content">
@@ -309,8 +308,22 @@
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery__inner-link">
-                            <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                                <img src="assets/img/slide1.jpg" width="1609" height="690" alt=""
+                            <a href="assets/img/stryska41-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska41.jpg" width="1609" height="690" alt=""
+                                     class="img gallery__img">
+                            </a>
+                            <div class="gallery__slide-content">
+                                <button class="btn btn_main btn_big btn_white btn_white-icon popup-trigger-consultation">
+                                    Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/stryska31-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska31.jpg" width="1609" height="690" alt=""
                                      class="img gallery__img">
                             </a>
                             <div class="gallery__slide-content">
@@ -323,8 +336,8 @@
 
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery__inner-link">
-                            <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                                <img src="assets/img/slide1.jpg" width="1609" height="690" alt=""
+                            <a href="assets/img/stryska21-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska21.jpg" width="1609" height="690" alt=""
                                      class="img gallery__img">
                             </a>
                             <div class="gallery__slide-content">
@@ -369,9 +382,7 @@
                     </ul>
                 </div>
                 <div class="part_right">
-                    <div class="section-map__wrap-maps">
-                        <img src="assets/img/map-single.png" alt="" class="section-map__img">
-                    </div>
+                    <div id="wrap_maps" class="section-map__wrap-maps"></div>
                 </div>
             </div>
         </section>
@@ -457,19 +468,18 @@
                         <ul class="documents-list" id="land-docs">
                             <li class="documents-list__item">
                                 <div class="documents-list__desc">
-                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
-                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                    <h3 class="documents-list__title">Витяг з Державного реєстру речових
+                                        прав на нерухоме майно про реєстрацію права власності</h3>
+                                    <p>Індекс номеру витягу: 181532880</p>
                                 </div>
 
                                 <div class="documents-list__btns">
                                     <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
                                 </div>
                             </li>
-                        </ul>
-                        <ul class="documents-list" id="building-docs">
                             <li class="documents-list__item">
                                 <div class="documents-list__desc">
-                                    <h3 class="documents-list__title">Право на виконання будівельних робіт:</h3>
+                                    <h3 class="documents-list__title">Організація дорожнього руху</h3>
                                     <p>Дозвіл на виконання будівельних робіт серії
                                         ЛВ № 012201002117 від жовтня 2020 року </p>
                                 </div>
@@ -478,6 +488,8 @@
                                     <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
                                 </div>
                             </li>
+                        </ul>
+                        <ul class="documents-list" id="building-docs">
                             <li class="documents-list__item">
                                 <div class="documents-list__desc">
                                     <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
@@ -519,8 +531,8 @@
 
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery__inner-link">
-                            <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                                <img src="assets/img/slide1.jpg" alt="" class="img gallery__img">
+                            <a href="assets/img/build1-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build1.jpg" alt="" class="img gallery__img">
                             </a>
                         </div>
                     </div>
@@ -533,8 +545,15 @@
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery__inner-link">
-                            <a href="assets/img/slide1.jpg" data-lightbox="gallery" class="gallery__link">
-                                <img src="assets/img/slide1.jpg" alt="" class="img gallery__img">
+                            <a href="assets/img/build2-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build2.jpg" alt="" class="img gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/build3-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build3.jpg" alt="" class="img gallery__img">
                             </a>
                         </div>
                     </div>

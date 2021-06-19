@@ -1,5 +1,13 @@
 .section-gallery {
+  .container{
+    position: relative;
+  }
   padding-bottom: 108px;
+  @include respond-to($md){
+    .section__header {
+       padding-left: 0;
+    }
+  }
   @include respond-to($sm) {
     padding-bottom: 50px;
   }

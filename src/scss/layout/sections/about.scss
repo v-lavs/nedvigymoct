@@ -43,7 +43,6 @@
 
   .partners {
     display: flex;
-    align-items: center;
     margin-bottom: 32px;
 
     &__link {
@@ -51,7 +50,7 @@
       margin-right: 45px;
 
       &:first-child {
-        padding-top: 7px;
+        padding-top: 11px;
       }
 
       &:last-child {
@@ -116,18 +115,30 @@
     padding-bottom: 180px;
     .section__header {
       margin-bottom: 0;
+
       .heading_anim {
         letter-spacing: .2em;
         font-size: 63px;
       }
     }
 
-    .text p{
+    .text p {
       margin-bottom: 15px;
     }
 
   }
-  @include respond-to($xs){
+  @include respond-to($xs) {
+    .partners__link {
+        margin-right: 25px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+    .partners__link:first-child {
+      padding-top: 7px;
+    }
     .btn_read-more {
       margin-top: 5px;
       padding: 3px;

@@ -31,12 +31,10 @@
     min-height: 690px;
 
   }
-    &__wrap-banner {
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: cover;
-      background-size: cover;
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
   }
 
   &__content {
@@ -176,7 +174,7 @@
     .section-banner__banner {
       width: 100%;
       margin-left: 0;
-      height: 680px;
+      min-height: 680px;
     }
     .section-banner__sidebar {
       width: 100%;
@@ -206,8 +204,11 @@
     .section-banner__logo_mob {
       display: block;
       position: absolute;
-      top: 70px;
-      left: 30px;
+      width: 148px;
+      height: 148px;
+
+      top: 43px;
+      left: 32px;
       z-index: 2;
     }
     .section-banner__nav {
@@ -224,6 +225,9 @@
 
   }
   @include respond-to($sm) {
+    .section-banner__banner{
+      min-height: 610px;
+    }
     .section-banner__nav-link {
       width: 70%;
       margin: 0 auto;

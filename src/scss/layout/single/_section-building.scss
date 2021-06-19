@@ -10,4 +10,7 @@
       width: 55%;
     }
   }
+  @include respond-to($xs) {
+    padding-bottom: 0;
+  }
 }

@@ -2,12 +2,18 @@
   padding-top: 135px;
   padding-bottom: 110px;
   background-color: $dark-100;
+  .container{
+    position: relative;
+  }
 &__top-content{
   justify-content: space-between;
+  padding-left: 40px;
 }
   .container:nth-child(2){
     align-items: center;
   }
+
+
   .sub-title {
     color: #fff;
     width: 35%;
@@ -110,12 +116,17 @@
       width: 100%;
     }
     .part_right {
-      min-height: 400px;
-      margin-bottom: 33px;
+      min-height: 480px;
+    }
+    .section-map__top-content{
+      padding-left: 0;
+      text-align: center;
+    }
+    .section__header{
+      width: 100%;
     }
     .section-map__wrap-maps {
       width: 100vw;
-      right: auto;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -161,5 +172,9 @@
   }
   @include respond-to($xs){
     padding-top: 0;
+    padding-bottom: 30px;
+    .part_right{
+      min-height: 390px;
+    }
   }
 }

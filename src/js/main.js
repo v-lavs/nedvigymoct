@@ -3,7 +3,7 @@
 * */
 
 //= include ../../node_modules/jquery/dist/jquery.js
-//= include ../../node_modules/lottie-web/build/player/lottie.js
+//= include ../lib/lottie.js
 //= include ../lib/jquery-nice-select-1.1.0/js/jquery.nice-select.js
 //= include ../lib/lightbox2/js/lightbox.js
 //= include ../lib/waypoints/index.js
@@ -140,9 +140,6 @@ $(document).ready(function () {
             jQuery(".header").removeClass('header_active');
         }
     }
-
-    onHeaderScroll();
-
     $(document).on('scroll', function () {
         onHeaderScroll()
     });
@@ -213,6 +210,17 @@ $(document).ready(function () {
         $(this).hide();
     });
 
+    $('.btn_choose').click(function (e) {
+        e.preventDefault();
+        $('.search-table').addClass('open-choose');
+        var items = $('.search-table__tbody .search-table__row');
+        setTimeout(function () {
+            for (var i = 0; i < items.length; i++) {
+                $(items[i]).delay((items.length - i + 1) * 200).animate({opacity: 1}, 400);
+            }
+        }, 100);
+    });
+
     //CUSTOM SELECT
     $('.custom-select').niceSelect();
 
@@ -233,53 +241,102 @@ $(document).ready(function () {
         offset: '80%'
     });
 
-    // window.addEventListener('resize', function() {
-    //     window.require("lottie").lottie.resize();
-    // });
+    window.addEventListener('resize', function() {
+        window.lottie.resize();
+    });
 
 
-    let animationDiv = document.getElementById('scrollingArea')
-    animationDiv.style.display = "none";
+//ANIMATION MAPS LOTTIE
+    function renderMap(container, lottieObj) {
+        if (container) {
+            const inViewport = elementInViewport(container, .5);
 
-    function map(div, pathLocation) {
-        let animationMapWhite = bodymovin.loadAnimation({
-            container: document.getElementById('img_map'),
-            renderer: 'svg',
-            loop: false,
-            autoplay: true,
-            rendererSettings: {
-                preserveAspectRatio: 'xMidYMax slice'
-            },
-            path: 'assets/animation/map_white.json'
-        });
-        animationMapWhite.play();
-    }
-
-    window.addEventListener('scroll', () => {
-
-        let scrollHeightPercent = document.documentElement.scrollHeight * .09;
-        let currentPOS = document.documentElement.scrollTop || document.body.scrollTop;
-
-        if (currentPOS >= scrollHeightPercent) {
-            let animationDiv = document.getElementById('scrollingArea');
-            if (animationDiv.style.display === 'none') {
-
-                animationDiv.style.display = ''
-
-                let bodyMotion1 = document.getElementById('lottie-scroll-1');
-                map(bodyMotion1, 'assets/animation/map_white.jso')
+            if (inViewport) {
+                lottieObj.play();
             }
         }
+    }
+
+    function elementInViewport(element, offsetTop) {
+        const bounds = element.getBoundingClientRect();
+        return (
+            (window.innerHeight - bounds.top - bounds.height * offsetTop > 0)
+        );
+    }
+
+    const mapContainer = document.getElementById('img_map');
+    const animationMapWhite = lottie.loadAnimation({
+        container: mapContainer,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMax slice'
+        },
+        path: 'assets/animation/map_white.json'
+    });
+    const mapBlackContainer = document.getElementById('wrap_maps');
+    const animationMapBlack = lottie.loadAnimation({
+        container: mapBlackContainer,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        },
+        path: 'assets/animation/map_black.json'
     });
 
-    $('.btn_choose').click(function (e) {
-        e.preventDefault();
-        $('.search-table').addClass('open-choose');
-        var items = $('.search-table__tbody .search-table__row');
-        setTimeout(function () {
-            for (var i = 0; i < items.length; i++) {
-                $(items[i]).delay((items.length - i + 1) * 200).animate({opacity: 1}, 400);
-            }
-        }, 100);
+    document.addEventListener('scroll', function () {
+        renderMap(mapContainer, animationMapWhite);
+        renderMap(mapBlackContainer, animationMapBlack);
     });
+
+
+    function onHoverPlay(container, lottieObj) {
+        if ($(window).width() >= 760) {
+
+            if (container) {
+                container.addEventListener("mouseenter", function () {
+                    lottieObj.play();
+                });
+                container.addEventListener("mouseleave", function () {
+                    lottieObj.stop();
+                });
+            }
+        } else {
+            lottieObj.play();
+        }
+    }
+
+    const iconContainer1 = document.getElementById('advantages1');
+    const animationIcon1 = lottie.loadAnimation({
+        container: iconContainer1,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'assets/animation/animation_icon_house.json',
+    });
+
+    const iconContainer2 = document.getElementById('advantages2');
+    const animationIcon2 = lottie.loadAnimation({
+        container: iconContainer2,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'assets/animation/animation_icon_androida.json'
+    });
+
+    const iconContainer3 = document.getElementById('advantages3');
+    const animationIcon3 = lottie.loadAnimation({
+        container: iconContainer3,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'assets/animation/animation_icon_car.json'
+    });
+
+    onHoverPlay(iconContainer1, animationIcon1);
+    onHoverPlay(iconContainer2, animationIcon2);
+    onHoverPlay(iconContainer3, animationIcon3);
 });

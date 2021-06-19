@@ -92,10 +92,18 @@
                 <div class="swiper-container banner">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="banner__inner" style="background-image: url(assets/img/slide1.jpg);"></div>
+                            <picture>
+                                <source srcset="assets/img/slide1-mob.jpg" media="(max-width: 480px)">
+                                <img src="assets/img/slide1.jpg" alt="" class="banner__img">
+                            </picture>
                         </div>
                         <div class="swiper-slide">
-                            <div class="banner__inner" style="background-image: url(assets/img/slide1.jpg);"></div>
+                            <div class="banner__inner" style="background-image: url(assets/img/slide1.jpg);">
+                                <picture>
+                                    <source srcset="assets/img/slide1-mob.jpg" media="(max-width: 480px)">
+                                    <img src="assets/img/slide1.jpg" alt="" class="banner__img">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +125,7 @@
                         <div class="section-intro__part section-intro__part_right">
                             <a href="#" class="logo-big">
                                 <picture>
-                                    <source srcset="assets/img/svg/logo-big-gold.svg" media="(max-width: 760px)">
+                                    <source srcset="assets/img/svg/logo-big-dark.svg" media="(max-width: 480px)">
                                     <img src="assets/img/svg/logo-big.svg" width="327" height="327" alt="" class="img">
                                 </picture>
 
@@ -159,6 +167,7 @@
                 </div>
             </div>
         </section>
+
         <section class="find-estate">
             <div class="container">
                 <h2 class="find-estate__title">
@@ -442,7 +451,7 @@
 
         <section class="public-location section_anim">
             <div class="container  d-flex">
-                <div class="part part_left">
+                <div class="part part_left ">
                     <div id="scrollingArea" class="wrap-map">
                         <div id="img_map" class="img_map"></div>
                     </div>
@@ -545,9 +554,9 @@
                         <h2 class="section__title">Про компанію</h2>
                     </header>
                     <div class="partners">
-                        <a href="#" class="partners__link"><img src="assets/img/novelex.svg" alt="" class="img"></a>
-                        <a href="#" class="partners__link"><img src="assets/img/altum.png" alt="" class="img"></a>
-                        <a href="#" class="partners__link"><img src="assets/img/partner-logo1.png" alt=""
+                        <a href="#" class="partners__link"><img src="assets/img/svg/novelex.svg" alt="" class="img"></a>
+                        <a href="#" class="partners__link"><img src="assets/img/svg/altum.svg" alt="" class="img"></a>
+                        <a href="#" class="partners__link"><img src="assets/img/svg/hryzlyuk.svg" alt=""
                                                                 class="img"></a>
                     </div>
                     <div class="text text-hide">
@@ -605,24 +614,24 @@
                     <div class="swiper-wrapper advantages">
                         <div class="advantages__item swiper-slide">
                             <div class="advantages-card">
-                                <div class="advantages-card__wrap-img">
-                                    <img src="assets/img/advantages1.svg" alt="" class="img advantages-card__img">
+                                <div class="advantages-card__wrap-img" id="advantages1">
+                                    <!--<img src="assets/img/advantages1.svg" alt="" class="img advantages-card__img">-->
                                 </div>
                                 <h4 class="advantages-card__title">Управлінська компанія у смартфоні</h4>
                             </div>
                         </div>
                         <div class="advantages__item swiper-slide">
                             <div class="advantages-card">
-                                <div class="advantages-card__wrap-img">
-                                    <img src="assets/img/advantages2.svg" alt="" class="img">
+                                <div class="advantages-card__wrap-img" id="advantages2">
+                                    <!--<img src="assets/img/advantages2.svg" alt="" class="img">-->
                                 </div>
                                 <h4 class="advantages-card__title">Smart системи управління нерухомістю</h4>
                             </div>
                         </div>
                         <div class="advantages__item swiper-slide">
                             <div class="advantages-card">
-                                <div class="advantages-card__wrap-img">
-                                    <img src="assets/img/advantages3.svg" alt="" class="img">
+                                <div class="advantages-card__wrap-img" id="advantages3">
+                                    <!--<img src="assets/img/advantages3.svg" alt="" class="img">-->
                                 </div>
                                 <h4 class="advantages-card__title">Smart паркомісце, котре здається в оренду</h4>
                             </div>
