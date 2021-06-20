@@ -17,15 +17,18 @@ $(document).ready(function () {
 
     function getStripPosition() {
         const $strip = $('#blendStrip');
-        const $title = $('.section-intro__title');
-        const topOffset = $title.offset().top - $('.section-intro__content').offset().top;
-        const isActive = $('.banner_anim').length > 0;
 
-        $strip.css({
-            top: topOffset + 'px',
-            left: isActive ? $title.offset().left - $(window).outerWidth() + $title.outerWidth() + 'px' : $title.outerWidth() + $title.offset().left + 'px',
-            height: $title.outerHeight() + 'px'
-        });
+        if ($strip.length > 0) {
+            const $title = $('.section-intro__title');
+            const topOffset = $title.offset().top - $('.section-intro__content').offset().top;
+            const isActive = $('.banner_anim').length > 0;
+
+            $strip.css({
+                top: topOffset + 'px',
+                left: isActive ? $title.offset().left - $(window).outerWidth() + $title.outerWidth() + 'px' : $title.outerWidth() + $title.offset().left + 'px',
+                height: $title.outerHeight() + 'px'
+            });
+        }
     }
 
     getStripPosition();
