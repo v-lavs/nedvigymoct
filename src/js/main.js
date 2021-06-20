@@ -328,12 +328,12 @@ $(document).ready(function () {
         if ($(window).width() >= 760) {
 
             if (container) {
-
                 container.addEventListener("mouseenter", function () {
                     lottieObj.play();
                 });
                 container.addEventListener("mouseleave", function () {
                     lottieObj.stop();
+                    animationIcon1.goToAndStop(130, true);
                 });
             }
         } else {
@@ -349,6 +349,8 @@ $(document).ready(function () {
         autoplay: false,
         path: 'assets/animation/animation_icon_house.json',
     });
+    animationIcon1.goToAndStop(128, true);
+
 
     const iconContainer2 = document.getElementById('advantages2');
     const animationIcon2 = lottie.loadAnimation({
