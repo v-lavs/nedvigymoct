@@ -1736,6 +1736,21 @@ select {
   overflow: hidden;
 }
 
+.section-intro.banner_anim .blend-strip {
+  transform: translateX(0);
+}
+
+.section-intro .blend-strip {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  transform: translateX(-100vw);
+  background-color: #FCC214;
+  mix-blend-mode: multiply;
+  transition: 1s transform 1s ease-out;
+  z-index: 2;
+}
+
 .section-intro__content {
   position: relative;
   display: flex;
@@ -1773,19 +1788,6 @@ select {
   margin-right: 14%;
 }
 
-.section-intro__title:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  background-color: #FCC214;
-  opacity: .6;
-  mix-blend-mode: multiply;
-  z-index: 0;
-}
-
 .section-intro__title span {
   position: relative;
   z-index: 3;
@@ -1802,7 +1804,7 @@ select {
 }
 
 .section-intro__part_left {
-  transform: translateX(-140%);
+  transform: translateX(-100vw);
 }
 
 .section-intro .swiper-slide {

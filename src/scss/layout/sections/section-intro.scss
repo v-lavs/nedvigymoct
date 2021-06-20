@@ -1,6 +1,23 @@
 .section-intro {
   padding: 60px 0 0;
   overflow: hidden;
+  
+  &.banner_anim {
+    .blend-strip {
+      transform: translateX(0);
+    }
+  }
+
+  .blend-strip {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    transform: translateX(-100vw);
+    background-color: #FCC214;
+    mix-blend-mode: multiply;
+    transition: 1s transform 1s ease-out;
+    z-index: 2;
+  }
 
   &__content {
     position: relative;
@@ -39,25 +56,11 @@
 
     margin-right: 14%;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 100vw;
-      background-color: #FCC214;
-      opacity: .6;
-      mix-blend-mode: multiply;
-      z-index: 0;
-    }
-
     span {
       position: relative;
       z-index: 3;
     }
   }
-
 
   .swiper-container {
     position: absolute;
@@ -71,9 +74,8 @@
   }
 
   &__part_left {
-    transform: translateX(-140%);
+    transform: translateX(-100vw);
   }
-
 
   .swiper-slide {
     padding: 0 8%;
