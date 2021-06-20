@@ -297,6 +297,7 @@ $(document).ready(function () {
         if ($(window).width() >= 760) {
 
             if (container) {
+
                 container.addEventListener("mouseenter", function () {
                     lottieObj.play();
                 });

@@ -1736,6 +1736,10 @@ select {
   overflow: hidden;
 }
 
+.section-intro__inner {
+  position: relative;
+}
+
 .section-intro__content {
   position: relative;
   display: flex;
@@ -1754,10 +1758,6 @@ select {
   justify-content: space-between;
 }
 
-.section-intro__inner {
-  position: relative;
-}
-
 .section-intro__title {
   position: relative;
   display: inline-block;
@@ -1767,9 +1767,9 @@ select {
   font-family: Raleway, sans-serif;
   padding: 50px 30px 40px 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  mix-blend-mode: multiply;
   margin-bottom: 40px;
   max-width: 550px;
+  mix-blend-mode: multiply;
   margin-right: 14%;
 }
 
@@ -2617,7 +2617,10 @@ select {
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 20px;
-  cursor: pointer;
+}
+
+.advantages-card__wrap-img:hover img {
+  display: none;
 }
 
 .advantages-card__title {
