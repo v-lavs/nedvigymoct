@@ -1413,7 +1413,6 @@ body.modal-open {
 .modal-cookies__body {
   background-image: linear-gradient(to right, transparent 0% 13%, #ffffff 13% 100%);
   display: flex;
-  overflow-y: auto;
   padding-top: 48px;
   height: 707px;
 }
@@ -3752,11 +3751,15 @@ body.modal-open {
   }
 
   .modal-cookies .part_left {
-    width: 62%;
+    width: 54%;
   }
 
-  .modal-cookies .modal-cookies__w {
+  .modal-cookies .part_right {
     width: 46%;
+  }
+
+  .modal-cookies__img {
+    width: 97%;
   }
 
   .modal-cookies__header {
