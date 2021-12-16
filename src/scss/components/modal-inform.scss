@@ -258,6 +258,12 @@ body.modal-open {
   z-index: 1000;
 }
 
+@media screen and (max-width: 1536px) {
+  .modal-inform__wrap {
+    max-height: 82vh;
+  }
+}
+
 @media screen and (max-width: 1367px) {
   .modal-inform .btn_close {
     width: 54px;

@@ -3596,6 +3596,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 1536px) {
+  .modal-inform__wrap {
+    max-height: 82vh;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .btn_big {
     min-width: 260px;
@@ -3771,6 +3777,12 @@ body.modal-open {
 
   .modal-inform .advantage {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .modal-inform__wrap {
+    max-height: 70vh;
   }
 }
 
@@ -4166,12 +4178,6 @@ body.modal-open {
 
   .section-map .part_right {
     min-height: 433px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .modal-inform__wrap {
-    max-height: 70vh;
   }
 }
 
