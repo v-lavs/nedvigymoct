@@ -13,17 +13,19 @@ body.modal-open {
   opacity: 0;
   transition: opacity .5s linear;
   overflow: hidden;
-  max-width: 1046px;
-  max-height: 770px;
-  height: 72%;
+  max-width: 1060px;
+
   width: 95%;
   background-color: transparent;
-//overflow-y: scroll;
+
+  &__wrap {
+    overflow-y: auto;
+    max-height: 70vh;
+  }
 
   &.open_modal {
     opacity: 1;
-    //overflow: visible;
-    overflow-y: scroll;
+    overflow-y: visible;
     z-index: 9999;
   }
 
@@ -31,7 +33,6 @@ body.modal-open {
     width: 100%;
 
   }
-
 
 
   &__header {
@@ -42,10 +43,8 @@ body.modal-open {
   &__body {
     background-image: linear-gradient(to right, transparent 0% 13%, #ffffff 13% 100%);
     display: flex;
-    //overflow-y: auto;
-    //min-height: 0;
     padding-top: 48px;
-    height: 707px;
+
   }
 
   &__heading {
@@ -70,7 +69,7 @@ body.modal-open {
     font-size: 17px;
     line-height: 1.29;
     color: #212428;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 
     p {
       margin-bottom: 19px;
@@ -85,9 +84,11 @@ body.modal-open {
     width: 100%;
     position: absolute;
     bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: auto;
+    height: 100%;
+
   }
 
   .advantage {
@@ -168,7 +169,8 @@ body.modal-open {
       padding-right: 53px;
 
     }
-    &__footer{
+
+    &__footer {
       width: 100%;
       padding-bottom: 50px;
     }
@@ -186,7 +188,7 @@ body.modal-open {
   .title {
     display: inline-block;
     border: 2px solid #171C66;
-    padding: 10px 18px;
+    padding: 11px 18px;
     font-weight: 700;
     font-size: 32px;
     line-height: 1;
@@ -266,13 +268,13 @@ body.modal-open {
     top: 26px;
     width: 16px;
   }
-  .modal-cookies .part_left{
+  .modal-cookies .part_left {
     width: 54%;
   }
-  .modal-cookies .part_right{
+  .modal-cookies .part_right {
     width: 46%;
   }
-  .modal-cookies__img{
+  .modal-cookies__img {
     width: 97%;
   }
   .modal-cookies__header {
@@ -287,9 +289,9 @@ body.modal-open {
   .modal-cookies {
     height: 692px;
   }
-.modal-cookies .advantage__item{
-  width: 46%;
-}
+  .modal-cookies .advantage__item {
+    width: 46%;
+  }
   .modal-cookies__text {
     font-size: 15px;
   }
@@ -309,14 +311,14 @@ body.modal-open {
     width: 100%;
     margin: 0 auto;
   }
+  .modal-cookies__wrap {
+    background-color: #ffffff;
+  }
 }
 
 
 @media screen and (max-width: 760px) {
-  .modal-cookies {
-    //top: 0;
-    //transform: translate(-50%, -0);
-  }
+
   .modal-cookies {
     height: 665px;
   }
