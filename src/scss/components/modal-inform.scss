@@ -4,7 +4,7 @@ body.modal-open {
 }
 
 
-.modal-cookies {
+.modal-inform {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -259,51 +259,60 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1367px) {
-  .modal-cookies .btn_close {
+  .modal-inform .btn_close {
     width: 54px;
     height: 54px;
   }
-  .modal-cookies .btn_close:before,
-  .modal-cookies .btn_close:after {
+  .modal-inform .btn_close:before,
+  .modal-inform .btn_close:after {
     top: 26px;
     width: 16px;
   }
 
-  .modal-cookies__header {
+  .modal-inform__header {
     padding-top: 54px;
   }
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 90vh;
+  }
+  .modal-inform__body{
+    padding-top: 38px;
+  }
+  .modal-inform__text p {
+    margin-bottom: 16px;
+  }
+  .modal-inform .advantage {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 1180px) {
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 70vh;
   }
 
 }
 
 @media screen and (max-width: 1060px) {
-  .modal-cookies {
+  .modal-inform {
     max-width: 450px;
   }
 
-  .modal-cookies .part_left {
+  .modal-inform .part_left {
     display: none;
   }
-  .modal-cookies .part_right {
+  .modal-inform .part_right {
     width: 100%;
     margin: 0 auto;
   }
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     background-color: #ffffff;
   }
 }
 
 @media screen and (max-width: 760px) {
 
-  .modal-cookies__header {
+  .modal-inform__header {
     position: relative;
 
     &:before {
@@ -318,14 +327,14 @@ body.modal-open {
       z-index: 1;
     }
   }
-  .modal-cookies .part_right {
+  .modal-inform .part_right {
     padding-left: 22px;
     padding-right: 22px;
   }
-  .modal-cookies__text {
+  .modal-inform__text {
     margin-bottom: 29px;
   }
-  .modal-cookies .advantage__item {
+  .modal-inform .advantage__item {
     padding-left: 0;
     padding-top: 48px;
     width: 43%;
@@ -337,16 +346,26 @@ body.modal-open {
       top: 20px;
     }
   }
-  .modal-cookies .advantage {
+  .modal-inform .advantage {
     align-items: flex-start;
+  }
+
+  .modal-inform__body{
+    padding-top: 48px;
+  }
+  .modal-inform__text p {
+    margin-bottom: 19px;
+  }
+  .modal-inform .advantage {
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 90vh;
   }
-  .modal-cookies .part__footer {
+  .modal-inform .part__footer {
     position: absolute;
     left: 22px;
     right: 22px;
@@ -357,22 +376,22 @@ body.modal-open {
     background-color: white;
   }
 
-  .modal-cookies .title {
+  .modal-inform .title {
     font-size: 28px;
   }
-  .modal-cookies .booking-start {
+  .modal-inform .booking-start {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .modal-cookies .title {
+  .modal-inform .title {
     font-size: 24px;
   }
-  .modal-cookies .booking-start {
+  .modal-inform .booking-start {
     font-size: 15px;
   }
-  .modal-cookies__heading {
+  .modal-inform__heading {
     padding-left: 22px;
 
     &:before {

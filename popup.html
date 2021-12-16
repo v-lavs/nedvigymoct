@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+    <meta name="yandex" content="none">
+
+    <title>popup</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/popup.css">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+<div class="overlay"></div>
+
+<button id="triggerPopupInform">Click For Modal</button>
+<div class="modal-inform" tabindex="-1" id="popupInform">
+
+    <div class="modal-inform__header">
+        <button type="button" id="closePopupInform" class="btn btn_close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+    </div>
+    <div class="modal-inform__wrap">
+        <div class="modal-inform__body">
+            <div class="part part_left">
+                <img src="assets/img/popup/family.png" alt="" class="modal-inform__img">
+            </div>
+            <div class="part part_right">
+                <div class="modal-inform__heading">
+                    <span class="booking-start">СТАРТ БРОНЮВАННЯ</span>
+                    <h3 class="title">ЖК 111 ЗЕЛЕНА</h3>
+                </div>
+                <div class="modal-inform__text">
+                    <p><span class="strong">Smart Estate Development</span> відкриває новий житловий комплекс
+                        преміум-класу <span class="strong">111 ЗЕЛЕНА</span> по вул.
+                        Зелена у Львові.</p>
+                    <p><span class="strong">Філософія - місце де хочеться дихати, гуляти, жити.</span> Цей житловий
+                        комплекс - про акустичний
+                        комфорт для життя і відпочинку, що стане місцем вашої свободи!</p>
+                </div>
+                <ul class="advantage">
+                    <li class="advantage__item">Підземний та наземний паркінг</li>
+                    <li class="advantage__item">Відеоспостереження та система контролю</li>
+                    <li class="advantage__item">Велопарковка</li>
+                    <li class="advantage__item">Кімнати з видом на паркову зону</li>
+                    <li class="advantage__item">Зарядка для електрокарів</li>
+                    <li class="advantage__item">Урбан парк та спортмайданчик</li>
+                    <li class="advantage__item">Сучасний дитячий майданчик</li>
+                    <li class="advantage__item">Зона для барбекю та пікніків з друзями</li>
+                </ul>
+                <div class="part__footer">
+                    <a href="#" class="btn btn_main btn_big btn_gold">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const elements = $('#popupInform');
+
+        $('#triggerPopupInform').click(function () {
+            elements.addClass('open_modal');
+            jQuery('.overlay').fadeIn();
+            $('body').addClass('modal_open');
+        });
+
+        $('#closePopupInform, .overlay').click(function () {
+            elements.removeClass('open_modal');
+            jQuery('.overlay').fadeOut();
+            $('body').removeClass('modal_open');
+        });
+    });
+</script>
+</body>
+</html>

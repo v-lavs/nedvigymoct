@@ -1,0 +1,469 @@
+a, a:hover {
+  text-decoration: none
+}
+
+body, html {
+  width: 100%;
+  height: 100%
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased
+}
+
+a, input, select, textarea {
+  font: inherit;
+  color: inherit
+}
+
+a, article, aside, blockquote, dd, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, img, input, label, li, nav, ol, p, section, select, span, strong, table, td, textarea, tr, ul {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box
+}
+
+article, aside, footer, header, nav, section {
+  display: block
+}
+
+input, select, textarea {
+  vertical-align: middle
+}
+
+textarea {
+  vertical-align: top;
+  resize: none
+}
+
+:focus {
+  outline: 0
+}
+
+button, input[type=submit] {
+  cursor: pointer
+}
+
+fieldset, img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+/*-------------------------------------------reset---------------------------------------*/
+
+
+body.modal-open {
+  overflow: hidden;
+  height: 100%
+}
+
+.modal-inform {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+  overflow: hidden;
+  max-width: 1060px;
+  width: 95%;
+  background-color: transparent
+}
+
+.modal-inform__wrap {
+  overflow-y: auto;
+  max-height: 75vh
+}
+
+.modal-inform.open_modal {
+  opacity: 1;
+  overflow-y: visible;
+  z-index: 9999
+}
+
+.modal-inform__dialog {
+  width: 100%
+}
+
+.modal-inform__header {
+  position: relative;
+  padding-top: 64px
+}
+
+.modal-inform__body {
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(13%, #fff));
+  background-image: linear-gradient(to right, transparent 0 13%, #fff 13% 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 48px
+}
+
+.modal-inform__heading {
+  position: relative;
+  padding-left: 43px;
+  color: #171C66;
+  margin-bottom: 40px
+}
+
+.modal-inform__heading:before {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 41px;
+  border: 2px solid #171C66
+}
+
+.modal-inform__text {
+  font-size: 17px;
+  line-height: 1.29;
+  color: #212428;
+  margin-bottom: 40px
+}
+
+.modal-inform__text p {
+  margin-bottom: 19px
+}
+
+.modal-inform__text p:last-child {
+  margin-bottom: 0
+}
+
+.modal-inform__img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%
+}
+
+.modal-inform .advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 40px
+}
+
+.modal-inform .booking-start, .modal-inform .title {
+  display: inline-block;
+  border: 2px solid #171C66;
+  line-height: 1
+}
+
+.modal-inform .advantage__item {
+  position: relative;
+  width: 48%;
+  padding-left: 48px;
+  margin-bottom: 12px
+}
+
+.modal-inform .advantage__item:before {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1
+}
+
+.modal-inform .advantage__item:nth-child(1):before {
+  background-image: url(../assets/img/popup/parking.svg)
+}
+
+.modal-inform .advantage__item:nth-child(2):before {
+  background-image: url(../assets/img/popup/control-system.svg)
+}
+
+.modal-inform .advantage__item:nth-child(3):before {
+  background-image: url(../assets/img/popup/bicycle-parking.svg)
+}
+
+.modal-inform .advantage__item:nth-child(4):before {
+  background-image: url(../assets/img/popup/room.svg)
+}
+
+.modal-inform .advantage__item:nth-child(5):before {
+  background-image: url(../assets/img/popup/electric-cars.svg)
+}
+
+.modal-inform .advantage__item:nth-child(6):before {
+  background-image: url(../assets/img/popup/park.svg)
+}
+
+.modal-inform .advantage__item:nth-child(7):before {
+  background-image: url(../assets/img/popup/playground.svg)
+}
+
+.modal-inform .advantage__item:nth-child(8):before {
+  background-image: url(../assets/img/popup/picnics.svg)
+}
+
+.modal-inform .part_left {
+  position: relative;
+  width: 56.5%
+}
+
+.modal-inform .part_right {
+  width: 43.5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 36px;
+  padding-right: 53px
+}
+
+.modal-inform .part__footer {
+  width: 100%;
+  padding-bottom: 50px
+}
+
+.modal-inform .booking-start {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 18px
+}
+
+.modal-inform .title {
+  padding: 11px 18px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #171C66;
+  margin-top: -2px
+}
+
+.modal-inform .strong {
+  font-weight: 700
+}
+
+.modal-inform .btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: #FBC308;
+  border: none;
+  background-image: none
+}
+
+.modal-inform .btn_close:after, .modal-inform .btn_close:before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  top: 30px
+}
+
+.modal-inform .btn_close:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 19px
+}
+
+.modal-inform .btn_close:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 19px
+}
+
+.modal-inform .btn_gold {
+  color: #212428;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  width: 100%
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .45);
+  z-index: 1000
+}
+
+@media screen and (max-width: 1367px) {
+  .modal-inform .btn_close {
+    width: 54px;
+    height: 54px
+  }
+
+  .modal-inform .btn_close:after, .modal-inform .btn_close:before {
+    top: 26px;
+    width: 16px
+  }
+
+  .modal-inform__header {
+    padding-top: 54px
+  }
+
+  .modal-inform__wrap {
+    max-height: 90vh
+  }
+  .modal-inform__body{
+    padding-top: 38px;
+  }
+  .modal-inform__text p {
+    margin-bottom: 16px;
+  }
+  .modal-inform .advantage {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .modal-inform__wrap {
+    max-height: 75vh
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .modal-inform {
+    max-width: 450px
+  }
+
+  .modal-inform .part_left {
+    display: none
+  }
+
+  .modal-inform .part_right {
+    width: 100%;
+    margin: 0 auto
+  }
+
+  .modal-inform__wrap {
+    background-color: #fff
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .modal-inform__header {
+    position: relative
+  }
+
+  .modal-inform__header:before {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 250, 247, 0)), color-stop(65.62%, #F8FAF7));
+    background: linear-gradient(0deg, rgba(248, 250, 247, 0) 0, #F8FAF7 65.62%);
+    height: 40px;
+    z-index: 1
+  }
+
+  .modal-inform .part_right {
+    padding-left: 22px;
+    padding-right: 22px
+  }
+
+  .modal-inform__text {
+    margin-bottom: 29px
+  }
+
+  .modal-inform .advantage__item {
+    padding-left: 0;
+    padding-top: 48px;
+    width: 43%
+  }
+
+  .modal-inform .advantage__item:before {
+    background-size: 100% auto;
+    width: 42px;
+    height: 42px;
+    top: 20px
+  }
+
+  .modal-inform .advantage {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-inform__wrap {
+    max-height: 90vh
+  }
+
+  .modal-inform .part__footer {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 0;
+    z-index: 2;
+    width: auto;
+    padding-top: 5px;
+    background-color: #fff
+  }
+
+  .modal-inform .title {
+    font-size: 28px
+  }
+
+  .modal-inform .booking-start {
+    font-size: 18px
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .modal-inform .title {
+    font-size: 24px
+  }
+
+  .modal-inform .booking-start {
+    font-size: 15px
+  }
+
+  .modal-inform__heading {
+    padding-left: 22px
+  }
+
+  .modal-inform__heading:before {
+    width: 20px
+  }
+}

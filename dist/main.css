@@ -1379,7 +1379,7 @@ body.modal-open {
   height: 100%;
 }
 
-.modal-cookies {
+.modal-inform {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -1393,40 +1393,40 @@ body.modal-open {
   background-color: transparent;
 }
 
-.modal-cookies__wrap {
+.modal-inform__wrap {
   overflow-y: auto;
   max-height: 70vh;
 }
 
-.modal-cookies.open_modal {
+.modal-inform.open_modal {
   opacity: 1;
   overflow-y: visible;
   z-index: 9999;
 }
 
-.modal-cookies__dialog {
+.modal-inform__dialog {
   width: 100%;
 }
 
-.modal-cookies__header {
+.modal-inform__header {
   position: relative;
   padding-top: 64px;
 }
 
-.modal-cookies__body {
+.modal-inform__body {
   background-image: linear-gradient(to right, transparent 0% 13%, #ffffff 13% 100%);
   display: flex;
   padding-top: 48px;
 }
 
-.modal-cookies__heading {
+.modal-inform__heading {
   position: relative;
   padding-left: 43px;
   color: #171C66;
   margin-bottom: 40px;
 }
 
-.modal-cookies__heading:before {
+.modal-inform__heading:before {
   position: absolute;
   display: block;
   content: '';
@@ -1437,22 +1437,22 @@ body.modal-open {
   border: 2px solid #171C66;
 }
 
-.modal-cookies__text {
+.modal-inform__text {
   font-size: 17px;
   line-height: 1.29;
   color: #212428;
   margin-bottom: 40px;
 }
 
-.modal-cookies__text p {
+.modal-inform__text p {
   margin-bottom: 19px;
 }
 
-.modal-cookies__text p:last-child {
+.modal-inform__text p:last-child {
   margin-bottom: 0;
 }
 
-.modal-cookies__img {
+.modal-inform__img {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -1462,7 +1462,7 @@ body.modal-open {
   height: 100%;
 }
 
-.modal-cookies .advantage {
+.modal-inform .advantage {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1473,14 +1473,14 @@ body.modal-open {
   margin-bottom: 40px;
 }
 
-.modal-cookies .advantage__item {
+.modal-inform .advantage__item {
   position: relative;
   width: 48%;
   padding-left: 48px;
   margin-bottom: 12px;
 }
 
-.modal-cookies .advantage__item:before {
+.modal-inform .advantage__item:before {
   position: absolute;
   content: '';
   background-repeat: no-repeat;
@@ -1494,56 +1494,56 @@ body.modal-open {
   z-index: 1;
 }
 
-.modal-cookies .advantage__item:nth-child(1):before {
+.modal-inform .advantage__item:nth-child(1):before {
   background-image: url(../assets/img/popup/parking.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(2):before {
+.modal-inform .advantage__item:nth-child(2):before {
   background-image: url(../assets/img/popup/control-system.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(3):before {
+.modal-inform .advantage__item:nth-child(3):before {
   background-image: url(../assets/img/popup/bicycle-parking.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(4):before {
+.modal-inform .advantage__item:nth-child(4):before {
   background-image: url(../assets/img/popup/room.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(5):before {
+.modal-inform .advantage__item:nth-child(5):before {
   background-image: url(../assets/img/popup/electric-cars.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(6):before {
+.modal-inform .advantage__item:nth-child(6):before {
   background-image: url(../assets/img/popup/park.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(7):before {
+.modal-inform .advantage__item:nth-child(7):before {
   background-image: url(../assets/img/popup/playground.svg);
 }
 
-.modal-cookies .advantage__item:nth-child(8):before {
+.modal-inform .advantage__item:nth-child(8):before {
   background-image: url(../assets/img/popup/picnics.svg);
 }
 
-.modal-cookies .part_left {
+.modal-inform .part_left {
   position: relative;
   width: 56.5%;
 }
 
-.modal-cookies .part_right {
+.modal-inform .part_right {
   width: 43.5%;
   height: max-content;
   padding-left: 36px;
   padding-right: 53px;
 }
 
-.modal-cookies .part__footer {
+.modal-inform .part__footer {
   width: 100%;
   padding-bottom: 50px;
 }
 
-.modal-cookies .booking-start {
+.modal-inform .booking-start {
   display: inline-block;
   font-size: 20px;
   line-height: 1;
@@ -1552,7 +1552,7 @@ body.modal-open {
   padding: 10px 18px;
 }
 
-.modal-cookies .title {
+.modal-inform .title {
   display: inline-block;
   border: 2px solid #171C66;
   padding: 11px 18px;
@@ -1563,11 +1563,11 @@ body.modal-open {
   margin-top: -2px;
 }
 
-.modal-cookies .strong {
+.modal-inform .strong {
   font-weight: 700;
 }
 
-.modal-cookies .btn_close {
+.modal-inform .btn_close {
   position: absolute;
   right: 0;
   top: 0;
@@ -1579,8 +1579,8 @@ body.modal-open {
   background-image: none;
 }
 
-.modal-cookies .btn_close:before,
-.modal-cookies .btn_close:after {
+.modal-inform .btn_close:before,
+.modal-inform .btn_close:after {
   content: '';
   position: absolute;
   width: 26px;
@@ -1590,21 +1590,21 @@ body.modal-open {
   top: 30px;
 }
 
-.modal-cookies .btn_close:before {
+.modal-inform .btn_close:before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 19px;
 }
 
-.modal-cookies .btn_close:after {
+.modal-inform .btn_close:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
   right: 19px;
 }
 
-.modal-cookies .btn_gold {
+.modal-inform .btn_gold {
   color: #212428;
   padding-top: 12px;
   padding-bottom: 13px;
@@ -3742,23 +3742,35 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1367px) {
-  .modal-cookies .btn_close {
+  .modal-inform .btn_close {
     width: 54px;
     height: 54px;
   }
 
-  .modal-cookies .btn_close:before,
-  .modal-cookies .btn_close:after {
+  .modal-inform .btn_close:before,
+  .modal-inform .btn_close:after {
     top: 26px;
     width: 16px;
   }
 
-  .modal-cookies__header {
+  .modal-inform__header {
     padding-top: 54px;
   }
 
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 90vh;
+  }
+
+  .modal-inform__body {
+    padding-top: 38px;
+  }
+
+  .modal-inform__text p {
+    margin-bottom: 16px;
+  }
+
+  .modal-inform .advantage {
+    margin-bottom: 30px;
   }
 }
 
@@ -4158,26 +4170,26 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1180px) {
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 70vh;
   }
 }
 
 @media screen and (max-width: 1060px) {
-  .modal-cookies {
+  .modal-inform {
     max-width: 450px;
   }
 
-  .modal-cookies .part_left {
+  .modal-inform .part_left {
     display: none;
   }
 
-  .modal-cookies .part_right {
+  .modal-inform .part_right {
     width: 100%;
     margin: 0 auto;
   }
 
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     background-color: #ffffff;
   }
 }
@@ -4665,11 +4677,11 @@ body.modal-open {
 }
 
 @media screen and (max-width: 760px) {
-  .modal-cookies__header {
+  .modal-inform__header {
     position: relative;
   }
 
-  .modal-cookies__header:before {
+  .modal-inform__header:before {
     position: absolute;
     content: '';
     display: block;
@@ -4681,30 +4693,42 @@ body.modal-open {
     z-index: 1;
   }
 
-  .modal-cookies .part_right {
+  .modal-inform .part_right {
     padding-left: 22px;
     padding-right: 22px;
   }
 
-  .modal-cookies__text {
+  .modal-inform__text {
     margin-bottom: 29px;
   }
 
-  .modal-cookies .advantage__item {
+  .modal-inform .advantage__item {
     padding-left: 0;
     padding-top: 48px;
     width: 43%;
   }
 
-  .modal-cookies .advantage__item:before {
+  .modal-inform .advantage__item:before {
     background-size: 100% auto;
     width: 42px;
     height: 42px;
     top: 20px;
   }
 
-  .modal-cookies .advantage {
+  .modal-inform .advantage {
     align-items: flex-start;
+  }
+
+  .modal-inform__body {
+    padding-top: 48px;
+  }
+
+  .modal-inform__text p {
+    margin-bottom: 19px;
+  }
+
+  .modal-inform .advantage {
+    margin-bottom: 40px;
   }
 }
 
@@ -5370,11 +5394,11 @@ body.modal-open {
 }
 
 @media screen and (max-width: 480px) {
-  .modal-cookies__wrap {
+  .modal-inform__wrap {
     max-height: 90vh;
   }
 
-  .modal-cookies .part__footer {
+  .modal-inform .part__footer {
     position: absolute;
     left: 22px;
     right: 22px;
@@ -5385,11 +5409,11 @@ body.modal-open {
     background-color: white;
   }
 
-  .modal-cookies .title {
+  .modal-inform .title {
     font-size: 28px;
   }
 
-  .modal-cookies .booking-start {
+  .modal-inform .booking-start {
     font-size: 18px;
   }
 }
@@ -5749,19 +5773,19 @@ body.modal-open {
 }
 
 @media screen and (max-width: 380px) {
-  .modal-cookies .title {
+  .modal-inform .title {
     font-size: 24px;
   }
 
-  .modal-cookies .booking-start {
+  .modal-inform .booking-start {
     font-size: 15px;
   }
 
-  .modal-cookies__heading {
+  .modal-inform__heading {
     padding-left: 22px;
   }
 
-  .modal-cookies__heading:before {
+  .modal-inform__heading:before {
     width: 20px;
   }
 }

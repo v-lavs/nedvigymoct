@@ -234,19 +234,7 @@ $(document).ready(function () {
     });
 
 
-    const elements = $('#popupCookies');
 
-    $('#triggerPopupCookies').click(function(){
-        elements.addClass('open_modal');
-        jQuery('.overlay').fadeIn();
-        $('body').addClass('modal_open');
-    });
-
-    $('#closePopupCookies, .overlay').click(function(){
-        elements.removeClass('open_modal');
-        jQuery('.overlay').fadeOut();
-        $('body').removeClass('modal_open');
-    });
 
     //READ MORE BTN
     $('.btn_read-more').click(function (e) {
