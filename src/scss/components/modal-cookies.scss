@@ -1,0 +1,346 @@
+body.modal-open {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+.modal-cookies {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s linear;
+  overflow: hidden;
+  max-width: 1046px;
+  max-height: 770px;
+  height: 72%;
+  width: 95%;
+  background-color: transparent;
+//overflow-y: scroll;
+
+  &.open_modal {
+    opacity: 1;
+    //overflow: visible;
+    overflow-y: scroll;
+    z-index: 9999;
+  }
+
+  &__dialog {
+    width: 100%;
+
+  }
+
+
+
+  &__header {
+    position: relative;
+    padding-top: 64px;
+  }
+
+  &__body {
+    background-image: linear-gradient(to right, transparent 0% 13%, #ffffff 13% 100%);
+    display: flex;
+    overflow-y: auto;
+    //min-height: 0;
+    padding-top: 48px;
+    height: 707px;
+  }
+
+  &__heading {
+    position: relative;
+    padding-left: 43px;
+    color: #171C66;
+    margin-bottom: 40px;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 41px;
+      border: 2px solid #171C66;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.29;
+    color: #212428;
+    margin-bottom: 38px;
+
+    p {
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 40px;
+
+    &__item {
+      position: relative;
+      width: 48%;
+      padding-left: 48px;
+      margin-bottom: 12px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      &:nth-child(1):before {
+        background-image: url(../assets/img/popup/parking.svg);
+      }
+
+      &:nth-child(2):before {
+        background-image: url(../assets/img/popup/control-system.svg);
+      }
+
+      &:nth-child(3):before {
+        background-image: url(../assets/img/popup/bicycle-parking.svg);
+      }
+
+      &:nth-child(4):before {
+        background-image: url(../assets/img/popup/room.svg);
+      }
+
+      &:nth-child(5):before {
+        background-image: url(../assets/img/popup/electric-cars.svg);
+      }
+
+      &:nth-child(6):before {
+        background-image: url(../assets/img/popup/park.svg);
+      }
+
+      &:nth-child(7):before {
+        background-image: url(../assets/img/popup/playground.svg);
+      }
+
+      &:nth-child(8):before {
+        background-image: url(../assets/img/popup/picnics.svg);
+      }
+
+    }
+  }
+
+  .part {
+    &_left {
+      position: relative;
+      width: 56.5%;
+    }
+
+    &_right {
+      width: 43.5%;
+      height: max-content;
+      padding-left: 36px;
+      padding-right: 53px;
+
+    }
+    &__footer{
+      width: 100%;
+      padding-bottom: 50px;
+    }
+  }
+
+  .booking-start {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    border: 2px solid #171C66;
+    text-transform: uppercase;
+    padding: 10px 18px;
+  }
+
+  .title {
+    display: inline-block;
+    border: 2px solid #171C66;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: #171C66;
+    margin-top: -2px;
+  }
+
+  .strong {
+    font-weight: 700;
+  }
+
+  .btn_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-color: #FBC308;
+    border: none;
+    background-image: none;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      background-color: white;
+      border-radius: 2px;
+      top: 30px;
+
+    }
+
+    &:before {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      left: 19px;
+    }
+
+    &:after {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      right: 19px;
+    }
+  }
+
+  .btn_gold {
+    color: #212428;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    width: 100%;
+  }
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1367px) {
+  .modal-cookies .btn_close {
+    width: 54px;
+    height: 54px;
+  }
+  .modal-cookies .btn_close:before,
+  .modal-cookies .btn_close:after {
+    top: 26px;
+    width: 16px;
+  }
+  .modal-cookies .part_left{
+    width: 54%;
+  }
+  .modal-cookies .part_right{
+    width: 46%;
+  }
+  .modal-cookies__img{
+    width: 97%;
+  }
+  .modal-cookies__header {
+    padding-top: 54px;
+  }
+  .modal-cookies .title {
+    font-size: 28px;
+  }
+  .modal-cookies .booking-start {
+    font-size: 16px;
+  }
+  .modal-cookies {
+    height: 692px;
+  }
+.modal-cookies .advantage__item{
+  width: 46%;
+}
+  .modal-cookies__text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .modal-cookies {
+    max-width: 450px;
+  }
+  .modal-cookies__body {
+    background-color: #FFFFFF;
+  }
+  .modal-cookies .part_left {
+    display: none;
+  }
+  .modal-cookies .part_right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .modal-cookies {
+    //top: 0;
+    //transform: translate(-50%, -0);
+  }
+  .modal-cookies {
+    height: 665px;
+  }
+  .modal-cookies .part_right {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .modal-cookies__text {
+    font-size: 17px;
+    margin-bottom: 29px;
+  }
+  .modal-cookies .advantage__item {
+    padding-left: 0;
+    padding-top: 48px;
+
+    &:before {
+      background-size: 100%;
+      width: 42px;
+      height: 42px;
+      top: 20px;
+    }
+  }
+  .modal-cookies .advantage {
+    align-items: flex-start;
+  }
+}
+
